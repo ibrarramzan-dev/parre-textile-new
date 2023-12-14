@@ -47,6 +47,12 @@
 @media screen and (max-width: 768px) {
   .hometext {
     padding: 0 .5rem;
+
+    .right{
+      h1{
+        text-align: center;
+      }
+    }
     .left {
       .container {
         gap: 1.2rem;
@@ -62,6 +68,11 @@
 @media screen and (max-width:364px) {
   .hometext{
     padding: 0 1rem;
+    .right{
+      h1{
+        text-align: center;
+      }
+    }
   }
 }
 
