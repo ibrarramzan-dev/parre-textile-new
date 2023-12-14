@@ -271,7 +271,7 @@
   .navbar {
     @include flexer();
     padding: 0;
-    height: 12vh;
+    height: 18vh;
     margin: 0;
     @include flexer(row, space-between);
     padding: 2rem 1rem;
@@ -337,6 +337,12 @@
         background: $color2;
       }
     }
+  }
+}
+
+@media screen and (max-width:425px) {
+  .navbar{
+    height: 15vh;
   }
 }
 
