@@ -401,6 +401,7 @@
     @include flexer(center, center);
 
     .rigt1 {
+      margin-bottom: 4rem;
       .sect {
         height: 40vh;
         margin-top: 1.2rem;
@@ -461,7 +462,7 @@
   }
 
   .team {
-    height: 85vh;
+    height: fit-content;
     width: fit-content;
     margin: 0;
     @include flexer(center, center);
@@ -579,9 +580,14 @@
 
 @media screen and (max-width: 768px) {
   .team {
-    height: 70vh;
+    height: fit-content;
     width: fit-content;
     margin: 0;
+
+    .rigt1{
+      margin-bottom: 0rem;
+    }
+
     .lef1 {
       width: 100vw;
       height: 25vh;
