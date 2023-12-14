@@ -103,8 +103,8 @@
     padding: 1rem;
     @include flexer(row, space-between);
 
-    .navbar_logo{
-      img{
+    .navbar_logo {
+      img {
         height: 11.5vh;
         margin-top: 2rem;
         width: 15vw;
@@ -122,28 +122,47 @@
     border: none;
   }
 
+  // styles/searchMenu.scss
+
   .searcmenu {
     width: 50%;
-    @include flexer();
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 3rem;
     height: 4rem;
-    padding: 1.1rem 0rem;
-    input {
-      width: 100%;
-      margin-top: 2rem;
+    padding: 1.1rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    button {
+      background: none;
       border: none;
-      text-align: center;
+      padding-right: 1rem;
+      cursor: pointer;
+      font-size: xx-large;
+    }
+
+    input {
+      padding-left: 30px; // Adjust the padding based on your icon size
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      height: 30px; // Adjust the height based on your design
+      box-sizing: border-box;
+      // margin-top: 2rem;
+      width: 60%;
+      border: none;
       background: none;
       outline: none;
       font-size: 2rem;
     }
-    button {
-      background: none;
-      margin-top: 2rem;
-      font-size: xx-large;
-      color: rgb(0, 0, 0);
-      border: none;
+
+    svg {
+      position: absolute;
+      left: 10px; // Adjust the left position based on your design
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 20px; // Adjust the font size based on your design
+      color: #666; // Adjust the color based on your design
     }
   }
 }
@@ -183,7 +202,7 @@
 
   input {
     width: 100%;
-    margin: 0 .2rem;
+    margin: 0 0.2rem;
     padding: 10px 25px;
     margin-bottom: 10px;
     outline: none;
@@ -355,8 +374,8 @@
   }
 }
 
-@media screen and (max-width:425px) {
-  .navbar{
+@media screen and (max-width: 425px) {
+  .navbar {
     height: 15vh;
   }
 }

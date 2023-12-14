@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import logo from "@/public/logo.png";
 import style from "@/styles/header.module.scss";
@@ -36,7 +36,7 @@ export const Header = () => {
         setMenuOpen(false);
       }
       else {
-        return  
+        return
       }
     };
 
@@ -83,8 +83,11 @@ export const Header = () => {
           </button>
         </div>
         <button
-          onClick={() => {
+          onClick={(handleClick) => {
             menuOpen === true ? setMenuOpen(false) : setMenuOpen(true);
+            if(inputRef.current){
+              inputRef.current.focus();
+            }
           }}
           className={style.hamburger}
         >
@@ -109,6 +112,13 @@ const SearchMenu = ({ options }) => {
     open: { opacity: 1, y: 0 },
     closed: { opacity: 0, y: "-100%" },
   };
+
+  const ref = useRef(null);
+
+  const handleClick = () => {
+    ref.current.focus();
+  }
+
   return (
     <motion.div
       className={style.search_modal}
@@ -121,16 +131,17 @@ const SearchMenu = ({ options }) => {
         <div className={style.navbar_logo}>
           <Image src={logo} alt="Logo" className="navbar-logo" />
         </div>
-      <div className={style.searcmenu}>
-        <input
-          type="text"
-          placeholder="Type words and Hit enter"
-          className={antic_didone.className}
-        />
-        <button>
-          <IoMdSearch />
-        </button>
-      </div>
+        <div className={style.searcmenu}>
+          <button>
+            <IoMdSearch />
+          </button>
+          <input
+            type="text"
+            // ref={inputRef}
+            placeholder="Type words and Hit enter"
+            className={antic_didone.className}
+          />
+        </div>
         <button className={style.closeIcon} onClick={() => options(false)}>
           <RxCross2 />
         </button>
