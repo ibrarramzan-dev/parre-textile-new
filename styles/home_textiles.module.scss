@@ -42,6 +42,7 @@
 
 @media screen and (max-width: 768px) {
   .hometext {
+    padding: 0 .5rem;
     .left {
       .container {
         gap: 1.2rem;
@@ -54,10 +55,17 @@
   }
 }
 
+@media screen and (max-width:364px) {
+  .hometext{
+    padding: 0 1rem;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .hometext {
     height: fit-content;
     width: 100%;
+    padding: 0 1rem;
     @include flexer(center);
 
     .right {
