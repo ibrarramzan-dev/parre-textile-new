@@ -65,22 +65,12 @@
   }
 }
 
-@media screen and (max-width:364px) {
-  .hometext{
-    padding: 0 1rem;
-    .right{
-      h1{
-        text-align: center;
-      }
-    }
-  }
-}
 
 @media screen and (max-width: 425px) {
   .hometext {
-    height: fit-content;
+    height: 90vh;
     width: 100%;
-    padding: 0 1rem;
+    padding: 0 2rem;
     @include flexer(center);
 
     .right {
@@ -88,6 +78,7 @@
       h1 {
         font-size: 1.8rem;
         text-align: center;
+        padding-bottom: 1.5rem;
       }
     }
     .left {
