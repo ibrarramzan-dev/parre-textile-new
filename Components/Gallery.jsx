@@ -3,7 +3,7 @@
 import style from "@/styles/gallery.module.scss";
 import React from "react";
 import Image from "next/image";
-import { PT_Serif } from "next/font/google";
+import { PT_Serif, Arapey } from "next/font/google";
 import img1 from "@/imgs/Product 1.jpg";
 import img2 from "@/imgs/Product 2.jpg";
 import img3 from "@/imgs/Product 1.jpg";
@@ -15,11 +15,16 @@ const pt_serif = PT_Serif({
   subsets: ["latin"],
 });
 
+const arapey = Arapey({
+  weight: "400",
+  subsets: ["latin"],
+});
+
 export const Gallery = () => {
   return (
     <div>
       <div className={style.galleryimg}>
-        <h1 className={`${style.header} ${pt_serif.className}`}>Gallery</h1>
+        <h1 className={`${style.header} ${arapey.className}`}>Gallery</h1>
         <div className={style.box}>
           <span style={{ "--i": 1 }}>
             <Image src={img1} alt="" />

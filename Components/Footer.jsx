@@ -5,12 +5,19 @@ import { GrFacebookOption } from "react-icons/gr";
 import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 import {
+  Arapey,
   Antic_Didone,
   Eagle_Lake,
   Playfair_Display,
   Cormorant,
   Roboto,
+  Libre_Bodoni,
 } from "next/font/google";
+
+const arapey = Arapey({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const playfair_display = Playfair_Display({
   weight: "400",
@@ -37,13 +44,23 @@ const roboto = Roboto({
   subsets: ["latin"],
 });
 
+const libre_bodoni = Libre_Bodoni({
+  weight: "400",
+  subsets: ["latin"],
+});
+
 const Footer = () => {
   return (
     <>
       <div className={style.bgfooter}>
         <div className={style.newsletter}>
-          <h2 className={antic_didone.className}>
-            Subscribe to our Newsletter
+          <h2>
+            <span
+              className={libre_bodoni.className}
+              style={{ fontWeight: "bold" }}
+            >
+              Subscribe to our Newsletter
+            </span>
           </h2>
           <p className={cormorant.className}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.

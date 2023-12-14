@@ -7,9 +7,23 @@ import { FaRegHeart } from "react-icons/fa";
 import { BsCart3 } from "react-icons/bs";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Link from "next/link";
-import { Cormorant, Playfair_Display, Antic_Didone } from "next/font/google";
+import {
+  Arapey,
+  Gentium_Book_Plus,
+  Playfair_Display,
+  Antic_Didone,
+} from "next/font/google";
 import Image from "next/image";
 
+const arapey = Arapey({
+  weight: "400",
+  subsets: ["latin"],
+});
+
+const gentium_book_plus = Gentium_Book_Plus({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const playfair_display = Playfair_Display({
   weight: "400",
@@ -22,31 +36,36 @@ const antic_didone = Antic_Didone({
 });
 
 const ProductsPage = () => {
-  const [data, setdata] = useState([])
+  const [data, setdata] = useState([]);
+
   useEffect(() => {
-    setdata(productData.slice(0, 4))
+    setdata(productData.slice(0, 4));
   }, []);
 
   return (
     <div className={style.products}>
       <header className={style.links}>
         <Link href="/" className="navlink">
-          HOME
+          <span className={gentium_book_plus.className}>HOME</span>
         </Link>
         <Link href="/About" className="navlink">
-          ABOUT
+          <span className={gentium_book_plus.className}>ABOUT</span>
         </Link>
         <Link href="/Product" className="navlink">
-          TEXTILES
+          <span className={gentium_book_plus.className}>TEXTILES</span>
         </Link>
         <Link href="/Showrooms" className="navlink">
-          SHOWROOM
+          <span className={gentium_book_plus.className}>SHOWROOM</span>
         </Link>
         <Link href="/Designer" className="navlink">
-          DESIGNER QUOTES
+          <span className={gentium_book_plus.className}>DESIGNER QUOTES</span>
         </Link>
       </header>
-      <h2 className={style.hometext}>Luxury Printed Textiles Exclusively for Discerning Interior Designers</h2>
+
+      <h2 className={`${style.hometext} ${arapey.className}`}>
+        Luxury Printed Textiles Exclusively for Discerning Interior Designers
+      </h2>
+
       <div className={style.product}>
         <div className={style.product_list}>
           {data.map((product) => (
@@ -68,11 +87,17 @@ const Product = ({ data }) => {
   const { productName, price, imageLink, _id } = data;
   let id = _id;
   console.log(imageLink.src);
+
   return (
     <div className={style.box}>
-      <Image src={imageLink} className={`${style.img} ${style.overlay}`} alt="" />
-      <div className={`${style.cardbody} ${style.overlay}`}>
-      </div>
+      <Image
+        src={imageLink}
+        className={`${style.img} ${style.overlay}`}
+        alt=""
+      />
+
+      <div className={`${style.cardbody} ${style.overlay}`}></div>
+
       <div className={style.icons}>
         <div className={style.blank}></div>
         <button className={style.sideicons}>
@@ -81,7 +106,7 @@ const Product = ({ data }) => {
         <button className={style.sideicons}>
           <BsCart3 />
         </button>
-        <button className={style.sideicons} >
+        <button className={style.sideicons}>
           <Link href={`/Product/${id}`}>
             <FaArrowRightLong />
           </Link>
@@ -97,4 +122,3 @@ const Product = ({ data }) => {
 };
 
 export default ProductsPage;
-
