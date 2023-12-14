@@ -7,7 +7,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { BsCart3 } from "react-icons/bs";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Link from "next/link";
-import { Cormorant, Playfair_Display, Antic_Didone } from "next/font/google";
+import { Playfair_Display, Antic_Didone } from "next/font/google";
 import Image from "next/image";
 
 const playfair_display = Playfair_Display({
