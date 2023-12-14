@@ -361,7 +361,21 @@
       }
     }
   }
-}
+
+  @media screen and (max-width:1680px) {
+    .lef1{
+      height: 20vh;
+      margin-top: .5rem;
+    }
+      .rigt1{
+        margin-top: 3rem;
+        height: 40vh;
+        padding-bottom: 12rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
 // Client
 
 .client {
@@ -703,6 +717,7 @@
       width: fit-content;
       height: fit-content;
       @include flexer(column);
+      margin-bottom: 4rem;
       .sect {
         margin-bottom: 4rem;
         text-align: center;
