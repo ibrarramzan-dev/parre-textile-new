@@ -121,10 +121,6 @@ const SearchMenu = ({ options }) => {
         <div className={style.navbar_logo}>
           <Image src={logo} alt="Logo" className="navbar-logo" />
         </div>
-        <button className={style.closeIcon} onClick={() => options(false)}>
-          <RxCross2 />
-        </button>
-      </div>
       <div className={style.searcmenu}>
         <input
           type="text"
@@ -133,6 +129,10 @@ const SearchMenu = ({ options }) => {
         />
         <button>
           <IoMdSearch />
+        </button>
+      </div>
+        <button className={style.closeIcon} onClick={() => options(false)}>
+          <RxCross2 />
         </button>
       </div>
     </motion.div>
