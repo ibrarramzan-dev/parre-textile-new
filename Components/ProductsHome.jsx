@@ -64,7 +64,7 @@ const ProductsPage = () => {
 
       <h2 className={`${style.hometext} ${arapey.className}`}>
         Luxury Printed Textiles Exclusively for Discerning Interior Designers
-      </h2>a
+      </h2>
 
       <div className={style.product}>
         <div className={style.product_list}>
