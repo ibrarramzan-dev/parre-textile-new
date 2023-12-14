@@ -75,7 +75,8 @@
     .right {
       @include flexer(center);
       h1 {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
+        text-align: center;
       }
     }
     .left {
