@@ -60,8 +60,6 @@ export const Header = () => {
       className={style.header}
     >
       <nav className={style.navbar}>
-
-
         <div className={style.icons1}>
           <Link href={"/"}>
             <button className={style.btn}>
