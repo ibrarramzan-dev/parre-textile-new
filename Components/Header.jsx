@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import logo from "@/public/logo.png";
 import style from "@/styles/header.module.scss";
@@ -83,11 +83,8 @@ export const Header = () => {
           </button>
         </div>
         <button
-          onClick={(handleClick) => {
+          onClick={() => {
             menuOpen === true ? setMenuOpen(false) : setMenuOpen(true);
-            if(inputRef.current){
-              inputRef.current.focus();
-            }
           }}
           className={style.hamburger}
         >
@@ -112,13 +109,6 @@ const SearchMenu = ({ options }) => {
     open: { opacity: 1, y: 0 },
     closed: { opacity: 0, y: "-100%" },
   };
-
-  const ref = useRef(null);
-
-  const handleClick = () => {
-    ref.current.focus();
-  }
-
   return (
     <motion.div
       className={style.search_modal}
@@ -137,7 +127,6 @@ const SearchMenu = ({ options }) => {
           </button>
           <input
             type="text"
-            // ref={inputRef}
             placeholder="Type words and Hit enter"
             className={antic_didone.className}
           />
