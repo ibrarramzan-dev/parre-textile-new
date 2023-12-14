@@ -62,12 +62,12 @@ const Footer = () => {
               Subscribe to our Newsletter
             </span>
           </h2>
-          <p className={cormorant.className}>
+          {/* <p className={cormorant.className}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Praesentium, sequi. Quo, sed autem! Sunt, magni inventore.
             Accusantium modi, nulla, neque ducimus quisquam sed, repellendus hic
             totam quis eveniet repellat
-          </p>
+          </p> */}
           <div className={style.textnewsletter}>
             <input
               type="email"
