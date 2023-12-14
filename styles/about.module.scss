@@ -407,6 +407,12 @@
   }
 }
 
+@media screen and (max-width:1680px) {
+  .skill{
+    height: fit-content;
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .team {
     height: 90vh;
