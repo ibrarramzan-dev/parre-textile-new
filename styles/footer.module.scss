@@ -34,6 +34,7 @@
       input[type="email"] {
         border: none;
         padding: 10px;
+        border-radius: 5px;
         font-size: larger;
         width: 100%;
         margin-right: 9px;
@@ -41,6 +42,7 @@
       }
 
       button {
+        border-radius: 5px;
         font-size: 1rem;
         font-family: "Antic Didone", serif;
         padding: 12px 30px;
@@ -82,7 +84,7 @@
 }
 
 .main_footer {
-  @include flexer(row, space-between,flex-start);
+  @include flexer(row, space-between, flex-start);
   width: 90%;
   height: fit-content;
   flex-wrap: wrap;
@@ -120,7 +122,7 @@
       border: 0.5px solid $bcolor1;
       @include flexer();
       transition: 0.3s ease;
-      &:hover{
+      &:hover {
         background: #000;
       }
     }
@@ -178,7 +180,7 @@
     width: 100vw;
   }
   .main_footer {
-    height: fit-content; 
+    height: fit-content;
   }
 
   .footer_header {
@@ -202,7 +204,7 @@
     display: flex;
     text-align: center;
 
-    .copy{
+    .copy {
       text-align: center;
     }
   }
@@ -213,62 +215,60 @@
     display: flex;
     text-align: center;
 
-    .links{
+    .links {
       display: none;
     }
 
-    .copy{
+    .copy {
       text-align: center;
     }
   }
 }
 
-
-
-@media screen and (max-width: 2560px) and ( min-width:1700px) {
-  .bgfooter{
-    .newsletter{
-      h2{
+@media screen and (max-width: 2560px) and (min-width: 1700px) {
+  .bgfooter {
+    .newsletter {
+      h2 {
         font-size: 4.5rem;
       }
-      p{
+      p {
         font-size: 2rem;
       }
     }
   }
 
-  .footer{
-    .main_footer{
-      .footer_header{
+  .footer {
+    .main_footer {
+      .footer_header {
         font-size: 4rem;
       }
 
-      .address{
-        h2{
+      .address {
+        h2 {
           font-size: 2.2rem;
         }
-        p{
+        p {
           font-size: 1.2rem;
         }
       }
-      .hello{
-        h2{
+      .hello {
+        h2 {
           font-size: 2.2rem;
         }
-        p{
+        p {
           font-size: 1.2rem;
         }
       }
     }
   }
 
-  .foot{
-    .links{
-      a{
+  .foot {
+    .links {
+      a {
         font-size: 1.8rem;
       }
     }
-    .copy{
+    .copy {
       font-size: 1.8rem;
     }
   }
