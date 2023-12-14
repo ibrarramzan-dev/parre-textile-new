@@ -36,7 +36,7 @@ export const Header = () => {
         setMenuOpen(false);
       }
       else {
-        return
+        return  
       }
     };
 
