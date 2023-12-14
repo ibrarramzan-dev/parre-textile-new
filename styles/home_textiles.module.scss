@@ -13,6 +13,10 @@
     height: 10vh;
     width: 100%;
     @include flexer(center);
+
+    h1{
+      font-size: 36.8px;
+    }
   }
 
   .left {
