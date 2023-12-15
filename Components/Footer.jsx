@@ -109,13 +109,19 @@ const Footer = () => {
         <div className={style.foot}>
           <div className={style.links}>
             <Link href={""} className={antic_didone.className}>
+              Home
+            </Link>
+            <Link href={""} className={antic_didone.className}>
+              About
+            </Link>
+            <Link href={""} className={antic_didone.className}>
               Textiles
             </Link>
             <Link href={""} className={antic_didone.className}>
-              Latest Projects
+              Showroom
             </Link>
             <Link href={""} className={antic_didone.className}>
-              Contact
+              FAQ's
             </Link>
           </div>
           <div className={`${style.copy} ${antic_didone.className}`}>
