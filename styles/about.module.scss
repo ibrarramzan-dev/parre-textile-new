@@ -135,6 +135,15 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .about {
+    .right {
+      img {
+        display: none;
+      }
+    }
+  }
+}
 // Achievements
 .ment {
   overflow: hidden;
@@ -279,7 +288,7 @@
         .ico {
           width: 3rem;
           color: white;
-          margin-bottom: .3rem;
+          margin-bottom: 0.3rem;
           height: 3rem;
           transition: all 0.3s ease;
 
@@ -362,20 +371,20 @@
     }
   }
 
-  @media screen and (max-width:1680px) {
-    .lef1{
+  @media screen and (max-width: 1680px) {
+    .lef1 {
       height: 20vh;
-      margin-top: .5rem;
+      margin-top: 0.5rem;
     }
-      .rigt1{
-        margin-top: 3rem;
-        height: 40vh;
-        padding-bottom: 12rem;
-        margin-bottom: 0;
-        padding-bottom: 0;
-      }
+    .rigt1 {
+      margin-top: 3rem;
+      height: 40vh;
+      padding-bottom: 12rem;
+      margin-bottom: 0;
+      padding-bottom: 0;
     }
   }
+}
 // Client
 
 .client {
@@ -407,8 +416,8 @@
   }
 }
 
-@media screen and (max-width:1680px) {
-  .skill{
+@media screen and (max-width: 1680px) {
+  .skill {
     height: fit-content;
   }
 }
@@ -604,7 +613,7 @@
     width: fit-content;
     margin: 0;
 
-    .rigt1{
+    .rigt1 {
       margin-bottom: 0rem;
     }
 
@@ -686,8 +695,8 @@
         height: 25vh;
         text-align: center;
 
-        .secti{
-          font-size: .8rem;
+        .secti {
+          font-size: 0.8rem;
         }
       }
     }
