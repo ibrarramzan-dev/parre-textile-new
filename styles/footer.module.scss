@@ -109,9 +109,9 @@
   @include flexer(column, flex-start, start);
   height: 15rem;
   padding-top: 1rem;
-  font-weight: bold;
-
+  
   h2 {
+    font-weight: bold;
     margin-bottom: 1.5rem;
     @include linkHover();
   }
