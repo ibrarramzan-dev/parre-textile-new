@@ -28,6 +28,12 @@
       padding-left: 0;
     }
   }
+
+  @media screen and (max-width: 1700px) and (min-width-1640px) {
+    .navbar_logo {
+      padding-left: 0;
+    }
+  }
 }
 
 .links {
