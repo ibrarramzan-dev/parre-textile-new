@@ -14,14 +14,14 @@ import img1 from "@/public/t1.jpg";
 import img2 from "@/public/t2.jpg";
 import img3 from "@/public/t3.jpg";
 import img4 from "@/public/t4.jpg";
-import img20 from "@/public/l1.png";
-import img7 from "@/public/l2.png";
-import img8 from "@/public/l3.png";
-import img9 from "@/public/l4.png";
-import img10 from "@/public/l5.png";
-import img11 from "@/public/l6.png";
-import img12 from "@/public/l7.png";
-import img13 from "@/public/l8.png";
+// import img20 from "@/public/l1.png";
+// import img7 from "@/public/l2.png";
+// import img8 from "@/public/l3.png";
+// import img9 from "@/public/l4.png";
+// import img10 from "@/public/l5.png";
+// import img11 from "@/public/l6.png";
+// import img12 from "@/public/l7.png";
+// import img13 from "@/public/l8.png";
 import Image from "next/image";
 import Footer from "@/Components/Footer";
 
@@ -65,7 +65,6 @@ export default function Home() {
       <Skills />
       <Work />
       <Team />
-      <Client />
       <Footer />
     </>
   );
@@ -222,25 +221,25 @@ const Team = () => {
   );
 };
 
-const Client = () => {
-  return (
-    <>
-      <div className={style.client}>
-        <h2>OUR CLIENT</h2>
-        <div className={style.cli}>
-          <marquee scrollamount="10" height="500" width="1300" direction="right" className={style.imges}>
-            <Image src={img20} height={"170"} alt="" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <Image src={img7} height={"170"} alt="" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <Image src={img8} height={"170"} alt="" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <Image src={img9} height={"170"} alt="" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <Image src={img10} height={"170"} alt="" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <Image src={img11} height={"170"} alt="" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <Image src={img12} height={"170"} alt="" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <Image src={img13} height={"170"} alt="" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          </marquee>
-          <div className={style.bottom}></div>
-        </div>
-      </div>
-    </>
-  );
-};
+// const Client = () => {
+//   return (
+//     <>
+//       <div className={style.client}>
+//         {/* <h2>OUR CLIENT</h2> */}
+//         <div className={style.cli}>
+//           <marquee scrollamount="10" height="500" width="1300" direction="right" className={style.imges}>
+//             <Image src={img20} height={"170"} alt="" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+//             <Image src={img7} height={"170"} alt="" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+//             <Image src={img8} height={"170"} alt="" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+//             <Image src={img9} height={"170"} alt="" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+//             <Image src={img10} height={"170"} alt="" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+//             <Image src={img11} height={"170"} alt="" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+//             <Image src={img12} height={"170"} alt="" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+//             <Image src={img13} height={"170"} alt="" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+//           </marquee>
+//           <div className={style.bottom}></div>
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
