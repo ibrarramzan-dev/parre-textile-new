@@ -385,36 +385,6 @@
     }
   }
 }
-// Client
-
-.client {
-  height: 35vh;
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-  padding-top: 2.6rem;
-  background: $color;
-  border-bottom: 1.5px solid white;
-  @include flexer(column, space-between);
-
-  // h2 {
-  //   margin-top: 1rem;
-  //   color: white;
-  //   font-size: 2.5rem;
-  // }
-
-  .cli {
-    width: 100%;
-    @include flexer(center);
-
-    marquee {
-      gap: 2rem;
-      .images {
-        gap: 2rem;
-      }
-    }
-  }
-}
 
 @media screen and (max-width: 1680px) {
   .skill {
@@ -836,24 +806,6 @@
       .secti {
         margin-bottom: 1rem;
       }
-    }
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .client {
-    height: 34vh;
-    overflow: hidden;
-    width: 100%;
-    position: relative;
-    padding-bottom: 10rem;
-    background: $color;
-    @include flexer(column, space-between);
-
-    h2 {
-      margin-top: 1rem;
-      color: white;
-      font-size: 1.8rem;
     }
   }
 }
