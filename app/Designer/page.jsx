@@ -1,5 +1,3 @@
-import Footer from "@/Components/Footer";
-import { Header } from "@/Components/Header";
 import { quotes } from "@/Components/quotes/quotesArray";
 import style from "@/styles/quotes/quote.module.scss";
 import { RxAvatar } from "react-icons/rx";
@@ -9,13 +7,11 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <Header />
       <div className={style.number}>
         <div className={style.allquotes}>
           <Quote />
         </div>
       </div>
-      <Footer />
     </>
   )
 }

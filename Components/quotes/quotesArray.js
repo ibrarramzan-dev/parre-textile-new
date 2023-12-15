@@ -7,22 +7,10 @@ export const quotes = [
     avatarImg: "",
   },
   {
-    quote: "If you have the ability to love,love yourself first",
-    author: "Charles Bukowski",
-    expertise: "American Novelist",
-    avatarImg: "",
-  },
-  {
     quote:
       "Weak people revenge,Strong people forigive,Intelligent people ignore",
     author: "Albert Einstein",
     expertise: "Scientist",
-    avatarImg: "",
-  },
-  {
-    quote: "Books are the training weights of the mind",
-    author: "Epictetus",
-    expertise: "Philosopher",
     avatarImg: "",
   },
   {
@@ -31,10 +19,10 @@ export const quotes = [
     expertise: "American Author",
     avatarImg: "",
   },
-  {
-    quote: "I'm not perfect. but I'll always be real",
-    author: "Tupac Shakur",
-    expertise: "American Rapper",
-    avatarImg: "",
-  },
+  // {
+  //   quote: "I'm not perfect. but I'll always be real",
+  //   author: "Tupac Shakur",
+  //   expertise: "American Rapper",
+  //   avatarImg: "",
+  // },
 ];
