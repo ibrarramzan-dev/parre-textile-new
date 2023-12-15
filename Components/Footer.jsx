@@ -65,7 +65,7 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className={antic_didone.className}
+              className={libre_bodoni.className}
             />
             <button>SUBMIT</button>
           </div>
