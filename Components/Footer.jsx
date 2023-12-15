@@ -65,7 +65,7 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className={roboto.className}
+              className={antic_didone.className}
             />
             <button>SUBMIT</button>
           </div>
