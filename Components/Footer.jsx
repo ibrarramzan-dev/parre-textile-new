@@ -57,7 +57,6 @@ const Footer = () => {
           <h2>
             <span
               className={libre_bodoni.className}
-              style={{ fontWeight: "bold" }}
             >
               Subscribe to our Newsletter
             </span>
