@@ -67,7 +67,7 @@ const Footer = () => {
               placeholder="Enter your email"
               className={libre_bodoni.className}
             />
-            <button className={libre_bodoni.className}>SUBSCRIBE</button>
+            <button className={libre_bodoni.className}>Subscribe</button>
           </div>
         </div>
       </div>
