@@ -109,7 +109,7 @@ const Footer = () => {
         <div className={style.foot}>
           <div className={style.links}>
             <Link href={""} className={antic_didone.className}>
-              Our Blog
+              Textiles
             </Link>
             <Link href={""} className={antic_didone.className}>
               Latest Projects
