@@ -13,7 +13,6 @@ export default function Home() {
       <Banner />
       <ProductsPage />
       <Gallery />
-      <HomeTextiles />
       <Designer />
       <Footer />
     </>
