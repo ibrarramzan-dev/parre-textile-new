@@ -9,39 +9,39 @@
   overflow: hidden;
   justify-content: center;
   align-items: center;
-
+  
   h2{
     text-align: center;
     font-family: $font4;
     font-weight: lighter;
     font-size: 2.5rem;
   }
-
+  
   .headings {
     font-size: 3rem;
     text-align: center;
     margin: 1rem;
   }
-
+  
   .allquotes {
     color: white;
     @include flexer(row);
     flex-wrap: wrap;
     gap: 3rem;
   }
-
+  
   .para {
     @include flexer(column, center);
     text-align: center;
-    height: 40vh;
+    height: 35vh;
     padding: 1rem;
     transition: all 0.4s ease;
     width: 85vw;
-    margin-bottom: 2rem;
+    // margin-bottom: 2rem;
 
     .line{
       width: 45%;
-      margin-top: .5rem;
+      margin-top: 1rem;
     }
 
     .logo {
