@@ -36,6 +36,7 @@ const Quote = () => {
               </div>
             </div>
           </div>
+                <hr className={style.line} />
         </div>
       ))}
     </>

@@ -60,6 +60,10 @@
         font-size: 1.2rem;
         @include flexer(column);
         color: black;
+
+        .line{
+          width: fit-content;
+        }
       }
     }
   }
