@@ -61,6 +61,10 @@
         @include flexer(column);
         color: black;
 
+        .expertise{
+          color: $color;
+        }
+
         .line{
           width: fit-content;
         }
