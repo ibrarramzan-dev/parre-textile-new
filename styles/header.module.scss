@@ -3,7 +3,7 @@
 .header {
   @include hw;
   border-bottom: 1px solid #00000042;
-  border-top: 3px solid $color;
+  border-top: 20px solid $color;
 }
 
 .hamburger {
