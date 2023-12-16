@@ -149,9 +149,6 @@
   p {
     margin-bottom: 1rem;
   }
-  .mail {
-    @include linkHover();
-  }
   .num {
     font-weight: bold;
     cursor: pointer;
