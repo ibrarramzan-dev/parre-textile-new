@@ -30,13 +30,6 @@ const Quote = () => {
             </div>
             <div className={style.quote}>{quote.quote}</div>
             <div className={style.author}>
-              <div className={style.avatar}>
-                {quote.avatarImg === "" ? (
-                  <RxAvatar />
-                ) : (
-                  <Image src={quote.avatarImg} alt="" />
-                )}
-              </div>
               <div className={style.name}>
                 <span className={style.author}>{quote.author}</span>
                 <span className={style.expertise}>{quote.expertise}</span>

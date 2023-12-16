@@ -54,11 +54,6 @@
 
     .author {
       font-size: 2rem;
-      .avatar {
-        font-size: 3.2rem;
-        @include flexer(row);
-        color: $color;
-      }
 
       .name {
         font-size: 1.2rem;
@@ -123,11 +118,6 @@
       }
       .author {
         font-size: 1.2rem;
-        .avatar {
-          font-size: 1.8rem;
-          @include flexer(row);
-          color: $color;
-        }
   
         .name {
           font-size: 1rem;
