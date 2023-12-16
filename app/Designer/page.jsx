@@ -8,9 +8,7 @@ export default function Home() {
   return (
     <>
       <div className={style.number}>
-        <h2>
-          Designer Quotes
-        </h2>
+        <h2>Designer Quotes</h2>
         <div className={style.allquotes}>
           <Quote />
         </div>
@@ -35,8 +33,8 @@ const Quote = () => {
                 <span className={style.expertise}>{quote.expertise}</span>
               </div>
             </div>
+            <hr className={style.line} />
           </div>
-                <hr className={style.line} />
         </div>
       ))}
     </>
