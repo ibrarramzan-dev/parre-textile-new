@@ -1,28 +1,22 @@
 export const quotes = [
   {
     quote:
-      "Next Time you think of beautiful things don't forget to count yourself in",
-    author: "Anonymous",
-    expertise: "Hacker",
+      "Color is a power which directly influences the soul",
+    author: "Wassily Kadinsky",
+    expertise: "Russian Painter",
     avatarImg: "",
   },
   {
     quote:
-      "Weak people revenge,Strong people forigive,Intelligent people ignore",
-    author: "Albert Einstein",
-    expertise: "Scientist",
+      "The essence of interior design will always be about people and how they live",
+    author: "Albert Hadley",
+    expertise: "Interior Designer",
     avatarImg: "",
   },
   {
-    quote: "Reading can take you places you have never been before",
-    author: "Dr Seuss",
-    expertise: "American Author",
+    quote: "Tradional interior design is a timeless, elegant look that never goes out of style",
+    author: "Mary McDonald",
+    expertise: "Actor",
     avatarImg: "",
   },
-  // {
-  //   quote: "I'm not perfect. but I'll always be real",
-  //   author: "Tupac Shakur",
-  //   expertise: "American Rapper",
-  //   avatarImg: "",
-  // },
 ];
