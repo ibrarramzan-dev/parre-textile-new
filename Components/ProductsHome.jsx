@@ -57,7 +57,7 @@ const ProductsPage = () => {
         <Link href="/Showrooms" className="navlink">
           <span className={gentium_book_plus.className}>SHOWROOM</span>
         </Link>
-        <Link href="/Designer" className="navlink">
+        <Link href="/FAQs" className="navlink">
           <span className={gentium_book_plus.className}>FAQ&apos;s</span>
         </Link>
       </header>

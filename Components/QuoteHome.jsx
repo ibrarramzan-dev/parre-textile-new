@@ -1,8 +1,6 @@
 import { quotes } from "@/Components/quotes/quotesArray";
-import style from "@/styles/quotes/quote.module.scss";
-import { RxAvatar } from "react-icons/rx";
 import { FaQuoteLeft } from "react-icons/fa";
-import Image from "next/image";
+import style from "@/styles/quotehome.module.scss";
 
 export default function Home() {
   return (

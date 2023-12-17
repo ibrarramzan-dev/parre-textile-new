@@ -3,8 +3,10 @@ import ProductsPage from "@/Components/ProductsHome";
 import { Gallery } from "@/Components/Gallery";
 import Footer from "@/Components/Footer";
 import Banner from "@/Components/Banner";
-import Designer from "@/app/Designer/page";
+import Designer from "@/app/FAQs/page";
 import { HomeTextiles } from "@/Components/HomeTextiles";
+import QuoteHome from "@/Components/QuoteHome";
+
 
 export default function Home() {
   return (
@@ -13,7 +15,7 @@ export default function Home() {
       <Banner />
       <ProductsPage />
       <Gallery />
-      <Designer />
+      <QuoteHome />
       <Footer />
     </>
   );

@@ -42,8 +42,8 @@ const ProductsPage = () => {
         <Link href="/Showrooms" className="navlink">
           SHOWROOM
         </Link>
-        <Link href="/Designer" className="navlink">
-          DESIGNER QUOTES
+        <Link href="/FAQs" className="navlink">
+          FAQ&apos;s
         </Link>
       </header>
 
