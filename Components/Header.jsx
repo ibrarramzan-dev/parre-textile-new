@@ -169,8 +169,8 @@ const Side_menu = () => {
         <Link href="/Showrooms" className={style.hamlink}>
           Showroom
         </Link>
-        <Link href="/Designer" className={style.hamlink}>
-          Designer Quotes
+        <Link href="/FAQs" className={style.hamlink}>
+          FAQ&apos;s
         </Link>
       </div>
     </motion.div>
