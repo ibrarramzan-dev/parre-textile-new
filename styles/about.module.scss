@@ -294,7 +294,7 @@
     @include flexer(column);
 
     h4 {
-      color: #bb6830;
+      color: $color;
       margin-bottom: 1rem;
       font-size: 1.5rem;
     }
@@ -329,7 +329,7 @@
       }
       p {
         font-size: 0.9rem;
-        color: #bb6830;
+        color: $color;
         font-weight: bold;
       }
     }
@@ -525,7 +525,7 @@
         }
         p {
           font-size: 0.9rem;
-          color: #bb6830;
+          color: $color;
           font-weight: bold;
         }
       }
@@ -594,7 +594,7 @@
       @include flexer(column);
 
       h4 {
-        color: #272727;
+        color: $color;
         margin-bottom: 1rem;
         font-size: 1rem;
       }
@@ -625,7 +625,7 @@
         }
         p {
           font-size: 0.9rem;
-          color: #bb6830;
+          color: $color;
           font-weight: bold;
         }
       }
