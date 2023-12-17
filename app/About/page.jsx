@@ -9,7 +9,7 @@ import {
   FaRegCalendarCheck,
   FaRegStickyNote,
 } from "react-icons/fa";
-import img from "@/public/about1.jpg";
+import img from "@/public/about.jpg";
 import img1 from "@/public/t1.jpg";
 import img2 from "@/public/t2.jpg";
 import img3 from "@/public/t3.jpg";
@@ -23,35 +23,33 @@ export default function Home() {
       <Header />
       <div className={style.about}>
         <div className={style.left}>
-          <h2>We Have Everything You Need?</h2>
-          <p className={style.about_p}>
-            Faded short sleeves t-shirt with high neckline.Soft and stretchy
-            material for a comfortable fit.Accessoorize with a straw hat and you
-            are ready for summer!
-          </p>
-          <p className={style.text}>Sample Ordered List</p>
-          <li className={style.bullet}>
-            Comodous in tempor ullamcorper miacullus
-          </li>
-          <li className={style.bullet}>
-            Pellentesque vitae neque mollis urna mattis laoreet.
-          </li>
-          <li className={style.bullet}>Divamus sit amet purus justo.</li>
-          <li className={style.bullet}>
-            Comodous in tempor ullamcorper miacullus
-          </li>
-          <li className={style.bullet}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          </li>
-          <div className={style.section}>
-            <div className={style.btndiv}>
-              <button className={style.btn}>CONTACT US</button>
-            </div>
-          </div>
-        </div>
-        <div className={style.right}>
+          <h1>About Us</h1>
           <Image src={img} className={style.Image} alt="" />
+          <h2>Parre&apos; Textile</h2>
+          <p className={style.about_p}>
+            Parre’ Textile is the culmination of a wonderful 40-year journey in
+            the Decorative Textile and Home Furnishings Industry.
+          </p>
+          <p className={style.about_p}>
+            Foundations of design were formed in the early years with the likes
+            of Schumacher, Osborne &amp; Little, Jim Thompson and many fine
+            boutique companies throughout the years.
+          </p>
+          <p className={style.about_p}>
+            The company represents a love and a desire to bring beautiful,
+            printed textiles of color to interior designers to design the finest
+            homes worldwide.
+          </p>
+          <p className={style.about_p}>
+            “Franglasiam”, is what describes the company best. A little bit of
+            French, A bit of English, a bit of Asia and a bit American.
+          </p>
+          <p className={style.about_p}>
+            Parre’ is a privately held, family run company made up of a Father
+            and his 2 children as the management team.
+          </p>
         </div>
+        <div className={style.right}></div>
       </div>
       <Acheviment />
       <Skills />
@@ -67,9 +65,7 @@ const Acheviment = () => {
     <div className={style.ment}>
       <div className={style.lef}>
         <h3>ACHIVEMENTS</h3>
-        <h1>
-          Milestone  Achieved
-        </h1>
+        <h1>Milestone Achieved</h1>
       </div>
       <div className={style.rig}>
         <div className={style.r}>
