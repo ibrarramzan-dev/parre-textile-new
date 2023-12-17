@@ -165,17 +165,16 @@
     }
 
     input {
-      padding-left: 30px; // Adjust the padding based on your icon size
+      padding-left: 30px;
       border: 1px solid #ccc;
       border-radius: 4px;
-      height: 30px; // Adjust the height based on your design
+      height: 30px;
       box-sizing: border-box;
-      // margin-top: 2rem;
       width: 60%;
       border: none;
       background: none;
       outline: none;
-      font-size: 2rem;
+      font-size: 1.6rem;
     }
 
     svg {
