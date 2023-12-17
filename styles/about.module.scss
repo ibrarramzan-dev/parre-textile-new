@@ -281,7 +281,7 @@
 
 // TEAM
 .team {
-  height: 80vh;
+  height: 75vh;
   overflow: hidden;
   width: 100%;
   @include flexer(column);
@@ -392,7 +392,7 @@
 
 @media screen and (max-width:1375px) {
   .team{
-    height: 100vh;
+    height: 82vh;
   }
 }
 
