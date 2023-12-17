@@ -15,6 +15,7 @@ export default function Home() {
     <>
     <Header/>
     <div className={style.showroom}>
+      <h2>Showroom</h2>
       <Image src={img} className={style.img} alt="" />
       <Image src={img1} className={style.img} alt="" />
       <Image src={img2} className={style.img} alt="" />
