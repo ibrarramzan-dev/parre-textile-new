@@ -535,8 +535,9 @@
   .work {
     height: fit-content;
     overflow: hidden;
+    padding-bottom: 2rem;
     padding-top: 2rem;
-    background: #2a2f27;
+    background: $color;
     width: fit-content;
     @include flexer(column);
     .left1 {
