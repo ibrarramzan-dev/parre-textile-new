@@ -121,10 +121,10 @@ const Footer = () => {
               Showroom
             </Link>
             <Link href={""} className={antic_didone.className}>
-              FAQ's
+              FAQ&apos;s
             </Link>
           </div>
-          <div className={`${style.copy} ${antic_didone.className}`}>
+          <div className={`${style.copys} ${antic_didone.className}`}>
             PARRE&apos; &copy; 2023. All Rights Reserved
           </div>
         </div>

@@ -207,15 +207,17 @@
   }
 }
 
-@media screen and (min-width: 430px) {
+@media screen and (max-width: 500px) {
   .foot {
     padding-bottom: 2rem !important;
     display: flex;
+    width: auto;
     text-align: center;
 
-    .copy {
+
+    .copys {
       text-align: center;
-      width: fit-content;
+      padding-top: 1rem;
     }
   }
 }
@@ -229,7 +231,7 @@
       display: none;
     }
 
-    .copy {
+    .copys{
       text-align: center;
     }
   }
