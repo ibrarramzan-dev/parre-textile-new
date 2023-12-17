@@ -4,6 +4,11 @@ import { Collapse } from "antd";
 import { Header } from "@/Components/Header";
 import Footer from "@/Components/Footer";
 
+const customArrowStyle = {
+  color: "white",
+  backgroundColor: "white",
+};
+
 const items = [
   {
     key: "1",
@@ -99,10 +104,53 @@ const App = () => {
         <div className={style.faqs}>
             <h2>Frequently Asked Questions</h2>
             <p className={style.parre}>Here at Parre&apos; Textile we believe in &quot;Keeping it Simple&quot;</p>
-        <Collapse accordion items={items} style={{backgroundColor:"#8f0d0a",color:"white"}} />
+        <Collapse accordion items={items} expandIconStyle={customArrowStyle}  style={{backgroundColor:"#8f0d0a",color:"white"}} />
         </div>
         <Footer />
         </>
     )
 }
 export default App;
+
+
+// import React from "react";
+// import style from "@/styles/faqs/faqs.module.scss";
+// import { Collapse } from "antd";
+// import { Header } from "@/Components/Header";
+// import Footer from "@/Components/Footer";
+
+// const items = [
+//   {
+//         key: "1",
+//         label:
+//           <h3>Does Parre Textile hold inventory of their printed fabric collections?</h3>,
+//         children: <p>No, Parre’ prints to order and holds no inventory.</p>,
+//       },
+//       {
+//         key: "2",
+//         label: <h3>How long does it take to receive fabric?</h3>,
+//         children: <p>From Purchase Order and Payment, fabric is printed and shipped
+//         in 20 business days.
+//         </p>,
+//       },
+// ];
+
+// const customArrowStyle = {
+//   color: "white", // Set the color to white
+// };
+
+// const App = () => {
+//   return (
+//     <>
+//       <Header />
+//       <div className={style.faqs}>
+//         <h2>Frequently Asked Questions</h2>
+//         <p className={style.parre}>Here at Parre&apos; Textile we believe in &quot;Keeping it Simple&quot;</p>
+//         <Collapse accordion items={items} expandIconStyle={customArrowStyle} style={{ backgroundColor: "#8f0d0a", color: "white" }} />
+//       </div>
+//       <Footer />
+//     </>
+//   );
+// };
+
+// export default App;
