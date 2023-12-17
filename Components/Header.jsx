@@ -127,7 +127,7 @@ const SearchMenu = ({ options }) => {
           </button>
           <input
             type="text"
-            placeholder="Type words and Hit enter"
+            placeholder="Search Textile"
             className={antic_didone.className}
           />
         </div>
