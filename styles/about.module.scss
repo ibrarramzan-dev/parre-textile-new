@@ -598,6 +598,7 @@
 
     .rigt1 {
       width: fit-content;
+      margin-top: 0;
       height: fit-content;
       @include flexer(column);
       margin-bottom: 4rem;
