@@ -27,7 +27,7 @@ const items = [
   },
   {
     key: "4",
-    label: <h3>re designs interchangeable from one base cloth to another?</h3>,
+    label: <h3>Are designs interchangeable from one base cloth to another?</h3>,
     children: <p>Each base cloth is carefully selected for each design. Sorry the
     answer is no.
     </p>,
