@@ -97,6 +97,8 @@ const App = () => {
         <>
         <Header />
         <div className={style.faqs}>
+            <h2>Frequently Asked Questions</h2>
+            <p>Here at Parre&apos; Textile we believe in &quot;Keeping it Simple&quot;</p>
         <Collapse accordion items={items} style={{backgroundColor:"#8f0d0a",color:"white"}} />
         </div>
         <Footer />

@@ -1,8 +1,26 @@
 @import "../utils";
 
 .faqs{
-    margin: 2rem 1rem;
+    margin: 2rem 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
     color: white;
+
+    h2{
+        color: black;
+        font-family: $font4;
+        font-weight: lighter;
+        font-size: 2.4rem;
+        margin: 1rem;
+        text-align: center;
+    }
+
+    p{
+        color: black;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 1rem;
+    }
 }
 
 .content{
