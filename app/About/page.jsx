@@ -64,7 +64,7 @@ const Acheviment = () => {
   return (
     <div className={style.ment}>
       <div className={style.lef}>
-        <h3>ACHIVEMENTS</h3>
+        <h3>ACHIEVEMENTS</h3>
         <h1>Milestone Achieved</h1>
       </div>
       <div className={style.rig}>
