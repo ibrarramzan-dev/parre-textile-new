@@ -9,7 +9,7 @@ import {
   FaRegCalendarCheck,
   FaRegStickyNote,
 } from "react-icons/fa";
-import img from "@/public/about.jpg";
+import img from "@/public/about.png";
 import img1 from "@/public/t1.jpg";
 import img2 from "@/public/t2.jpg";
 import img3 from "@/public/t3.jpg";
