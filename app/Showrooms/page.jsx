@@ -3,13 +3,11 @@
 import { Header } from "@/Components/Header";
 import style from "@/styles/showroom.module.scss";
 import React from "react";
-import img from "@/public/text.jpg";
+import img from "@/public/bga1.jpg";
+import img1 from "@/public/bga2.jpg";
+import img2 from "@/public/bga3.jpg";
+import img3 from "@/public/bga4.jpg";
 import Image from "next/image";
-import img1 from "@/imgs/Product 1.jpg";
-import img2 from "@/imgs/Product 2.jpg";
-import img3 from "@/imgs/Product 3.jpg";
-import img4 from "@/imgs/Product 4.jpg";
-import img5 from "@/imgs/Product 1.jpg";
 import Footer from "@/Components/Footer";
 
 export default function Home() {
@@ -18,25 +16,9 @@ export default function Home() {
     <Header/>
     <div className={style.showroom}>
       <Image src={img} className={style.img} alt="" />
-      <div className={style.galleryimg}>
-        <div className={style.box}>
-          <span style={{ "--i": 1 }}>
-            <Image src={img1} alt="" />
-          </span>
-          <span style={{ "--i": 2 }}>
-            <Image src={img2} alt="" />
-          </span>
-          <span style={{ "--i": 3 }}>
-            <Image src={img3} alt="" />
-          </span>
-          <span style={{ "--i": 4 }}>
-            <Image src={img4} alt="" />
-          </span>
-          <span style={{ "--i": 5 }}>
-            <Image src={img5} alt="" />
-          </span>
-        </div>
-      </div>
+      <Image src={img1} className={style.img} alt="" />
+      <Image src={img2} className={style.img} alt="" />
+      <Image src={img3} className={style.img} alt="" />
     </div>
     <Footer />
     </>
