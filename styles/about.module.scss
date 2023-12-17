@@ -2,7 +2,8 @@
 
 .about {
   height: fit-content;
-  width: fit-content;
+  width: 100%;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,10 +14,10 @@
   .left {
     width: 100%;
     display: flex;
-    margin-left: 8rem;
+    margin: 1rem;
     flex-direction: column;
 
-    h1{
+    h1 {
       text-align: center;
       margin-top: 1rem;
       font-family: $font4;
@@ -24,12 +25,14 @@
       font-size: 2.4rem;
     }
 
-    img{
+    img {
       width: 100%;
+      object-fit: cover;
+      background: red;
     }
 
     h2 {
-      margin: 1rem;
+      margin: 1rem 0;
       font-family: "PT Serif", serif;
       font-weight: 400;
       font-size: 2rem;
@@ -43,21 +46,6 @@
       font-family: "PT Serif", serif;
       font-weight: 400;
       margin: 10px;
-    }
-
-    .text {
-      color: black;
-      font-size: 18px;
-      font-weight: bold;
-      padding-right: 30%;
-      text-align: left;
-    }
-
-    .bullet {
-      list-style-type: decimal;
-      color: #3f3f3f;
-      font-size: 1.1rem;
-      margin-top: 0.8rem;
     }
 
     .section {
@@ -114,35 +102,8 @@
       }
     }
   }
-
-  button {
-    border: 1px solid black;
-    background: none;
-    padding: 0.5rem 0;
-    font-size: 1.1rem;
-    width: 10rem;
-    margin: 2rem 0;
-    font-family: "PT Serif", serif;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-
-    &:hover {
-      border: 1px solid black;
-      background: black;
-      color: white;
-    }
-  }
 }
 
-@media screen and (max-width: 986px) {
-  .about {
-    .right {
-      img {
-        display: none;
-      }
-    }
-  }
-}
 // Achievements
 .ment {
   overflow: hidden;
