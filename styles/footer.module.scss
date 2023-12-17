@@ -212,6 +212,7 @@
     padding-bottom: 2rem !important;
     display: flex;
     width: auto;
+    padding-left: 2rem;
     text-align: center;
 
 
@@ -226,7 +227,7 @@
   .foot {
     display: flex;
     text-align: center;
-
+    padding-left: 0;
     .links {
       display: none;
     }
