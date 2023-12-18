@@ -72,6 +72,7 @@ const Product_show_component = ({ params }) => {
   return (
     <>
       <div className={style.product_detail}>
+       
         <div className={style.head}>
           <h1>White Suit</h1>
           <FaChevronDown />

@@ -21,33 +21,14 @@ const antic_didone = Antic_Didone({
 });
 
 const ProductsPage = () => {
-  const [data, setdata] = useState([])
+  const [data, setdata] = useState([]);
   useEffect(() => {
-    setdata(productData)
+    setdata(productData);
   }, []);
 
   return (
     <div className={style.products}>
-      {/* <header className={style.links}>
-
-        <Link href="/" className="navlink">
-          HOME
-        </Link>
-        <Link href="/About" className="navlink">
-          ABOUT
-        </Link>
-        <Link href="/Product" className="navlink">
-          TEXTILES
-        </Link>
-        <Link href="/Showrooms" className="navlink">
-          SHOWROOM
-        </Link>
-        <Link href="/FAQs" className="navlink">
-          FAQ&apos;s
-        </Link>
-      </header> */}
-
-
+      <p>Our Premier Collection</p>
       <div className={style.product}>
         <div className={style.product_list}>
           {data.map((product) => (
@@ -71,9 +52,12 @@ const Product = ({ data }) => {
   console.log(imageLink.src);
   return (
     <div className={style.box}>
-      <Image src={imageLink} className={`${style.img} ${style.overlay}`} alt="" />
-      <div className={`${style.cardbody} ${style.overlay}`}>
-      </div>
+      <Image
+        src={imageLink}
+        className={`${style.img} ${style.overlay}`}
+        alt=""
+      />
+      <div className={`${style.cardbody} ${style.overlay}`}></div>
       <div className={style.icons}>
         <div className={style.blank}></div>
         <button className={style.sideicons}>
@@ -82,7 +66,7 @@ const Product = ({ data }) => {
         <button className={style.sideicons}>
           <BsCart3 />
         </button>
-        <button className={style.sideicons} >
+        <button className={style.sideicons}>
           <Link href={`/Product/${id}`}>
             <FaArrowRightLong />
           </Link>
@@ -97,4 +81,3 @@ const Product = ({ data }) => {
 };
 
 export default ProductsPage;
-
