@@ -28,7 +28,7 @@ const ProductsPage = () => {
 
   return (
     <div className={style.products}>
-      <p>Our Premier Collection</p>
+      <p className={style.collection}>Our Premier Collection</p>
       <div className={style.product}>
         <div className={style.product_list}>
           {data.map((product) => (

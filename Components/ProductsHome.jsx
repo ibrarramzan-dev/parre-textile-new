@@ -75,7 +75,7 @@ const ProductsPage = () => {
       </div>
 
       <div className={style.showmore}>
-        <Link href={"/Products"}>
+        <Link href={"/Textiles"}>
           <button>Browse the Collection</button>
         </Link>
       </div>
