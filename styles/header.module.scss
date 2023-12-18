@@ -234,6 +234,7 @@
 
 .sidelink {
   height: auto;
+  margin-top: 2.5rem;
   @include flexer(column, center);
   padding: 0 10px 10px 10px;
   gap: 1.5rem;
@@ -241,6 +242,7 @@
 
 @media screen and (min-width: 768px) {
   .sidelink {
+    margin-top: .5rem;
     height: 300px;
   }
 }
