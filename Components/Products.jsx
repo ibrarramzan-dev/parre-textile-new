@@ -28,7 +28,7 @@ const ProductsPage = () => {
 
   return (
     <div className={style.products}>
-      <header className={style.links}>
+      {/* <header className={style.links}>
 
         <Link href="/" className="navlink">
           HOME
@@ -45,7 +45,7 @@ const ProductsPage = () => {
         <Link href="/FAQs" className="navlink">
           FAQ&apos;s
         </Link>
-      </header>
+      </header> */}
 
 
       <div className={style.product}>
@@ -56,11 +56,11 @@ const ProductsPage = () => {
         </div>
       </div>
 
-      <div className={style.showmore}>
+      {/* <div className={style.showmore}>
         <Link href={"/Products"}>
           <button>View More</button>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };
