@@ -93,7 +93,9 @@ const Product = ({ data }) => {
       <Image
         src={imageLink}
         className={`${style.img} ${style.overlay}`}
-        alt=""
+        width={350} // change image size in px.
+        height={350} // change image size in px.
+        alt={productName}
       />
 
       <div className={`${style.cardbody} ${style.overlay}`}></div>
