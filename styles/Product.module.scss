@@ -205,19 +205,19 @@
 }
 
 @media screen and (max-width: 400px) {
-  .links {
-    font-size: 0.5rem;
-  }
+  // .links {
+  //   font-size: 0.5rem;
+  // }
 
-  .icons {
-    @include flexer(column);
-    height: 260px;
-  }
+  // .icons {
+  //   @include flexer(column);
+  //   height: 260px;
+  // }
 
   .sideicons {
     position: relative;
-    top: 25px;
-    right: -100px;
+    top: 5px;
+    right: -105px;
     border: none;
     background-color: white;
     border-radius: 100px;
