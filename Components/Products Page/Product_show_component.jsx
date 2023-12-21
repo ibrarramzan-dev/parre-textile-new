@@ -17,12 +17,18 @@ import {
 } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import style from "@/styles/productDetails.module.scss";
-import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
-import 'react-inner-image-zoom/lib/InnerImageZoom/styles.min.css';
-import InnerImageZoom from 'react-inner-image-zoom';
+import "react-inner-image-zoom/lib/InnerImageZoom/styles.css";
+import "react-inner-image-zoom/lib/InnerImageZoom/styles.min.css";
+import InnerImageZoom from "react-inner-image-zoom";
 import { FaChevronDown } from "react-icons/fa";
 import { BsCart3 } from "react-icons/bs";
 import { products } from "@/Components/productsArray";
+import { Libre_Bodoni } from "next/font/google";
+
+const libre_bodoni = Libre_Bodoni({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const Product_show_component = ({ params }) => {
   const [productDetail, setProductDetail] = useState({});
@@ -39,10 +45,12 @@ const Product_show_component = ({ params }) => {
           <FaChevronDown />
         </div>
         <div className={style.body}>
-        <div className={style.left}>
-
-       <InnerImageZoom src={productDetail.imageLink} zoomSrc={productDetail.largeImageLink} />
-        </div>
+          <div className={style.left}>
+            <InnerImageZoom
+              src={productDetail.imageLink}
+              zoomSrc={productDetail.largeImageLink}
+            />
+          </div>
           <div className={style.right}>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
@@ -61,7 +69,12 @@ const Product_show_component = ({ params }) => {
                 <option value="">Blue</option>
                 <option value="">White</option>
               </select>
-              <div className={style.price}>{productDetail.price}</div>
+              <div className={`${style.price}`}>
+                $
+                <span className={libre_bodoni.className}>
+                  {productDetail.price}
+                </span>
+              </div>
               <div className={style.numbers}>
                 <input
                   type="number"

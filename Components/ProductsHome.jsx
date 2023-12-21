@@ -116,7 +116,7 @@ const Product = ({ data }) => {
 
         <div className={style.title}>
           <h4 className={playfair_display.className}>{productName}</h4>
-          <p className={antic_didone.className}>{price}</p>
+          <p className={antic_didone.className}>${price}</p>
         </div>
       </div>
     </div>

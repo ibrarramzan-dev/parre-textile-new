@@ -23,7 +23,7 @@ export const Gallery = () => {
         <div className={style.box}>
           <span style={{ "--i": 1 }}>
             <Image
-              src="https://lh3.googleusercontent.com/pw/ABLVV87l57BCfA_yRtq-bBo2x1y6N27oZmktTn-Y95lnW55wSgC6xIAcWzrAilcEerfYOnsyG1d3ok_XvLZax31_5zFO54OCUIer2rP443D-nDtKrlTlpNJpj8y8EZH8tQE1OlHFBczRd27NqE5uNJihlPar=w1320-h831-s-no-gm?authuser=0"
+              src="https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C1%20Des%202%20Col%205.jpg"
               width={100} // change image size in px.
               height={100} // change image size in px.
               alt=""
@@ -31,20 +31,35 @@ export const Gallery = () => {
           </span>
           <span style={{ "--i": 2 }}>
             <Image
-              src="https://lh3.googleusercontent.com/pw/ABLVV86jPQIhEfItIgkLQXQ8UzHcg61gnUEEAvMEWTsBNiy_k2QFbVJt1kenfFWhUaRrbCogtbw694tIWpwLTDsAJcUpwpf3PXxgzfv_h0X8PhQKYmkswghkd142hM6pFtoX6otPSg5-kxDw75TSw4rRI-bq=w1320-h831-s-no-gm?authuser=0"
+              src="https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C1%20Des%202%20Combo%201.jpg"
               width={100} // change image size in px.
               height={100} // change image size in px.
               alt=""
             />
           </span>
           <span style={{ "--i": 3 }}>
-            <Image src="https://lh3.googleusercontent.com/pw/ABLVV84tKrovDT-enJpN3uyMrPkHISEdsUcieqbhYO0QZ8JzzLnnXhGzsqdr6eWpp_cIlOJUK4RzJbtAo58Uh4n-qEb2n70KYbVAbCehtEJTEdmp7GiwvYU5GwATVCzFLRgYtLMg7DAw6TAE9unPKjQztZAh=w995-h903-s-no-gm?authuser=0" width={100} height={100} alt="" />
+            <Image
+              src="https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C1%20Des%202%20Combo%204%2028%20Jul.jpg"
+              width={100}
+              height={100}
+              alt=""
+            />
           </span>
           <span style={{ "--i": 4 }}>
-            <Image src="https://lh3.googleusercontent.com/pw/ABLVV84hfH2zab6ALXuJ6bmpw1qSIuZymfktAGFkKICJ9ypvDSc5o1cK2IQ8iPUOoHTRO9T5-xSE-n4WaQmBaPTBd8PgDtbbEdsjcOPjOWUH6tge3hk6srvnyQWnC-LUoQpkOTR_y_e691-Q5ON_lzycVf6N=w1318-h903-s-no-gm?authuser=0" width={100} height={100} alt="" />
+            <Image
+              src="https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C1%20Des%202%20Combo%206%20Feb%2023.jpg"
+              width={100}
+              height={100}
+              alt=""
+            />
           </span>
           <span style={{ "--i": 5 }}>
-            <Image src="https://lh3.googleusercontent.com/pw/ABLVV85rzXMiuw2iGyuI_uFJgAtMmrqvIT3H9wJujw7LBfM9pF3eaqmYPr2X8OM4KK9eM7GhnYNXqIhN0Eye6n5ipgRfxa3lbhxigRnzJ3aDTDtZI2fWWpsZBppt5r3avkchyyKkwAlLwiij90JuHyOgRTdt=w995-h903-s-no-gm?authuser=0" width={100} height={100} alt="" />
+            <Image
+              src="https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C1%20Des%202%20Combo%207%20%20%2015%20July%202023.jpg"
+              width={100}
+              height={100}
+              alt=""
+            />
           </span>
         </div>
       </div>
