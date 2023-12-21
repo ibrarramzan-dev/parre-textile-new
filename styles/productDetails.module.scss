@@ -26,7 +26,7 @@
   height: fit-content;
   .left {
     width: 50%;
-    height: 39vh;
+    height: 38vh;
   }
 }
 
@@ -45,7 +45,7 @@
 }
 
 .right {
-  height: 39vh;
+  height: 38vh;
   width: 40%;
   @include flexer(column, start, start);
   margin-left: 2rem;
