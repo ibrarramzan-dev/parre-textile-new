@@ -42,9 +42,12 @@ const ProductsPage = () => {
           ))}
         </div>
       </div>
+      {
+        data.length > 50 ? "" : 
       <div className={style.btn}>
         <button onClick={handleClick}>Show more</button>
-      </div>{" "}
+      </div>
+      }
     </div>
   );
 };
@@ -59,8 +62,8 @@ const Product = ({ data }) => {
         <Image
           src={imageLink}
           className={`${style.img} ${style.overlay}`}
-          width={350} // change image size in px.
-          height={350} // change image size in px.
+          width={350}
+          height={350}
           alt=""
         />
       </div>
