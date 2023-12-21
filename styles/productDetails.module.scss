@@ -45,7 +45,7 @@
 }
 
 .right {
-  height: 38vh;
+  height: fit-content;
   width: 40%;
   @include flexer(column, start, start);
   margin-left: 2rem;
