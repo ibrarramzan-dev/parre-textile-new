@@ -29,14 +29,13 @@ export const Header = () => {
   const [width, setWidth] = useState(0);
   useEffect(() => {
     const handleResize = () => {
-      if (typeof window !== 'undefined') {
+      if (typeof window !== "undefined") {
         setWidth(window.innerWidth);
       }
       if (width > 1056) {
         setMenuOpen(false);
-      }
-      else {
-        return
+      } else {
+        return;
       }
     };
 
@@ -95,9 +94,7 @@ export const Header = () => {
         {searchModalOpen && <SearchMenu options={setSearchModalOpen} />}
       </AnimatePresence>
 
-      <AnimatePresence>
-        {menuOpen && <Side_menu />}
-      </AnimatePresence>
+      <AnimatePresence>{menuOpen && <Side_menu />}</AnimatePresence>
     </motion.header>
   );
 };
@@ -163,8 +160,8 @@ const Side_menu = () => {
         <Link href="/About" className={style.hamlink}>
           About
         </Link>
-        <Link href="/Products" className={style.hamlink}>
-          Products
+        <Link href="/Textiles" className={style.hamlink}>
+          Textiles
         </Link>
         <Link href="/Showrooms" className={style.hamlink}>
           Showroom
@@ -174,7 +171,7 @@ const Side_menu = () => {
         </Link>
       </div>
     </motion.div>
-  )
-}
+  );
+};
 
 export default SearchMenu;

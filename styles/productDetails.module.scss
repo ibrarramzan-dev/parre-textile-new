@@ -73,9 +73,6 @@
     margin-bottom: 2rem;
     font-size: 1.1rem;
   }
-  :nth-child(1) {
-    margin-top: -4.3rem;
-  }
 
   h3 {
     color: $color1;
@@ -181,13 +178,14 @@
 
 @media screen and (max-width: 978px) {
   .head {
-    margin-top: 6.3rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .head {
-    padding: 2rem;
+    padding: 0.34rem;
 
     h1 {
       font-size: 2.5rem;

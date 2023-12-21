@@ -27,7 +27,10 @@ const ProductsPage = () => {
   }, []);
   const handleClick = () => {
     // setdata(...data,productData.slice(data.length,data.length+10))
-    setdata(prevData => [...prevData, ...productData.slice(prevData.length, prevData.length + 10)]);
+    setdata((prevData) => [
+      ...prevData,
+      ...productData.slice(prevData.length, prevData.length + 10),
+    ]);
   };
   return (
     <div className={style.products}>
@@ -39,9 +42,10 @@ const ProductsPage = () => {
           ))}
         </div>
       </div>
-<div className={style.btn} >
+      <div className={style.btn}>
         <button onClick={handleClick}>Show more</button>
-      </div>    </div>
+      </div>{" "}
+    </div>
   );
 };
 
@@ -51,13 +55,15 @@ const Product = ({ data }) => {
   console.log(imageLink.src);
   return (
     <div className={style.box}>
-      <Image
-        src={imageLink}
-        className={`${style.img} ${style.overlay}`}
-        width={350} // change image size in px.
-        height={350} // change image size in px.
-        alt=""
-      />
+      <div>
+        <Image
+          src={imageLink}
+          className={`${style.img} ${style.overlay}`}
+          width={350} // change image size in px.
+          height={350} // change image size in px.
+          alt=""
+        />
+      </div>
       <div className={`${style.cardbody} ${style.overlay}`}></div>
       <div className={style.icons}>
         <div className={style.blank}></div>
