@@ -23,9 +23,12 @@ const antic_didone = Antic_Didone({
 const ProductsPage = () => {
   const [data, setdata] = useState([]);
   useEffect(() => {
-    setdata(productData);
+    setdata(productData.slice(0, 10));
   }, []);
-
+  const handleClick = () => {
+    // setdata(...data,productData.slice(data.length,data.length+10))
+    setdata(prevData => [...prevData, ...productData.slice(prevData.length, prevData.length + 10)]);
+  };
   return (
     <div className={style.products}>
       <p className={style.collection}>Our Premier Collection</p>
@@ -36,13 +39,9 @@ const ProductsPage = () => {
           ))}
         </div>
       </div>
-
-      {/* <div className={style.showmore}>
-        <Link href={"/Products"}>
-          <button>View More</button>
-        </Link>
-      </div> */}
-    </div>
+<div className={style.btn} >
+        <button onClick={handleClick}>Show more</button>
+      </div>    </div>
   );
 };
 

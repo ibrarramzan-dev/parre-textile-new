@@ -15,6 +15,7 @@
   h1 {
     font-size: 3.5rem;
     font-weight: lighter;
+    text-align: center;
     margin-bottom: 2rem;
   }
 }
@@ -44,7 +45,7 @@
 }
 
 .right {
-  height: 80vh;
+  height: 38vh;
   width: 40%;
   @include flexer(column, start, start);
   margin-left: 2rem;

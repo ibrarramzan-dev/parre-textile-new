@@ -9,6 +9,28 @@
     text-align: center;
     margin: 2rem .8rem 0rem .5rem;
   }
+
+    .btn{
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+
+    button{
+      padding: .5rem 1rem;
+      background: none;
+      border: 2px solid black;
+      font-size: 1.8rem;
+      font-family: $font4;
+      margin-bottom: 1.8rem;
+      
+      &:hover{
+        transition: all .3s ease;
+        color: white;
+        cursor: pointer;
+        background-color: black;
+      }
+    }
+  }
 }
 
 .links {
