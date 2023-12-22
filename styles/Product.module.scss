@@ -347,12 +347,12 @@
   position: relative;
   opacity: 0;
   display: none;
-  top: -250px;
+  top: -260px;
   @include flexer(column);
   transition: all 0.3s ease;
 
   .blank {
-    height: 80px;
+    height: 90px;
   }
 }
 
