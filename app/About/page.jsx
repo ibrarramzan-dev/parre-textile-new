@@ -51,128 +51,128 @@ export default function Home() {
         </div>
         <div className={style.right}></div>
       </div>
-      <Acheviment />
-      <Skills />
-      <Work />
+      {/* <Acheviment /> */}
+      {/* <Skills /> */}
+      {/* <Work /> */}
       <Team />
       <Footer />
     </>
   );
 }
 
-const Acheviment = () => {
-  return (
-    <div className={style.ment}>
-      <div className={style.lef}>
-        <h3>ACHIEVEMENTS</h3>
-        <h1>Milestone Achieved</h1>
-      </div>
-      <div className={style.rig}>
-        <div className={style.r}>
-          <div className={style.exp}>
-            <h2>25+</h2>
-            <p>Years Experience</p>
-          </div>
-          <div className={style.exp}>
-            <h2>1450+</h2>
-            <p>Textile Project</p>
-          </div>
-        </div>
-        <div className={style.r}>
-          <div className={style.exp}>
-            <h2>87+</h2>
-            <p>Award Winnings</p>
-          </div>
-          <div className={style.exp}>
-            <h2>999+</h2>
-            <p>Positive Reviews</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+// const Acheviment = () => {
+//   return (
+//     <div className={style.ment}>
+//       <div className={style.lef}>
+//         <h3>ACHIEVEMENTS</h3>
+//         <h1>Milestone Achieved</h1>
+//       </div>
+//       <div className={style.rig}>
+//         <div className={style.r}>
+//           <div className={style.exp}>
+//             <h2>25+</h2>
+//             <p>Years Experience</p>
+//           </div>
+//           <div className={style.exp}>
+//             <h2>1450+</h2>
+//             <p>Textile Project</p>
+//           </div>
+//         </div>
+//         <div className={style.r}>
+//           <div className={style.exp}>
+//             <h2>87+</h2>
+//             <p>Award Winnings</p>
+//           </div>
+//           <div className={style.exp}>
+//             <h2>999+</h2>
+//             <p>Positive Reviews</p>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
 
-const Skills = () => {
-  return (
-    <>
-      <div className={style.skill}>
-        <div className={style.rit}>
-          <h2>OUR SKILLS</h2>
-          <p className={style.abou_p}>
-            Enhancing Your Inner <br /> Beauty
-          </p>
-          <div className={style.percen}>
-            <div className={style.tage}>
-              <h1>90%</h1>
-              <h3>Textile Services</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-            </div>
-            <div className={style.tage}>
-              <h1>85%</h1>
-              <h3>Textile Material</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-            </div>
-          </div>
+// const Skills = () => {
+//   return (
+//     <>
+//       <div className={style.skill}>
+//         <div className={style.rit}>
+//           <h2>OUR SKILLS</h2>
+//           <p className={style.abou_p}>
+//             Enhancing Your Inner <br /> Beauty
+//           </p>
+//           <div className={style.percen}>
+//             <div className={style.tage}>
+//               <h1>90%</h1>
+//               <h3>Textile Services</h3>
+//               <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+//             </div>
+//             <div className={style.tage}>
+//               <h1>85%</h1>
+//               <h3>Textile Material</h3>
+//               <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+//             </div>
+//           </div>
 
-          <div className={style.percen}>
-            <div className={style.tage}>
-              <h1>92%</h1>
-              <h3>Sewing Services</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-            </div>
-            <div className={style.tage}>
-              <h1>85%</h1>
-              <h3>Design Services</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-};
+//           <div className={style.percen}>
+//             <div className={style.tage}>
+//               <h1>92%</h1>
+//               <h3>Sewing Services</h3>
+//               <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+//             </div>
+//             <div className={style.tage}>
+//               <h1>85%</h1>
+//               <h3>Design Services</h3>
+//               <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
 
-const Work = () => {
-  return (
-    <>
-      <div className={style.work}>
-        <div className={style.left1}>
-          <h4>HOW WE WORK</h4>
-          <p>
-            Bringing Your the Elements <br /> of Style
-          </p>
-        </div>
-        <div className={style.right1}>
-          <div className={style.rgt1}>
-            <div className={style.secti}>
-              <FaRegCalendarCheck className={style.ico} />
-              <h1>Appointment</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            </div>
-            <div className={style.secti}>
-              <FaRegStickyNote className={style.ico} />
-              <h1>Choose Fabric</h1>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-            </div>
-          </div>
-          <div className={style.rgt1}>
-            <div className={style.secti}>
-              <FaBuilding className={style.ico} />
-              <h1>Production</h1>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-            </div>
-            <div className={style.secti}>
-              <FaRegLaughWink className={style.ico} />
-              <h1>Final Result</h1>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-};
+// const Work = () => {
+//   return (
+//     <>
+//       <div className={style.work}>
+//         <div className={style.left1}>
+//           <h4>HOW WE WORK</h4>
+//           <p>
+//             Bringing Your the Elements <br /> of Style
+//           </p>
+//         </div>
+//         <div className={style.right1}>
+//           <div className={style.rgt1}>
+//             <div className={style.secti}>
+//               <FaRegCalendarCheck className={style.ico} />
+//               <h1>Appointment</h1>
+//               <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+//             </div>
+//             <div className={style.secti}>
+//               <FaRegStickyNote className={style.ico} />
+//               <h1>Choose Fabric</h1>
+//               <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+//             </div>
+//           </div>
+//           <div className={style.rgt1}>
+//             <div className={style.secti}>
+//               <FaBuilding className={style.ico} />
+//               <h1>Production</h1>
+//               <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+//             </div>
+//             <div className={style.secti}>
+//               <FaRegLaughWink className={style.ico} />
+//               <h1>Final Result</h1>
+//               <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
 
 const Team = () => {
   return (
