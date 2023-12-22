@@ -315,7 +315,7 @@
     padding-bottom: 2.5rem;
     @include flexer(row);
     margin: 1rem;
-    gap: 4rem;
+    gap: 5rem;
 
     .sect {
       margin-bottom: 3rem;
@@ -358,6 +358,22 @@
   }
 }
 
+// @media screen and (max-width: 1440px) {
+//   .team {
+//     height: 90vh;
+//     width: fit-content;
+//     margin: 0 3rem;
+//     @include flexer(center, center);
+
+//     .rigt1 {
+//       margin-bottom: 4rem;
+//       .sect {
+//         height: 40vh;
+//         margin-top: 1.2rem;
+//       }
+//     }
+//   }
+
   .skill {
     height: fit-content;
     .rit {
@@ -365,6 +381,22 @@
       margin-bottom: 1rem;
     }
   }
+// }
+
+// @media screen and (max-width: 1382px) {
+//   .team {
+//     height: 85vh;
+//     width: fit-content;
+//     margin: 0px;
+//     @include flexer(center, center);
+//   }
+// }
+
+// @media screen and (max-width: 1375px) {
+//   .team {
+//     height: 82vh;
+//   }
+// }
 
 @media screen and (max-width: 1300px) {
   .ment {
