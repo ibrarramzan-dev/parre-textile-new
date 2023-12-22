@@ -14,24 +14,25 @@
   .left {
     width: 100%;
     display: flex;
-    margin: 1rem;
     flex-direction: column;
 
     h1 {
       text-align: center;
       margin-top: 1rem;
+      margin-bottom: 1rem;
       font-family: $font4;
       font-weight: lighter;
       font-size: 2.4rem;
     }
 
     img {
+
       width: 100%;
       object-fit: cover;
     }
 
     h2 {
-      margin: 1rem 0;
+      margin: 2rem 0;
       font-family: "PT Serif", serif;
       font-weight: 400;
       font-size: 2rem;
@@ -42,8 +43,10 @@
     .color{
       background: $color;
       padding: 1rem;
+      width: 100%;
       > .about_p {
         font-size: 1.2rem;
+        width: 100%;
         color: white;
         font-family: "PT Serif", serif;
         font-weight: 400;
