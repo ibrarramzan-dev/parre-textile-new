@@ -185,7 +185,7 @@ const Team = () => {
         <div className={style.rigt1}>
           <div className={style.sect}>
             <Image src={img1} alt="" />
-            <h1>Ricky Martin</h1>
+            <h1>David</h1>
             <p>Director of Development</p>
           </div>
           <div className={style.sect}>
