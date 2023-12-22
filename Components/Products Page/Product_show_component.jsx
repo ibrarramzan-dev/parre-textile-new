@@ -42,7 +42,7 @@ const Product_show_component = ({ params }) => {
       <div className={style.product_detail}>
         <div className={style.head}>
           <h1>{productDetail.productName}</h1>
-          <FaChevronDown />
+          <FaChevronDown className={style.red} />
         </div>
         <div className={style.body}>
           <div className={style.left}>
