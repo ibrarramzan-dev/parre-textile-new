@@ -55,7 +55,7 @@ const ProductsPage = () => {
           <span className={gentium_book_plus.className}>TEXTILES</span>
         </Link>
         <Link href="/Showrooms" className="navlink">
-          <span className={gentium_book_plus.className}>SHOWROOM</span>
+          <span className={gentium_book_plus.className}>SHOWROOMS</span>
         </Link>
         <Link href="/FAQs" className="navlink">
           <span className={gentium_book_plus.className}>FAQ&apos;s</span>

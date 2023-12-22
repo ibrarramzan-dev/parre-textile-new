@@ -191,12 +191,12 @@ const Team = () => {
           <div className={style.sect}>
             <Image src={img2} alt="" />
             <h1>Linna Stones</h1>
-            <p>MARKETING</p>
+            <p>Marketing</p>
           </div>
           <div className={style.sect}>
             <Image src={img3} alt="" />
             <h1>Fanny Lawson</h1>
-            <p>HR STAFF</p>
+            <p>HR Staff</p>
           </div>
           {/* <div className={style.sect}>
             <Image src={img4} alt="" />

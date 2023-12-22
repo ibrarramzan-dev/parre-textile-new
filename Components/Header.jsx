@@ -164,7 +164,7 @@ const Side_menu = () => {
           Textiles
         </Link>
         <Link href="/Showrooms" className={style.hamlink}>
-          Showroom
+          Showrooms
         </Link>
         <Link href="/FAQs" className={style.hamlink}>
           FAQ&apos;s
