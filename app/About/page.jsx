@@ -3,12 +3,6 @@
 import { Header } from "@/Components/Header";
 import style from "@/styles/about.module.scss";
 import React from "react";
-import {
-  FaRegLaughWink,
-  FaBuilding,
-  FaRegCalendarCheck,
-  FaRegStickyNote,
-} from "react-icons/fa";
 import img from "@/public/aboutimg.png";
 import img1 from "@/public/t5.jpg";
 import img2 from "@/public/t2.jpg";

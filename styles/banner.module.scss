@@ -5,22 +5,22 @@
   width: 100vw;
 
   img {
-    height: 60vh;
+    height: 81vh;
     width: 100%;
   }
 }
 
-@media screen and (max-width: 810px) {
-  .bannerimg {
-    img {
-      height: 50vh;
-    }
-  }
-}
+// @media screen and (max-width: 810px) {
+//   .bannerimg {
+//     img {
+//       height: 50vh;
+//     }
+//   }
+// }
 @media screen and (max-width: 768px) {
   .bannerimg {
     img {
-      height: 30vh;
+      height: 53vh;
     }
   }
 }
@@ -28,7 +28,7 @@
 @media screen and (max-width: 464px) {
   .bannerimg {
     img {
-      height: 20vh;
+      height: 37.2vh;
     }
   }
 }
