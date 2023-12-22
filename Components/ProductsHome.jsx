@@ -87,40 +87,42 @@ const Product = ({ data }) => {
   const { productName, price, imageLink, _id } = data;
   let id = _id;
   console.log(imageLink.src);
-
   return (
     <div className={style.box}>
-      <Image
-        src={imageLink}
-        className={`${style.img} ${style.overlay}`}
-        width={350} // change image size in px.
-        height={350} // change image size in px.
-        alt={productName}
-      />
-
-      <div className={`${style.cardbody} ${style.overlay}`}></div>
+      <div>
+        <Image
+          src={imageLink}
+          className={`${style.img} ${style.overlay}`}
+          width={350}
+          height={350}
+          alt=""
+        />
+      </div>
+      <div className={style.cardbody}></div>
 
       <div className={style.icons}>
+        <div className={style.c_icon}>
+          <button className={style.sideicons}>
+            <FaRegHeart />
+          </button>
+          <button className={style.sideicons}>
+            <BsCart3 />
+          </button>
+          <button className={style.sideicons}>
+            <Link href={`/Product/${id}`}>
+              <FaArrowRightLong />
+            </Link>
+          </button>
+        </div>
         <div className={style.blank}></div>
-        <button className={style.sideicons}>
-          <FaRegHeart />
-        </button>
-        <button className={style.sideicons}>
-          <BsCart3 />
-        </button>
-        <button className={style.sideicons}>
-          <Link href={`/Product/${id}`}>
-            <FaArrowRightLong />
-          </Link>
-        </button>
-
         <div className={style.title}>
           <h4 className={playfair_display.className}>{productName}</h4>
-          <p className={antic_didone.className}>${price}</p>
+          <p className={antic_didone.className}>{price}</p>
         </div>
       </div>
     </div>
   );
 };
+
 
 export default ProductsPage;

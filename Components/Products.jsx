@@ -26,7 +26,6 @@ const ProductsPage = () => {
     setdata(productData.slice(0, 10));
   }, []);
   const handleClick = () => {
-    // setdata(...data,productData.slice(data.length,data.length+10))
     setdata((prevData) => [
       ...prevData,
       ...productData.slice(prevData.length, prevData.length + 10),
@@ -42,12 +41,13 @@ const ProductsPage = () => {
           ))}
         </div>
       </div>
-      {
-        data.length > 50 ? "" : 
-      <div className={style.btn}>
-        <button onClick={handleClick}>Show more</button>
-      </div>
-      }
+      {data.length > 50 ? (
+        ""
+      ) : (
+        <div className={style.btn}>
+          <button onClick={handleClick}>Show more</button>
+        </div>
+      )}
     </div>
   );
 };
@@ -67,20 +67,23 @@ const Product = ({ data }) => {
           alt=""
         />
       </div>
-      <div className={`${style.cardbody} ${style.overlay}`}></div>
+      <div className={style.cardbody}></div>
+
       <div className={style.icons}>
+        <div className={style.c_icon}>
+          <button className={style.sideicons}>
+            <FaRegHeart />
+          </button>
+          <button className={style.sideicons}>
+            <BsCart3 />
+          </button>
+          <button className={style.sideicons}>
+            <Link href={`/Product/${id}`}>
+              <FaArrowRightLong />
+            </Link>
+          </button>
+        </div>
         <div className={style.blank}></div>
-        <button className={style.sideicons}>
-          <FaRegHeart />
-        </button>
-        <button className={style.sideicons}>
-          <BsCart3 />
-        </button>
-        <button className={style.sideicons}>
-          <Link href={`/Product/${id}`}>
-            <FaArrowRightLong />
-          </Link>
-        </button>
         <div className={style.title}>
           <h4 className={playfair_display.className}>{productName}</h4>
           <p className={antic_didone.className}>{price}</p>
