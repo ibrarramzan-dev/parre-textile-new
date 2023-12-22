@@ -198,11 +198,11 @@ const Team = () => {
             <h1>Fanny Lawson</h1>
             <p>HR STAFF</p>
           </div>
-          <div className={style.sect}>
+          {/* <div className={style.sect}>
             <Image src={img4} alt="" />
             <h1>Paula Frains</h1>
             <p>DESIGNER</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
