@@ -26,6 +26,8 @@ export default function Home() {
           <h1>About Us</h1>
           <Image src={img} className={style.Image} alt="" />
           <h2>Parre&apos; Textile</h2>
+          <div className={style.color}>
+
           <p className={style.about_p}>
             Parre’ Textile is the culmination of a wonderful 40-year journey in
             the Decorative Textile and Home Furnishings Industry.
@@ -48,6 +50,7 @@ export default function Home() {
             Parre’ is a privately held, family run company made up of a Father
             and his 2 children as the management team.
           </p>
+          </div>
         </div>
         <div className={style.right}></div>
       </div>
