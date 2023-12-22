@@ -10,7 +10,7 @@ import {
   FaRegStickyNote,
 } from "react-icons/fa";
 import img from "@/public/about.png";
-import img1 from "@/public/t1.jpg";
+import img1 from "@/public/t5.jpg";
 import img2 from "@/public/t2.jpg";
 import img3 from "@/public/t3.jpg";
 import img4 from "@/public/t4.jpg";
@@ -186,7 +186,7 @@ const Team = () => {
           <div className={style.sect}>
             <Image src={img1} alt="" />
             <h1>Ricky Martin</h1>
-            <p>MANAGER</p>
+            <p>Director of Development</p>
           </div>
           <div className={style.sect}>
             <Image src={img2} alt="" />
