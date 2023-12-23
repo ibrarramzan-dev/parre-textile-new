@@ -92,13 +92,13 @@ const Product_show_component = ({ params }) => {
             </p>
           </div>
         </div>
-        <Tabsection />
+        <Tabsection productName={productDetail.productName} />
       </div>
     </>
   );
 };
 
-const Tabsection = () => {
+const Tabsection = ({productName}) => {
   const [width, setWidth] = useState(window.innerWidth);
   useEffect(() => {
     const handleResize = () => {
@@ -220,7 +220,7 @@ const Tabsection = () => {
                   fontSize={"1.7rem"}
                   fontWeight={"lighter"}
                 >
-                  Be the first to review &#34;White Suit&#34;
+                  Be the first to review &#34;{productName}&#34;
                 </Heading>
                 <Text mb={"2rem"} color={"GrayText"} fontFamily={"PT Serif"}>
                   Your email address will not be published. Required fields are
