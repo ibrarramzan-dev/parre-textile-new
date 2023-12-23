@@ -124,9 +124,9 @@ const Tabsection = () => {
           p={20}
           border={"none"}
           w={["17rem", "full"]}
-          m={".2rem"}
-          _hover={{ borderTop: "2px solid black" }}
-          _selected={{ borderTop: "2px solid black" }}
+          m={".2rem"}a
+          _hover={{ borderTop: "2px solid #8f0d0a" }}
+          _selected={{ borderTop: "2px solid #8f0d0a" }}
         >
           DESCRIPTION
         </Tab>
@@ -135,8 +135,8 @@ const Tabsection = () => {
           border={"none"}
           w={["17rem", "full"]}
           m={".2rem"}
-          _hover={{ borderTop: "2px solid black" }}
-          _selected={{ borderTop: "2px solid black" }}
+          _hover={{ borderTop: "2px solid #8f0d0a" }}
+          _selected={{ borderTop: "2px solid #8f0d0a" }}
         >
           ADDITIONAL INFORMATION
         </Tab>
@@ -145,8 +145,8 @@ const Tabsection = () => {
           border={"none"}
           w={["17rem", "full"]}
           m={".2rem"}
-          _hover={{ borderTop: "2px solid black" }}
-          _selected={{ borderTop: "2px solid black" }}
+          _hover={{ borderTop: "2px solid #8f0d0a" }}
+          _selected={{ borderTop: "2px solid #8f0d0a" }}
         >
           REVIEWS (0)
         </Tab>
