@@ -163,7 +163,7 @@ const Tabsection = () => {
           </Text>
         </TabPanel>
         <TabPanel w={"100%"}>
-          <Heading
+          {/* <Heading
             w={"100%"}
             mb={"2rem"}
             fontFamily={"PT Serif"}
@@ -171,7 +171,7 @@ const Tabsection = () => {
             fontWeight={"lighter"}
           >
             Additional Information
-          </Heading>
+          </Heading> */}
           <Flex
             w={"100%"}
             display={"flex"}
