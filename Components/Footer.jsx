@@ -108,19 +108,19 @@ const Footer = () => {
         </div>
         <div className={style.foot}>
           <div className={style.links}>
-            <Link href={""} className={antic_didone.className}>
+            <Link href={"/"} className={antic_didone.className}>
               Home
             </Link>
-            <Link href={""} className={antic_didone.className}>
+            <Link href={"/About"} className={antic_didone.className}>
               About
             </Link>
-            <Link href={""} className={antic_didone.className}>
+            <Link href={"/Textiles"} className={antic_didone.className}>
               Textiles
             </Link>
-            <Link href={""} className={antic_didone.className}>
+            <Link href={"/Showrooms"} className={antic_didone.className}>
               Showroom
             </Link>
-            <Link href={""} className={antic_didone.className}>
+            <Link href={"/FAQs"} className={antic_didone.className}>
               FAQ&apos;s
             </Link>
           </div>
