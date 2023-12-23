@@ -196,14 +196,14 @@ const Tabsection = () => {
               flexDirection={width > 768 ? "row" : "column"}
             >
               <Box w={width > 768 ? "50%" : "100%"}>
-                <Heading
+                {/* <Heading
                   mb={"2rem"}
                   fontFamily={"PT Serif"}
                   fontSize={"1.7rem"}
                   fontWeight={"lighter"}
                 >
                   Reviews
-                </Heading>
+                </Heading> */}
                 <Text
                   fontSize={"large"}
                   color={"GrayText"}
