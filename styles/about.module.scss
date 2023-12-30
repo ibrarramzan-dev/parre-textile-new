@@ -7,7 +7,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // margin-bottom: 2rem;
   box-sizing: border-box;
   overflow: hidden;
 
@@ -41,19 +40,27 @@
     }
 
     .color{
-      background: $color;
-      padding: 4rem 5rem 1rem 5rem;
+      padding: 0rem 5rem 2rem 5rem;
       width: 100%;
       > .about_p {
         font-size: 1.2rem;
         width: 100%;
-        color: white;
         padding-right: 1rem;
         font-family: "PT Serif", serif;
         font-weight: 400;
         margin: 10px;
-        text-align: justify;
+        text-align: start;
       }
+
+      @media screen and (max-width:768px) {
+        padding: 0rem 3rem 1rem 3rem;
+      }
+
+      @media screen and (max-width:500px) {
+        padding: 0rem 1rem 2rem 1rem;
+      }
+
+     
     }
       
     .section {
