@@ -83,168 +83,6 @@
   }
 }
 
-// .product {
-//   @include flexer(column);
-//   z-index: 0;
-//   > h2 {
-//     font-size: 3rem;
-//     border-bottom: 1px solid $color2;
-//   }
-// }
-
-// .product_list {
-//   @include flexer(row, center);
-//   flex-wrap: wrap;
-//   gap: 15px;
-//   width: 100vw;
-//   overflow: none;
-//   height: fit-content;
-//   padding: 2rem;
-// }
-
-// .box {
-//   width: 350px;
-//   height: 247px;
-//   overflow: hidden;
-//   @include flexer();
-//   display: inline-block;
-//   margin-bottom: 2rem;
-//   margin-top: 0;
-//   margin-right: 0.2rem;
-//   &:hover .title {
-//     transition: all ease 0.5s;
-//     color: black;
-//   }
-// }
-
-//   &:hover img {
-//     scale: 1.1;
-//     transition: all 0.3s ease;
-//   }
-// }
-
-// .img {
-//   width: 100%;
-//   position: relative;
-//   top: 110px;
-//   height: 220px;
-//   object-fit: cover;
-
-//   &:hover .title {
-//     transition: all ease 0.5s;
-//     color: black;
-//   }
-// }
-
-// .cardbody {
-//   width: 100%;
-
-//   &:hover .title {
-//     transition: all ease 0.5s;
-//     color: black;
-//   }
-//   &:hover .sideicons {
-//     transition: all ease 0.5s;
-//     color: black;
-//   }
-// }
-
-// .title {
-//   @include flexer(row, space-between);
-//   width: 100%;
-//   position: relative;
-//   display: inline-block;
-//   top: 100px;
-//   color: rgba(0, 0, 0, 0);
-//   background-color: white;
-//   h4 {
-//     font-size: 1.2rem;
-//   }
-//   p {
-//     font-size: 1.5rem;
-//   }
-//   &:hover .title {
-//     transition: all ease 0.5s;
-//     color: black;
-//   }
-// }
-
-// .icons {
-//   width: 100%;
-//   position: relative;
-//   @include flexer();
-//   bottom: 110px;
-//   height: 250px;
-//   .blank {
-//     height: 300px;
-//   }
-// }
-
-// .sideicons {
-//   // position: relative;
-//   top: 5px;
-//   right: -145px;
-//   border: none;
-//   background-color: $color;
-//   border-radius: 100px;
-//   margin: 5px;
-//   padding: 5px;
-//   font-size: larger;
-//   opacity: 0;
-//   transition: all ease 0.3s;
-//   color: white;
-//   @include flexer();
-//   a {
-//     @include flexer();
-//     color: white;
-//     padding: 0;
-//   }
-//   &:hover {
-//     box-shadow: 2px 2px 5px rgba(56, 56, 56, 0.562);
-//   }
-// }
-
-// @media screen and (max-width: 400px) {
-
-//   .sideicons {
-//     position: relative;
-//     top: 20px;
-//     right: -105px;
-//     border: none;
-//     border-radius: 100px;
-//     margin: 5px;
-//     padding: 5px;
-//     font-size: larger;
-//     opacity: 0;
-//     transition: all ease 0.3s;
-//     @include flexer();
-//     a {
-//       @include flexer();
-//       color: white;
-//       padding: 0;
-//     }
-//     &:hover {
-//       box-shadow: 2px 2px 5px rgba(56, 56, 56, 0.562);
-//     }
-//   }
-// }
-
-// .box:hover .sideicons {
-//   display: flex !important;
-//   &:nth-child(2) {
-//     animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-//     animation-delay: 0.2s;
-//   }
-//   &:nth-child(3) {
-//     animation-delay: 0.3s;
-//     animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-//   }
-//   &:nth-child(4) {
-//     animation-delay: 0.3s;
-//     animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-//   }
-// }
-
 .showmore {
   width: 100%;
   border-bottom: 1px solid rgba(70, 68, 68, 0.103);
@@ -299,11 +137,6 @@
   }
 }
 
-// @media screen and (max-width: 425px) {
-//   .box {
-//     margin-top: 2rem;
-//   }
-// }
 
 .product {
   @include flexer();
@@ -327,7 +160,6 @@
 
   &:hover .icons {
     opacity: 1;
-    // display: block;
   }
   &:hover .sideicons {
     animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;

@@ -23,90 +23,31 @@ export default function Home() {
 
           <p className={style.about_p}>
             Parre’ Textile is the culmination of a wonderful 40-year journey in
-            the Decorative Textile and Home Furnishings Industry.
-          </p>
-          <p className={style.about_p}>
-            Foundations of design were formed in the early years with the likes
+            the Decorative Textile and Home Furnishings Industry.Foundations of design were formed in the early years with the likes
             of Schumacher, Osborne &amp; Little, Jim Thompson and many fine
-            boutique companies throughout the years.
-          </p>
-          <p className={style.about_p}>
-            The company represents a love and a desire to bring beautiful,
+            boutique companies throughout the decades.The company represents a love and a desire to bring beautiful,
             printed textiles of color to interior designers to design the finest
-            homes worldwide.
-          </p>
-          <p className={style.about_p}>
-            “Franglasiam”, is what describes the company best. A little bit of
-            French, A bit of English, a bit of Asia and a bit American.
-          </p>
-          <p className={style.about_p}>
-            Parre’ is a privately held, family run company made up of a Father
+            homes worldwide. “Franglasiam”, is what describes the company best. A little bit of
+            French, A bit of English, a bit of Asia and a bit American. Parre’ is a privately held, family run company made up of a Father
             and his 2 children as the management team.
+          </p>
+          <p className={style.about_p}>
+            
+          </p>
+          <p className={style.about_p}>
+            
+          </p>
+          <p className={style.about_p}>
+           
+          </p>
+          <p className={style.about_p}>
+           
           </p>
           </div>
         </div>
         <div className={style.right}></div>
       </div>
-      <Team />
       <Footer />
     </>
   );
 }
-
-const Team = () => {
-  return (
-    <>
-      <div className={style.team}>
-        <div className={style.lef1}>
-          <h4>OUR TEAM</h4>
-          <p>Meet The Professionals</p>
-        </div>
-        <div className={style.rigt1}>
-          <div className={style.sect}>
-            <Image src={img1} alt="" />
-            <h1>David</h1>
-            <p>Director of Development</p>
-          </div>
-          <div className={style.sect}>
-            <Image src={img2} alt="" />
-            <h1>Linna Stones</h1>
-            <p>Marketing</p>
-          </div>
-          <div className={style.sect}>
-            <Image src={img3} alt="" />
-            <h1>Fanny Lawson</h1>
-            <p>HR Staff</p>
-          </div>
-          {/* <div className={style.sect}>
-            <Image src={img4} alt="" />
-            <h1>Paula Frains</h1>
-            <p>DESIGNER</p>
-          </div> */}
-        </div>
-      </div>
-    </>
-  );
-};
-
-// const Client = () => {
-//   return (
-//     <>
-//       <div className={style.client}>
-//         {/* <h2>OUR CLIENT</h2> */}
-//         <div className={style.cli}>
-//           <marquee scrollamount="10" height="500" width="1300" direction="right" className={style.imges}>
-//             <Image src={img20} height={"170"} alt="" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-//             <Image src={img7} height={"170"} alt="" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-//             <Image src={img8} height={"170"} alt="" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-//             <Image src={img9} height={"170"} alt="" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-//             <Image src={img10} height={"170"} alt="" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-//             <Image src={img11} height={"170"} alt="" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-//             <Image src={img12} height={"170"} alt="" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-//             <Image src={img13} height={"170"} alt="" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-//           </marquee>
-//           <div className={style.bottom}></div>
-//         </div>
-//       </div>
-//     </>
-//   );
-// };

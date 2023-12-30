@@ -13,7 +13,7 @@ const items = [
   {
     key: "1",
     label:
-      <h3>Does Parre Textile hold inventory of their printed fabric collections?</h3>,
+      <h3>Does Parre' Textile hold inventory of their printed fabric collections?</h3>,
     children: <p>No, Parre’ prints to order and holds no inventory.</p>,
   },
   {
@@ -63,7 +63,7 @@ const items = [
   },
   {
     key: "9",
-    label: <h3>Are Parres printed fabrics suitable both for Curtains and Upholstery</h3>,
+    label: <h3>Are Parre' printed fabrics suitable both for Curtains and Upholstery?</h3>,
     children: <p>Yes, all base clothes are suitable for residential drapery and
     upholstery. Rub tests range from 17, 000 to 25,000 rubs.
     </p>,
@@ -77,7 +77,7 @@ const items = [
   },
   {
     key: "11",
-    label: <h3>Does Parre’ accept checks as well as credit cards for Payment</h3>,
+    label: <h3>Does Parre’ accept checks as well as credit cards for Payment?</h3>,
     children: <p>Parre’ only accepts credit cards for payment. When an order is
     received, the order is invoiced and emailed with a link for
     Payment.

@@ -24,14 +24,16 @@ const Quote = () => {
             <div className={style.logo}>
               <FaQuoteLeft className={style.logo} />
             </div>
-            <div className={style.quote}>{quote.quote}</div>
-            <div className={style.author}>
-              <div className={style.name}>
-                <span className={style.author}>{quote.author}</span>
-                <span className={style.expertise}>{quote.expertise}</span>
+            <div className={style.all}>
+              <div className={style.quote}>{quote.quote}</div>
+              <div className={style.author}>
+                <div className={style.name}>
+                  <span className={style.author}>{quote.author}</span>
+                  <span className={style.expertise}>{quote.expertise}</span>
+                </div>
               </div>
+                <hr className={style.line} />
             </div>
-            <hr className={style.line} />
           </div>
         </div>
       ))}

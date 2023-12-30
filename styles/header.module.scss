@@ -76,7 +76,7 @@
     > img {
       width: 48%;
       @include hw(60%, 60%);
-      border: 1px solid $color;
+      border: 2.5px solid $color;
       padding: 4px 22px;
     }
   }
@@ -115,7 +115,7 @@
   position: fixed;
   width: 100vw;
   z-index: 100;
-  height: 25vh;
+  height: 20vh;
   top: 0px;
   right: 0px;
   background: rgb(255, 255, 255);
