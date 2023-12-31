@@ -89,7 +89,7 @@
     > img {
       width: 48%;
       @include hw(60%, 60%);
-      border: 2.5px solid $color;
+      border: 3px solid $color;
       padding: 4px 22px;
     }
   }
