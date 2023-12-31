@@ -105,7 +105,6 @@ const Footer = () => {
           </section>
           <section className={style.hello}>
             <h2 className={playfair_display.className}>Say Hello</h2>
-            {/* <p className={style.mail}>Orders@ParreTextile.com</p> */}
             <div className={style.mail}>
               <Link
                 className={style.mail}
@@ -146,13 +145,6 @@ const Footer = () => {
                 InvestorRelations@ParreTextile.com
               </Link>
             </div>
-            {/* <p className={style.mail}>MediaPR@ParreTextile.com</p>
-            <p className={style.mail}>SampleRequests@ParreTextile.com</p>
-            <p className={style.mail}>CustomerService@ParreTextile.com</p>
-            <p className={style.mail}>InvestorRelations@ParreTextile.com</p> */}
-            {/* <p className={`${style.num} ${playfair_display.className}`}>
-              +1 840 841 25 69
-            </p> */}
           </section>
         </div>
         <div className={style.foot}>
