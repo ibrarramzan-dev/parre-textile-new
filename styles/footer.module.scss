@@ -131,6 +131,7 @@
   p {
     margin-bottom: 1.6rem;
   }
+  
   .social {
     @include flexer();
 
@@ -139,6 +140,10 @@
       font-weight: bold;
       margin-top: 1rem;
       margin-right: 0.5rem;
+    }
+
+    .media{
+      @include flexer(row);
     }
 
     .social_link {
@@ -153,6 +158,10 @@
       &:hover {
         background: #000;
       }
+    }
+
+    @media screen and (max-width:500px) {
+      @include flexer(column);
     }
   }
 }

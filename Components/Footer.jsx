@@ -78,10 +78,6 @@ const Footer = () => {
           </section>
           <section className={style.address}>
             <h2 className={playfair_display.className}>Address</h2>
-            {/* <p>
-              Germany — <br /> 785 15h Street, Office 478 <br /> Berlin, De
-              81566
-            </p> */}
             <p>
               70 Okner Parkway <br />
               Livingston, New Jersey <br />
@@ -89,18 +85,14 @@ const Footer = () => {
             </p>
             <div className={style.social}>
               <h2 className={playfair_display.className}>Follow Along</h2>
+              <div className={style.media}>
               <Link className={style.social_link} href={""}>
                 <GrFacebookOption />
               </Link>
               <Link className={style.social_link} href={""}>
                 <FaInstagram />
               </Link>
-              {/* <Link className={style.social_link} href={""}>
-                <FaXTwitter />
-              </Link>
-              <Link className={style.social_link} href={""}>
-                <FaYoutube />
-              </Link> */}
+              </div>
             </div>
           </section>
           <section className={style.hello}>
