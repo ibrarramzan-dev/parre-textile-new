@@ -73,8 +73,7 @@ const Footer = () => {
       <footer className={style.footer}>
         <div className={style.main_footer}>
           <section className={`${style.footer_header} ${eagle_lake.className}`}>
-            {/* We Innovate & develop <br /> modern textiles{" "} */}
-            Sign Up for Exclusive Offerings, New Product and More
+            We Innovate & develop <br /> modern textiles{" "}
           </section>
           <section className={style.address}>
             <h2 className={playfair_display.className}>Address</h2>
