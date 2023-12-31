@@ -94,20 +94,24 @@ const Footer = () => {
               <Link className={style.social_link} href={""}>
                 <FaInstagram />
               </Link>
-              <Link className={style.social_link} href={""}>
+              {/* <Link className={style.social_link} href={""}>
                 <FaXTwitter />
               </Link>
               <Link className={style.social_link} href={""}>
                 <FaYoutube />
-              </Link>
+              </Link> */}
             </div>
           </section>
           <section className={style.hello}>
             <h2 className={playfair_display.className}>Say Hello</h2>
-            <p className={style.mail}>info@email.com</p>
-            <p className={`${style.num} ${playfair_display.className}`}>
+            <p className={style.mail}>Orders@ParreTextile.com</p>
+            <p className={style.mail}>MediaPR@ParreTextile.com</p>
+            <p className={style.mail}>SampleRequests@ParreTextile.com</p>
+            <p className={style.mail}>CustomerService@ParreTextile.com</p>
+            <p className={style.mail}>InvestorRelations@ParreTextile.com</p>
+            {/* <p className={`${style.num} ${playfair_display.className}`}>
               +1 840 841 25 69
-            </p>
+            </p> */}
           </section>
         </div>
         <div className={style.foot}>
