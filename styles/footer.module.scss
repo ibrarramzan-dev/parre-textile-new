@@ -135,6 +135,13 @@
   .social {
     @include flexer();
 
+    h2{
+      @include linkHover();
+      font-weight: bold;
+      margin-top: 1.5rem;
+      margin-right: .5rem;
+    }
+
     .social_link {
       padding: 8px;
       color: white;

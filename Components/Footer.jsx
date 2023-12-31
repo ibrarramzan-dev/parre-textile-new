@@ -88,6 +88,7 @@ const Footer = () => {
               07039
             </p>
             <div className={style.social}>
+              <h2 className={playfair_display.className}>Follow Along</h2>
               <Link className={style.social_link} href={""}>
                 <GrFacebookOption />
               </Link>
