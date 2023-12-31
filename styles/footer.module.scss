@@ -18,10 +18,9 @@
       font-family: $font2;
       margin-bottom: 1rem;
       font-size: 3.5rem;
-
     }
-    @media screen and (max-width:500px) {
-      h2{
+    @media screen and (max-width: 500px) {
+      h2 {
         font-size: 2.5rem;
       }
     }
@@ -35,7 +34,7 @@
     .textnewsletter {
       @include flexer();
       width: 100%;
-      
+
       input[type="email"] {
         border: none;
         padding: 10px 10px 10px 1.7rem;
@@ -74,19 +73,19 @@
     }
   }
 
-  @media screen and (max-width:769px) and (min-width:501px) {
-    .newsletter{
+  @media screen and (max-width: 769px) and (min-width: 501px) {
+    .newsletter {
       width: 80%;
     }
   }
-  
+
   @media (max-width: 768px) {
     .newsletter {
       .textnewsletter {
         @include flexer(column);
 
-        input{
-          margin-left: .62rem;
+        input {
+          margin-left: 0.62rem;
         }
 
         button {
@@ -123,7 +122,7 @@
   @include flexer(column, flex-start, start);
   height: 15rem;
   padding-top: 1rem;
-  
+
   h2 {
     font-weight: bold;
     margin-bottom: 1.5rem;
@@ -135,11 +134,11 @@
   .social {
     @include flexer();
 
-    h2{
+    h2 {
       @include linkHover();
       font-weight: bold;
       margin-top: 1rem;
-      margin-right: .5rem;
+      margin-right: 0.5rem;
     }
 
     .social_link {
@@ -167,15 +166,15 @@
     font-weight: bold;
     width: fit-content;
   }
-  
+
+  .mail {
+    margin-bottom: 0.5rem;
+  }
 
   a {
     color: white;
+    margin-bottom: 0;
     text-decoration: none;
-
-    .mail{
-      margin-bottom: 1.5rem;
-    }
   }
 
   .num {
@@ -188,8 +187,8 @@
   @include flexer(row, space-between);
   width: 80%;
   height: 5vh;
-  margin-bottom: .7rem;
-  padding-top: .5rem;
+  margin-bottom: 0.7rem;
+  padding-top: 0.5rem;
   font-family: "Antic Didone", serif;
   flex-wrap: wrap;
 
@@ -245,16 +244,15 @@
     padding-left: 2rem;
     text-align: center;
 
-
     .copys {
       text-align: center;
-      padding-top: .5rem;
+      padding-top: 0.5rem;
     }
   }
 
-  .footer{
-    .main_footer{
-      .hello{
+  .footer {
+    .main_footer {
+      .hello {
         margin-bottom: 1rem;
       }
     }
@@ -270,7 +268,7 @@
       display: none;
     }
 
-    .copys{
+    .copys {
       text-align: center;
     }
   }

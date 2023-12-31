@@ -106,15 +106,46 @@ const Footer = () => {
           <section className={style.hello}>
             <h2 className={playfair_display.className}>Say Hello</h2>
             {/* <p className={style.mail}>Orders@ParreTextile.com</p> */}
-            <Link className={style.mail} href="mailto:Orders@ParreTextile.com">Orders@ParreTextile.com</Link>
-            <br />
-            <Link className={style.mail} href="mailto:MediaPR@ParreTextile.com">MediaPR@ParreTextile.com</Link>
-            <br />
-            <Link className={style.mail} href="mailto:SampleRequests@ParreTextile.com">SampleRequests@ParreTextile.com</Link>
-            <br />
-            <Link className={style.mail} href="mailto:CustomerService@ParreTextile.com">CustomerService@ParreTextile.com</Link>
-            <br />
-            <Link className={style.mail} href="mailto:InvestorRelations@ParreTextile.com">InvestorRelations@ParreTextile.com</Link>
+            <div className={style.mail}>
+              <Link
+                className={style.mail}
+                href="mailto:Orders@ParreTextile.com"
+              >
+                Orders@ParreTextile.com
+              </Link>
+            </div>
+            <div className={style.mail}>
+              <Link
+                className={style.mail}
+                href="mailto:MediaPR@ParreTextile.com"
+              >
+                MediaPR@ParreTextile.com
+              </Link>
+            </div>
+            <div className={style.mail}>
+              <Link
+                className={style.mail}
+                href="mailto:SampleRequests@ParreTextile.com"
+              >
+                SampleRequests@ParreTextile.com
+              </Link>
+            </div>
+            <div className={style.mail}>
+              <Link
+                className={style.mail}
+                href="mailto:CustomerService@ParreTextile.com"
+              >
+                CustomerService@ParreTextile.com
+              </Link>
+            </div>
+            <div className={style.mail}>
+              <Link
+                className={style.mail}
+                href="mailto:InvestorRelations@ParreTextile.com"
+              >
+                InvestorRelations@ParreTextile.com
+              </Link>
+            </div>
             {/* <p className={style.mail}>MediaPR@ParreTextile.com</p>
             <p className={style.mail}>SampleRequests@ParreTextile.com</p>
             <p className={style.mail}>CustomerService@ParreTextile.com</p>
