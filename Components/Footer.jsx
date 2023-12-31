@@ -74,7 +74,7 @@ const Footer = () => {
       <footer className={style.footer}>
         <div className={style.main_footer}>
           <section className={`${style.footer_header} ${eagle_lake.className}`}>
-            We Innovate & develop <br /> modern textiles{" "}
+            We Innovate & create <br /> modern textiles{" "}
           </section>
           <section className={style.address}>
             <h2 className={playfair_display.className}>Address</h2>
@@ -105,11 +105,20 @@ const Footer = () => {
           </section>
           <section className={style.hello}>
             <h2 className={playfair_display.className}>Say Hello</h2>
-            <p className={style.mail}>Orders@ParreTextile.com</p>
-            <p className={style.mail}>MediaPR@ParreTextile.com</p>
+            {/* <p className={style.mail}>Orders@ParreTextile.com</p> */}
+            <Link className={style.mail} href="mailto:Orders@ParreTextile.com">Orders@ParreTextile.com</Link>
+            <br />
+            <Link className={style.mail} href="mailto:MediaPR@ParreTextile.com">MediaPR@ParreTextile.com</Link>
+            <br />
+            <Link className={style.mail} href="mailto:SampleRequests@ParreTextile.com">SampleRequests@ParreTextile.com</Link>
+            <br />
+            <Link className={style.mail} href="mailto:CustomerService@ParreTextile.com">CustomerService@ParreTextile.com</Link>
+            <br />
+            <Link className={style.mail} href="mailto:InvestorRelations@ParreTextile.com">InvestorRelations@ParreTextile.com</Link>
+            {/* <p className={style.mail}>MediaPR@ParreTextile.com</p>
             <p className={style.mail}>SampleRequests@ParreTextile.com</p>
             <p className={style.mail}>CustomerService@ParreTextile.com</p>
-            <p className={style.mail}>InvestorRelations@ParreTextile.com</p>
+            <p className={style.mail}>InvestorRelations@ParreTextile.com</p> */}
             {/* <p className={`${style.num} ${playfair_display.className}`}>
               +1 840 841 25 69
             </p> */}

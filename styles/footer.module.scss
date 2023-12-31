@@ -167,9 +167,18 @@
     font-weight: bold;
     width: fit-content;
   }
-  p {
-    margin-bottom: .5rem;
+  
+
+  a {
+    color: white;
+    text-decoration: none;
+    gap: .5rem;
+
+    .mail{
+      margin-bottom: 1.5rem;
+    }
   }
+
   .num {
     font-weight: bold;
     cursor: pointer;
