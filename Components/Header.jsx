@@ -12,6 +12,7 @@ import { IoPersonCircleOutline } from "react-icons/io5";
 import { BsCart3 } from "react-icons/bs";
 import { VscThreeBars } from "react-icons/vsc";
 import { RxCross2 } from "react-icons/rx";
+import hd from "@/public/hd.png";
 
 const antic_didone = Antic_Didone({
   weight: "400",
@@ -71,11 +72,13 @@ export const Header = () => {
             </button>
           </Link>
         </div>
+        <Image src={hd} className={style.hd} alt="" />
         <div className={style.navbar_logo}>
           <Link className={style.link} href={"/"}>
             <Image src={logo} alt="Logo" className="navbar-logo" />
           </Link>
         </div>
+        <Image src={hd} className={style.hd} alt="" />
         <div className={style.icons}>
           <button className={style.btn} onClick={openSearchModal}>
             <IoMdSearch />

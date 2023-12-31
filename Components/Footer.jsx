@@ -55,9 +55,7 @@ const Footer = () => {
       <div className={style.bgfooter}>
         <div className={style.newsletter}>
           <h2>
-            <span
-              className={libre_bodoni.className}
-            >
+            <span className={libre_bodoni.className}>
               Subscribe to our Newsletter
             </span>
           </h2>
@@ -75,13 +73,19 @@ const Footer = () => {
       <footer className={style.footer}>
         <div className={style.main_footer}>
           <section className={`${style.footer_header} ${eagle_lake.className}`}>
-            We Innovate & develop <br /> modern textiles{" "}
+            {/* We Innovate & develop <br /> modern textiles{" "} */}
+            Sign Up for Exclusive Offerings, New Product and More
           </section>
           <section className={style.address}>
             <h2 className={playfair_display.className}>Address</h2>
-            <p>
+            {/* <p>
               Germany — <br /> 785 15h Street, Office 478 <br /> Berlin, De
               81566
+            </p> */}
+            <p>
+              70 Okner Parkway <br />
+              Livingston, New Jersey <br />
+              07039
             </p>
             <div className={style.social}>
               <Link className={style.social_link} href={""}>
