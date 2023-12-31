@@ -56,7 +56,8 @@ const Footer = () => {
         <div className={style.newsletter}>
           <h2>
             <span className={libre_bodoni.className}>
-              Subscribe to our Newsletter
+              {/* Subscribe to our Newsletter */}
+              Sign Up for Exclusive Offerings, New Product and More
             </span>
           </h2>
           <div className={style.textnewsletter}>
