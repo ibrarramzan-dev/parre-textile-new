@@ -61,11 +61,7 @@ export const Header = () => {
     >
       <nav className={style.navbar}>
         <div className={style.icons1}>
-          <Link href={"/"}>
-            <button className={style.btn}>
-              <IoPersonCircleOutline />
-            </button>
-          </Link>
+        
           <Link href={"/"}>
             <button className={style.btn}>
               <BsCart3 />
@@ -80,6 +76,11 @@ export const Header = () => {
         </div>
         <Image src={hd} className={style.hd} alt="" />
         <div className={style.icons}>
+        <Link href={"/"}>
+            <button className={style.btn}>
+              <IoPersonCircleOutline />
+            </button>
+          </Link>
           <button className={style.btn} onClick={openSearchModal}>
             <IoMdSearch />
           </button>
