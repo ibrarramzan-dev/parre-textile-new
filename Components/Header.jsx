@@ -104,40 +104,40 @@ export const Header = () => {
 
 // components/SearchMenu.js
 
-const SearchMenu = ({ options }) => {
-  const variants = {
-    open: { opacity: 1, y: 0 },
-    closed: { opacity: 0, y: "-100%" },
-  };
-  return (
-    <motion.div
-      className={style.search_modal}
-      variants={variants}
-      initial="closed"
-      animate="open"
-      exit="closed"
-    >
-      <div className={style.search_modal_header}>
-        <div className={style.navbar_logo}>
-          <Image src={logo} alt="Logo" className="navbar-logo" />
-        </div>
-        <div className={style.searcmenu}>
-          <button>
-            <IoMdSearch />
-          </button>
-          <input
-            type="text"
-            placeholder="Search Textile"
-            className={antic_didone.className}
-          />
-        </div>
-        <button className={style.closeIcon} onClick={() => options(false)}>
-          <RxCross2 />
-        </button>
-      </div>
-    </motion.div>
-  );
-};
+// const SearchMenu = ({ options }) => {
+//   const variants = {
+//     open: { opacity: 1, y: 0 },
+//     closed: { opacity: 0, y: "-100%" },
+//   };
+//   return (
+//     <motion.div
+//       className={style.search_modal}
+//       variants={variants}
+//       initial="closed"
+//       animate="open"
+//       exit="closed"
+//     >
+//       <div className={style.search_modal_header}>
+//         <div className={style.navbar_logo}>
+//           <Image src={logo} alt="Logo" className="navbar-logo" />
+//         </div>
+//         <div className={style.searcmenu}>
+//           <button>
+//             <IoMdSearch />
+//           </button>
+//           <input
+//             type="text"
+//             placeholder="Search Textile"
+//             className={antic_didone.className}
+//           />
+//         </div>
+//         <button className={style.closeIcon} onClick={() => options(false)}>
+//           <RxCross2 />
+//         </button>
+//       </div>
+//     </motion.div>
+//   );
+// };
 
 const Side_menu = () => {
   const variants2 = {
@@ -177,4 +177,4 @@ const Side_menu = () => {
   );
 };
 
-export default SearchMenu;
+// export default SearchMenu;
