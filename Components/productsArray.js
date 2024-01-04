@@ -106,40 +106,40 @@ export const products = [
   {
     //14
     _id: "_2smdst2ej",
-    productName: "C1 Des 20 Combo 26 June 2023 Upload",
-    price: "",
+    productName: "Gormley 01",
+    price: "100% Cotton",
     imageLink:
         "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C1%20Des%202%20Combo%204%2028%20Jul.jpg",
   },
   {
     //15
     _id: "_7f76cs7v0",
-    productName: "C1 Des 20 Original Feb 23",
-    price: "",
+    productName: "Holdamph 04",
+    price: "55% Linen/45% Cotton",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C1%20Design%2018%20Large%20Combo4.jpg",
   },
   {
     //16
     _id: "_2qr423ooy",
-    productName: "C1 Design 18 Combo 2 Feb 23",
-    price: "",
+    productName: "Winterfield 01",
+    price: "55% Linen/45% Cotton",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C1%20Des%2013%20Combo%201.jpg",
   },
   {
     //17
     _id: "_fkg8e9mfy",
-    productName: "C1 Design 18 Large Combo1 Oct 22",
-    price: "",
+    productName: "O’Shea 02",
+    price: "55% Linen/45% Cotton",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C2%20Des%203%20Combo%205%20Jan%2029.jpg",
   },
   {
     //18
     _id: "_m06lwqfll",
-    productName: "C1 Design 18 Large Combo4",
-    price: "",
+    productName: "Farrell 03",
+    price: "100% Cotton",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/DP%2019%20Color%203%20Feb%2023.jpg",
   },
