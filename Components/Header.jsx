@@ -12,7 +12,7 @@ import { IoPersonCircleOutline } from "react-icons/io5";
 import { BsCart3 } from "react-icons/bs";
 import { VscThreeBars } from "react-icons/vsc";
 import { RxCross2 } from "react-icons/rx";
-import hd from "@/public/hd.png";
+import hd from "@/public/rod.jpg";
 
 const antic_didone = Antic_Didone({
   weight: "400",
