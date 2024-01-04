@@ -13,6 +13,7 @@ export const products = [
     _id: "_ihztrt4p7",
     productName1: "Garvey 01    ",
     productName2: "55% Linen/45% Cotton",
+    color: "Not Available",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C2%20Des%2012%20New%20Combo%201%20Feb%2023.jpg",
   },
@@ -156,7 +157,7 @@ export const products = [
     _id: "_m06lwqfll",
     productName1: "Farrell 03",
     productName2: "100% Cotton",
-    color: "",
+    color: "Not Available",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/DP%2019%20Color%203%20Feb%2023.jpg",
   },
@@ -210,7 +211,7 @@ export const products = [
     _id: "_ai8z7tyla",
     productName1: "Geller 03",
     productName2: "100% Cotton",
-    color: "",
+    color: "Not Available",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/DP%2018%20Col%201%20Feb%2023.jpg",
   },
@@ -282,7 +283,7 @@ export const products = [
     _id: "_kxcqji4ln",
     productName1: "Kott 02 ",
     productName2: "55% Linen 45% Cotton",
-    color: "",
+    color: "Not Available",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C2%20Des%208%20Combo%204%20Feb%2023.jpg",
   },
