@@ -41,8 +41,8 @@ const Product_show_component = ({ params }) => {
     <>
       <div className={style.product_detail}>
         <div className={style.head}>
-          <h1>{productDetail.productName1} ,   {productDetail.productName2} </h1>
-          <FaChevronDown className={style.red} />
+          {/* <h1>{productDetail.productName1} ,   {productDetail.productName2} </h1>
+          <FaChevronDown className={style.red} /> */}
         </div>
         <div className={style.body}>
           <div className={style.left}>
@@ -52,30 +52,23 @@ const Product_show_component = ({ params }) => {
             />
           </div>
           <div className={style.right}>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-              nisi laboriosam suscipit rem quisquam quae culpa. Animi libero vel
-              soluta!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-              nisi laboriosam suscipit rem quisquam quae culpa. Animi libero vel
-              soluta!
-            </p>
-            <h3>Color</h3>
-            <div className={style.selection}>
+          <h2>Product Name: {productDetail.productName1}</h2>
+          <h2>Material: {productDetail.productName2}</h2>
+
+            {/* <h3>Color</h3> */}
+            {/* <div className={style.selection}>
               <select  name="Choose an option" placeholder="Choose an option">
                 <option value="">Choose an option</option>
                 <option value="">Blue</option>
                 <option value="">White</option>
-              </select>
+              </select> */}
               {/* <div className={`${style.price}`}>
                 $
                 <span className={libre_bodoni.className}>
                   {productDetail.price}
                 </span>
               </div> */}
-              <div className={style.numbers}>
+              {/* <div className={style.numbers}>
                 <input
                   type="number"
                   placeholder="Enter quantity..."
@@ -84,16 +77,16 @@ const Product_show_component = ({ params }) => {
                 <button>
                   <BsCart3 /> Add to Cart
                 </button>
-              </div>
+              </div> */}
             </div>
 
-            <p className={style.texting}>
+            {/* <p className={style.texting}>
               Product ID : <span>{params}</span>
-            </p>
+            </p> */}
           </div>
         </div>
         {/* <Tabsection productName={productDetail.productName} /> */}
-      </div>
+      {/* </div> */}
     </>
   );
 };

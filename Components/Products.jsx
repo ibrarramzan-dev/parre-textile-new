@@ -52,23 +52,23 @@ const ProductsPage = () => {
   );
 };
 
-
 const Product = ({ data }) => {
   const { productName1, productName2, imageLink, _id } = data;
   let id = _id;
   console.log(imageLink.src);
   return (
-    <div className={style.card}>
-      <div className={style.content}>
-        <Image
-          src={imageLink}
-          className={style.waku}
-          width={350}
-          height={350}
-          alt=""
-        />
-      </div>
-      <div className={style.overlay}>
+    <Link href={"/"}>
+      <div className={style.card}>
+        <div className={style.content}>
+          <Image
+            src={imageLink}
+            className={style.waku}
+            width={350}
+            height={350}
+            alt=""
+          />
+        </div>
+        {/* <div className={style.overlay}>
         <button className={style.sideicons}>
           <FaRegHeart />
         </button>
@@ -80,12 +80,13 @@ const Product = ({ data }) => {
             <FaArrowRightLong />
           </Link>
         </button>
+      </div> */}
+        <div className={style.title}>
+          <h4 className={playfair_display.className}>{productName1}</h4>
+          <p className={antic_didone.className}>{productName2}</p>
+        </div>
       </div>
-      <div className={style.title}>
-        <h4 className={playfair_display.className}>{productName1}</h4>
-        <p className={antic_didone.className}>{productName2}</p>
-      </div>
-    </div>
+    </Link>
   );
 };
 
