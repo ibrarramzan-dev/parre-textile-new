@@ -1,38 +1,28 @@
 @import "./utils";
 
 .product_detail {
-  height: fit-content;
+  height: 100%;
   width: 100%;
   @include flexer(column);
 }
 
-.head {
-  width: 100%;
-  height: fit-content;
-  @include flexer(column);
-  padding: 4rem 3rem;
-
-  h1 {
-    font-size: 3.5rem;
-    font-weight: lighter;
-    text-align: center;
-    color: $color;
-    margin-bottom: 2rem;
-  }
-}
 
 .body {
+  margin: 2rem 0;
   @include flexer(row);
   width: 90%;
-  height: fit-content;
+  height: 100%;
   .left {
-    width: 80%;
+    width: 95%;
     height: fit-content;
+  }
+  @media screen and (max-width:1150px) {
+    @include flexer(column);
   }
 }
 
 .right {
-  height: 54vh;
+  height: fit-content;
   width: 20%;
   @include flexer(column, start, start);
   margin-left: 2rem;
@@ -47,160 +37,73 @@
     margin-bottom: 1rem;
   }
 
-  // .price {
-  //   margin-bottom: 2rem;
-  //   display: none;
-    // text-align: start;
-    // font-size: 1.5rem;
-    // color: $color;
-    // margin-top: 1rem;
-  // }
+  @media screen and (max-width:1150px) {
+    width: 95%;
+  }
+}
+// MEDIA QUERIRES
 
-  // p {
-  //   color: $color1;
-  //   margin-bottom: 2rem;
-  //   font-size: 1.1rem;
-  // }
+// @media only screen and (max-width: 1108px) {
+//   .body {
+//     width: 80%;
+//     @include flexer(column);
+//   }
 
-  // h3 {
-  //   color: $color1;
-  //   font-family: "PT Serif", serif;
-  //   font-weight: lighter;
-  //   padding-bottom: 0.8rem;
-  // }
-
-  // .selection select {
-  //   border: none;
-  //   outline: none;
-  //   margin: 0rem 0 1rem 0rem;
-  //   justify-content: space-evenly;
-  //   width: 100%;
-  //   max-width: 20rem;
-  //   font-size: 1rem;
-  //   color: $color3;
-  // }
-
-//   .numbers {
+//   .body {
+//     @include flexer(column);
 //     width: 90%;
-//     input {
-//       padding: 0.8rem 0.3rem;
-//       padding-left: 2rem;
-//       color: $color3;
-//       border: 2px solid $color2;
-//       outline: none;
-//       font-size: 1.2rem;
-//       margin-right: 0.5rem;
+//     height: fit-content;
+//     .left {
 //       width: 100%;
-//     }
-
-//     button {
-//       background-color: $color;
-//       cursor: pointer;
-//       font-family: "PT Serif", serif;
-//       margin-top: 1rem;
-//       border: none;
-//       outline: none;
-//       padding: 0.8rem 2rem;
-//       color: white;
-//       font-size: 1.2rem;
+//       height: fit-content;
 //       margin-bottom: 2rem;
 //     }
 //   }
 
-//   .texting {
-//     font-family: "PT Serif", serif;
-//     color: black;
+//   .right {
+//     width: 95%;
+//     height: fit-content;
 
-//     span {
-//       color: $color1;
+//     .numbers {
+//       input {
+//         margin-bottom: 1rem;
+//       }
 //     }
-
-//     .colorchange:hover {
-//       color: #c49851;
-//       transition: all 0.3s ease-in-out;
-//       cursor: pointer;
-//     }
-//   }
-
-//   @media screen and (max-width: 500px) {
-//     margin-left: 0.8rem;
 //   }
 // }
 
-// DOWN SECTION
-// .formspan {
-//   margin-left: 0.5rem;
-//   text-decoration: underline;
-//   transition: all 0.3s ease;
-//   cursor: pointer;
-//   &:hover {
-//     color: black;
+// @media screen and (max-width: 978px) {
+//   .head {
+//     margin-top: 3rem;
+//     margin-bottom: 2rem;
 //   }
 // }
 
-// MEDIA QUERIRES
+// @media only screen and (max-width: 768px) {
+//   .head {
+//     padding: 0.34rem;
 
-@media only screen and (max-width: 1108px) {
-  .body {
-    width: 80%;
-    @include flexer(column);
-  }
+//     h1 {
+//       font-size: 2.5rem;
+//       margin-bottom: 1rem;
+//     }
+//   }
 
-  .body {
-    @include flexer(column);
-    width: 90%;
-    height: fit-content;
-    .left {
-      width: 100%;
-      height: fit-content;
-      margin-bottom: 2rem;
-    }
-  }
+//   .body {
+//     @include flexer(column);
+//   }
 
-  .right {
-    width: 95%;
-    height: fit-content;
+//   .right {
+//     width: 98%;
+//   }
 
-    .numbers {
-      input {
-        margin-bottom: 1rem;
-      }
-    }
-  }
-}
+//   .left {
+//     padding: 0;
+//   }
 
-@media screen and (max-width: 978px) {
-  .head {
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .head {
-    padding: 0.34rem;
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-  }
-
-  .body {
-    @include flexer(column);
-  }
-
-  .right {
-    width: 98%;
-  }
-
-  .left {
-    padding: 0;
-  }
-
-  .thumbnail {
-    margin-top: 1rem;
-    width: 3rem;
-  }
-}
-}
+//   .thumbnail {
+//     margin-top: 1rem;
+//     width: 3rem;
+//   }
+// }
+// }

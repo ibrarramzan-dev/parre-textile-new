@@ -1,20 +1,4 @@
 "use client";
-import {
-  Tabs,
-  TabList,
-  TabPanels,
-  Tab,
-  TabPanel,
-  Text,
-  Heading,
-  Flex,
-  Box,
-  Button,
-  FormControl,
-  FormLabel,
-  Input,
-  Textarea,
-} from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import style from "@/styles/productDetails.module.scss";
 import "react-inner-image-zoom/lib/InnerImageZoom/styles.css";
@@ -54,6 +38,7 @@ const Product_show_component = ({ params }) => {
           <div className={style.right}>
           <h2>Product Name: {productDetail.productName1}</h2>
           <h2>Material: {productDetail.productName2}</h2>
+          <h2>Color: {productDetail.color}</h2>
 
             {/* <h3>Color</h3> */}
             {/* <div className={style.selection}>

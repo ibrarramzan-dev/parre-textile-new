@@ -57,7 +57,7 @@ const Product = ({ data }) => {
   let id = _id;
   console.log(imageLink.src);
   return (
-    <Link href={"/"}>
+    <Link href={`/Product/${id}`}>
       <div className={style.card}>
         <div className={style.content}>
           <Image
