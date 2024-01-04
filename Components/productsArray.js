@@ -146,152 +146,152 @@ export const products = [
   {
     //19
     _id: "_w06mmhui1",
-    productName: "C1 Design 18 Large Combo6 Oct 22",
-    price: "",
+    productName: "Landale 03",
+    price: "55% Linen/45% Cotton",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C2%20Des%205%20Combo%203%20Oct%2022.jpg",
   },
   {
     //20
     _id: "_360k4ycms",
-    productName: "C1 Design 18 Large Combo9 Oct 22",
-    price: "",
+    productName: "Curran 03",
+    price: "55% Linen/45% Cotton",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C1%20Des%2020%20Combo%2026%20June%202023%20Upload.jpg",
   },
   {
     //21
     _id: "_42kvgwibw",
-    productName: "C2 Des 1 colorway 4",
-    price: "",
+    productName: "Quinn 01",
+    price: "52% Linen/48% Cotton",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C1%20Des%2014%20Combo%201%20Oct%2022.jpg",
   },
   {
     //22
     _id: "_lizqwpc4s",
-    productName: "C2 Des 1 Combo 1 Feb 23",
-    price: "",
+    productName: "Holdamph 01",
+    price: "55% Linen/45% Cotton",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C1%20Design%2018%20Large%20Combo1%20Oct%2022.jpg",
   },
   {
     //23
     _id: "_kjjckaavp",
-    productName: "C2 Des 1 Main Feb 23",
-    price: "",
+    productName: "Quinn 02",
+    price: "52% Linen/48% Cotton",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/DP%2014%20New%20color%205%2014%20Oct%2022.jpg",
   },
   {
     //24
     _id: "_ai8z7tyla",
-    productName: "C2 Des 3 Combo 5 Jan 29",
-    price: "",
+    productName: "Geller 03",
+    price: "100% Cotton",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/DP%2018%20Col%201%20Feb%2023.jpg",
   },
   {
     //25
     _id: "_8qmq15nge",
-    productName: "C2 Des 5 Combo 1 Paper Print",
-    price: "",
+    productName: "Garvey 03",
+    price: "55% Linen/45% Cotton",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C2%20Des%2012%20Charcoal%202%20Feb%2023.jpg",
   },
   {
     //26
     _id: "_d9maur2xg",
-    productName: "C2 Des 5 Combo 3 Oct 22",
-    price: "",
+    productName: "Marklin 02",
+    price: "55% Linen/45% Cotton",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C2%20Des%206%20Combo%208%20Feb%2023.jpg",
   },
   {
     //27
     _id: "_bcfck6at7",
-    productName: "C2 Des 5 Combo 4 Feb 23",
-    price: "",
+    productName: "Brickell 01",
+    price: "55% Linen/45% Cotton",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C2%20Des%2011%20Combo%206%20Upload.jpg",
   },
   {
     //28
     _id: "_w15mupe3j",
-    productName: "C2 Des 5 Combo 8 Feb 23",
-    price: "",
+    productName: "Holdaamph 03",
+    price: "55% Linen/45% Cotton",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C1%20Design%2018%20Large%20Combo6%20Oct%2022.jpg",
   },
   {
     //29
     _id: "_iz8f80my4",
-    productName: "C2 Des 6 Combo 4",
-    price: "",
+    productName: "Quinn 03",
+    price: "52% Linen/48% Cotton",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C1%20Des%2014%20Combo%202.jpg",
   },
   {
     //30
     _id: "_z85v6kozf",
-    productName: "C2 Des 6 Combo 1 Feb 23",
-    price: "",
+    productName: "Curran 02",
+    price: "100% Cotton",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C1%20Des%2020%20Combo%2012%20Feb%2023.jpg",
   },
   {
     //31
     _id: "_ke21m94hj",
-    productName: "C2 Des 6 Combo 7 Feb 23",
-    price: "",
+    productName: "Geller 03",
+    price: "100% Cotton",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C1%20Design%2018%20Combo%202%20Feb%2023.jpg",
   },
   {
     //32
     _id: "_kxcqji4ln",
-    productName: "C2 Des 6 Combo 8 Feb 23",
-    price: "",
+    productName: "Kott 02 ",
+    price: "55% Linen 45% Cotton",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C2%20Des%208%20Combo%204%20Feb%2023.jpg",
   },
   {
     //33
     _id: "_kq2eraohd",
-    productName: "C2 Des 8 Combo 4 Feb 23",
-    price: "",
+    productName: "Wilkie 04",
+    price: "100% Cotton",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C2%20Des%201%20Combo%201%20Feb%2023.jpg",
   },
   {
     //34
     _id: "_iojhrb7nx",
-    productName: "C2 Des 8 Combo 5 Feb 23",
-    price: "",
+    productName: "Winterfield 03",
+    price: "55% Linen/45% Cotton",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C1%20Des%2013%20Combo%208.jpg",
   },
   {
     //35
     _id: "_yjnubmvl4",
-    productName: "C2 Des 8 Combo 6",
-    price: "",
+    productName: "Holdamph 02",
+    price: "55% Linen/45% Cotton",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/DP%2018%20Col%206%20Feb%2023.jpg",
   },
   {
     //36
     _id: "_vrza68htq",
-    productName: "C2 Des 8 Combo 8 Feb 23",
-    price: "",
+    productName: "Winterfield 04",
+    price: "55% Linen/45% Cotton",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C1%20Des%2013%20Combo%206.jpg",
   },
   {
     //37
     _id: "_ixaidsic3",
-    productName: "C2 Des 10 Combo 1 BIG Upload",
-    price: "",
+    productName: "Bergen 01",
+    price: "55% Linen/45% Cotton",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C2%20Des%2010%20Combo%205%20Feb%2023%20Upload.jpg",
   },
