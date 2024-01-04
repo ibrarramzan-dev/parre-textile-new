@@ -10,16 +10,16 @@ export const products = [
   {
     //2
     _id: "_ihztrt4p7",
-    productName: "C1 Des 2 Combo 1",
-    price: "",
+    productName: "Garvey 01    ",
+    price: "55% Linen/45% Cotton",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C2%20Des%2012%20New%20Combo%201%20Feb%2023.jpg",
   },
   {
     //3
     _id: "_ry78w9nqc",
-    productName: "C1 Des 2 Combo 4 28 Jul",
-    price: "",
+    productName: "Farrell 01",
+    price: "100% Cotton",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/DP%2019%20Green%20Feb%2023.jpg",
   },
