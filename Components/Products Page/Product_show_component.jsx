@@ -41,7 +41,7 @@ const Product_show_component = ({ params }) => {
     <>
       <div className={style.product_detail}>
         <div className={style.head}>
-          <h1>{productDetail.productName1} {productDetail.productName2} </h1>
+          <h1>{productDetail.productName1} ,   {productDetail.productName2} </h1>
           <FaChevronDown className={style.red} />
         </div>
         <div className={style.body}>
