@@ -331,10 +331,10 @@
 .title {
   opacity: 0;
   h4 {
-    font-size: 1.05rem;
+    font-size: 1.3rem;
   }
   p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   &:hover .title {
     transition: all ease 0.5s;
@@ -343,10 +343,10 @@
 
   @media screen and (max-width: 400px) {
     h4 {
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
     p {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
 }
