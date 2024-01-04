@@ -48,11 +48,12 @@
   }
 
   .price {
-    text-align: start;
-    font-size: 1.5rem;
     margin-bottom: 2rem;
-    color: $color;
-    margin-top: 1rem;
+    display: none;
+    // text-align: start;
+    // font-size: 1.5rem;
+    // color: $color;
+    // margin-top: 1rem;
   }
 
   p {
@@ -71,6 +72,7 @@
   .selection select {
     border: none;
     outline: none;
+    margin: 0rem 0 1rem 0rem;
     justify-content: space-evenly;
     width: 100%;
     max-width: 20rem;

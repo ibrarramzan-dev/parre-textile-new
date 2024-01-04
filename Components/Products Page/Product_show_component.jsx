@@ -64,7 +64,7 @@ const Product_show_component = ({ params }) => {
             </p>
             <h3>Color</h3>
             <div className={style.selection}>
-              <select name="Choose an option" placeholder="Choose an option">
+              <select  name="Choose an option" placeholder="Choose an option">
                 <option value="">Choose an option</option>
                 <option value="">Blue</option>
                 <option value="">White</option>
