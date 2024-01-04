@@ -3,7 +3,6 @@
 .section {
   @include flexer(center, center);
   min-height: 100vh;
-  //   background: #810b07;
   background: white;
   animation: animateBg 10s linear infinite;
 }

@@ -61,12 +61,11 @@ export const Header = () => {
     >
       <nav className={style.navbar}>
         <div className={style.icons1}>
-        
-          <Link href={"/"}>
+          {/* <Link href={"/"}>
             <button className={style.btn}>
               <BsCart3 />
             </button>
-          </Link>
+          </Link> */}
         </div>
         <Image src={hd} className={style.hd} alt="" />
         <div className={style.navbar_logo}>
@@ -75,8 +74,8 @@ export const Header = () => {
           </Link>
         </div>
         <Image src={hd} className={style.hd} alt="" />
-        <div className={style.icons}>
-        <Link href={"/"}>
+        {/* <div className={style.icons}> */}
+          {/* <Link href={"/"}>
             <button className={style.btn}>
               <IoPersonCircleOutline />
             </button>
@@ -92,7 +91,7 @@ export const Header = () => {
           className={style.hamburger}
         >
           {menuOpen === true ? <RxCross2 /> : <VscThreeBars />}
-        </button>
+        </button> */}
       </nav>
       <AnimatePresence>
         {searchModalOpen && <SearchMenu options={setSearchModalOpen} />}
