@@ -34,32 +34,32 @@ export const products = [
   {
     //5
     _id: "_fxtj2130f",
-    productName: "C1 Des 2 Combo 7 15 July 2023",
-    price: "",
+    productName: "Farrell 02   ",
+    price: "100% Cotton",
     imageLink:
         "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/DP%2019%20Color%201%20%20FARELL.jpg",
   },
   {
     //6
     _id: "_2rze5dfil",
-    productName: "C1 Des 13 Combo 1",
-    price: "",
+    productName: "Garvey 01",
+    price: "55% Linen/45% Cotton",
     imageLink:
         "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C2%20Des%2012%20New%20Red%20Feb%2023.jpg",
   },
   {
     //7
     _id: "_uy1g54v3y",
-    productName: "C1 Des 13 Combo 6",
-    price: "",
+    productName: "Kott 01",
+    price: "55% Linen/45% Cotton",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C2%20Des%208%20Combo%205%20Feb%2023.jpg",
   },
   {
     //8
     _id: "_djonj24ln",
-    productName: "C1 Des 13 Combo 7",
-    price: "",
+    productName: "Marklin 04",
+    price: "55% Linen/45% Cotton",
     imageLink:
         "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C2%20Des%206%20%20Combo%204.jpg",
   },
