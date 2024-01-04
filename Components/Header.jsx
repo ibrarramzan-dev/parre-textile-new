@@ -74,16 +74,16 @@ export const Header = () => {
           </Link>
         </div>
         <Image src={hd} className={style.hd} alt="" />
-        {/* <div className={style.icons}> */}
+        {/* <div className={style.icons}>  */}
           {/* <Link href={"/"}>
             <button className={style.btn}>
               <IoPersonCircleOutline />
             </button>
-          </Link>
-          <button className={style.btn} onClick={openSearchModal}>
+          </Link> */}
+          {/* <button className={style.btn} onClick={openSearchModal}>
             <IoMdSearch />
           </button>
-        </div>
+        </div> */}
         <button
           onClick={() => {
             menuOpen === true ? setMenuOpen(false) : setMenuOpen(true);
@@ -91,7 +91,7 @@ export const Header = () => {
           className={style.hamburger}
         >
           {menuOpen === true ? <RxCross2 /> : <VscThreeBars />}
-        </button> */}
+        </button>
       </nav>
       <AnimatePresence>
         {searchModalOpen && <SearchMenu options={setSearchModalOpen} />}
