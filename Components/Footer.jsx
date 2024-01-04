@@ -73,7 +73,7 @@ const Footer = () => {
 
       <footer className={style.footer}>
         <div className={style.main_footer}>
-          <section className={`${style.footer_header} ${eagle_lake.className}`}>
+          <section className={`${style.footer_header} ${playfair_display.className}`}>
             We Innovate & create <br /> modern textiles{" "}
           </section>
           <section className={style.address}>
