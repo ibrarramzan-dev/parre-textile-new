@@ -41,7 +41,7 @@ const Product_show_component = ({ params }) => {
     <>
       <div className={style.product_detail}>
         <div className={style.head}>
-          <h1>{productDetail.productName}</h1>
+          <h1>{productDetail.productName1} {productDetail.productName2} </h1>
           <FaChevronDown className={style.red} />
         </div>
         <div className={style.body}>
@@ -69,12 +69,12 @@ const Product_show_component = ({ params }) => {
                 <option value="">Blue</option>
                 <option value="">White</option>
               </select>
-              <div className={`${style.price}`}>
+              {/* <div className={`${style.price}`}>
                 $
                 <span className={libre_bodoni.className}>
                   {productDetail.price}
                 </span>
-              </div>
+              </div> */}
               <div className={style.numbers}>
                 <input
                   type="number"

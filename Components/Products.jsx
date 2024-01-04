@@ -54,7 +54,7 @@ const ProductsPage = () => {
 
 
 const Product = ({ data }) => {
-  const { productName, price, imageLink, _id } = data;
+  const { productName1, productName2, imageLink, _id } = data;
   let id = _id;
   console.log(imageLink.src);
   return (
@@ -82,8 +82,8 @@ const Product = ({ data }) => {
         </button>
       </div>
       <div className={style.title}>
-        <h4 className={playfair_display.className}>{productName}</h4>
-        <p className={antic_didone.className}>{price}</p>
+        <h4 className={playfair_display.className}>{productName1}</h4>
+        <p className={antic_didone.className}>{productName2}</p>
       </div>
     </div>
   );
