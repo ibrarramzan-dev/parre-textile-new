@@ -26,8 +26,8 @@ export const products = [
   {
     //4
     _id: "_9bml1sqa0",
-    productName: "C1 Des 2 Combo 6 Feb 23",
-    price: "",
+    productName: "Landale 04",
+    price: " 55% Linen/45% Cotton",
     imageLink:
       "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C2%20Des%205%20Combo%201%20Paper%20Print.jpg",
   },
