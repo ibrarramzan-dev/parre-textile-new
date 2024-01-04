@@ -66,40 +66,40 @@ export const products = [
   {
     //9
     _id: "_ka12myf1x",
-    productName: "C1 Des 13 Combo 8",
-    price: "",
+    productName: "Landale 01",
+    price: "55% Linen/45% Cotton",
     imageLink:
         "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C2%20Des%205%20Combo%204%20Feb%2023.jpg",
   },
   {
     //10
     _id: "_zqag8qhum",
-    productName: "C1 Des 14 Combo 1 Oct 22",
-    price: "",
+    productName: "Wilkie 04",
+    price: "55% Linen/45% Cotton",
      imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C2%20Des%201%20colorway%204.jpg",
   },
   {
     //11
     _id: "_yw8elxk4h",
-    productName: "C1 Des 14 Combo 2",
-    price: "",
+    productName: "Gormely 04",
+    price: "100% Cotton",
      imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C1%20Des%202%20Combo%201.jpg",
   },
   {
     //12
     _id: "_ce8cr7vpi",
-    productName: "C1 Des 18 Combo 3 Feb 23",
-    price: "",
+    productName: "Quinn 04",
+    price: "52% Linen/48% Cotton",
   imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/DP%2014%20New%20color%204%20Oct%2022.jpg",
   },
   {
     //13
     _id: "_ygwkaqcef",
-    productName: "C1 Des 20 Combo 12 Feb 23",
-    price: "",
+    productName: "Bergen 02",
+    price: "55% Linen/45% Cotton",
   imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C2%20Des%2010%20Combo%207%2021%20Feb%2023%20Upload.jpg",
   },
