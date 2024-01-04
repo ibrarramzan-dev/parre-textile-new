@@ -1,8 +1,7 @@
 import React from "react";
 import style from "@/styles/footer.module.scss";
-import { FaYoutube, FaInstagram } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { GrFacebookOption } from "react-icons/gr";
-import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 import {
   Arapey,
@@ -56,7 +55,6 @@ const Footer = () => {
         <div className={style.newsletter}>
           <h2>
             <span className={libre_bodoni.className}>
-              {/* Subscribe to our Newsletter */}
               Sign Up for Exclusive Offerings, New Product and More
             </span>
           </h2>

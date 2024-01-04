@@ -3,9 +3,6 @@
 import style from "@/styles/Product.module.scss";
 import React, { useState, useEffect } from "react";
 import { products as productData } from "./productsArray";
-import { FaRegHeart } from "react-icons/fa";
-import { BsCart3 } from "react-icons/bs";
-import { FaArrowRightLong } from "react-icons/fa6";
 import Link from "next/link";
 import { Playfair_Display, Antic_Didone } from "next/font/google";
 import Image from "next/image";
@@ -68,19 +65,6 @@ const Product = ({ data }) => {
             alt=""
           />
         </div>
-        {/* <div className={style.overlay}>
-        <button className={style.sideicons}>
-          <FaRegHeart />
-        </button>
-        <button className={style.sideicons}>
-          <BsCart3 />
-        </button>
-        <button className={style.sideicons}>
-          <Link href={`/Product/${id}`}>
-            <FaArrowRightLong />
-          </Link>
-        </button>
-      </div> */}
         <div className={style.title}>
           <h4 className={playfair_display.className}>{productName1}</h4>
           <p className={antic_didone.className}>{productName2}</p>

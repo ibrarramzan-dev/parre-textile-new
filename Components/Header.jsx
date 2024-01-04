@@ -7,9 +7,6 @@ import logo from "@/public/logo.png";
 import style from "@/styles/header.module.scss";
 import Link from "next/link";
 import { Antic_Didone } from "next/font/google";
-import { IoMdSearch } from "react-icons/io";
-import { IoPersonCircleOutline } from "react-icons/io5";
-import { BsCart3 } from "react-icons/bs";
 import { VscThreeBars } from "react-icons/vsc";
 import { RxCross2 } from "react-icons/rx";
 import hd from "@/public/rod.jpg";
@@ -61,11 +58,6 @@ export const Header = () => {
     >
       <nav className={style.navbar}>
         <div className={style.icons1}>
-          {/* <Link href={"/"}>
-            <button className={style.btn}>
-              <BsCart3 />
-            </button>
-          </Link> */}
         </div>
         <Image src={hd} className={style.hd} alt="" />
         <div className={style.navbar_logo}>
@@ -74,16 +66,6 @@ export const Header = () => {
           </Link>
         </div>
         <Image src={hd} className={style.hd} alt="" />
-        {/* <div className={style.icons}>  */}
-          {/* <Link href={"/"}>
-            <button className={style.btn}>
-              <IoPersonCircleOutline />
-            </button>
-          </Link> */}
-          {/* <button className={style.btn} onClick={openSearchModal}>
-            <IoMdSearch />
-          </button>
-        </div> */}
         <button
           onClick={() => {
             menuOpen === true ? setMenuOpen(false) : setMenuOpen(true);
@@ -102,42 +84,6 @@ export const Header = () => {
   );
 };
 
-// components/SearchMenu.js
-
-// const SearchMenu = ({ options }) => {
-//   const variants = {
-//     open: { opacity: 1, y: 0 },
-//     closed: { opacity: 0, y: "-100%" },
-//   };
-//   return (
-//     <motion.div
-//       className={style.search_modal}
-//       variants={variants}
-//       initial="closed"
-//       animate="open"
-//       exit="closed"
-//     >
-//       <div className={style.search_modal_header}>
-//         <div className={style.navbar_logo}>
-//           <Image src={logo} alt="Logo" className="navbar-logo" />
-//         </div>
-//         <div className={style.searcmenu}>
-//           <button>
-//             <IoMdSearch />
-//           </button>
-//           <input
-//             type="text"
-//             placeholder="Search Textile"
-//             className={antic_didone.className}
-//           />
-//         </div>
-//         <button className={style.closeIcon} onClick={() => options(false)}>
-//           <RxCross2 />
-//         </button>
-//       </div>
-//     </motion.div>
-//   );
-// };
 
 const Side_menu = () => {
   const variants2 = {
@@ -176,5 +122,3 @@ const Side_menu = () => {
     </motion.div>
   );
 };
-
-// export default SearchMenu;
