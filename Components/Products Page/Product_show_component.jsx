@@ -92,214 +92,214 @@ const Product_show_component = ({ params }) => {
             </p>
           </div>
         </div>
-        <Tabsection productName={productDetail.productName} />
+        {/* <Tabsection productName={productDetail.productName} /> */}
       </div>
     </>
   );
 };
 
-const Tabsection = ({ productName }) => {
-  const [width, setWidth] = useState(window.innerWidth);
-  useEffect(() => {
-    const handleResize = () => {
-      setWidth(window.innerWidth);
-    };
+// const Tabsection = ({ productName }) => {
+//   const [width, setWidth] = useState(window.innerWidth);
+//   useEffect(() => {
+//     const handleResize = () => {
+//       setWidth(window.innerWidth);
+//     };
 
-    window.addEventListener("resize", handleResize);
+//     window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-  return (
-    <Tabs
-      width={"100%"}
-      mb={"1rem"}
-      p={width < 1025 ? "2rem" : "7rem"}
-    >
-      <TabList
-        mb={"5rem"}
-        display={"flex"}
-        alignItems={width > 768 ? "center" : "start"}
-        justifyContent={width > 768 ? "start" : "center"}
-        flexDirection={width > 768 ? "row" : "column"}
-      >
-        <Tab
-          p={20}
-          border={"none"}
-          w={["17rem", "full"]}
-          m={".2rem"}
-          a
-          _hover={{ borderTop: "2px solid #8f0d0a" }}
-          _selected={{ borderTop: "2px solid #8f0d0a" }}
-        >
-          DESCRIPTION
-        </Tab>
-        <Tab
-          p={20}
-          border={"none"}
-          w={["17rem", "full"]}
-          m={".2rem"}
-          _hover={{ borderTop: "2px solid #8f0d0a" }}
-          _selected={{ borderTop: "2px solid #8f0d0a" }}
-        >
-          ADDITIONAL INFORMATION
-        </Tab>
-        <Tab
-          p={20}
-          border={"none"}
-          w={["17rem", "full"]}
-          m={".2rem"}
-          _hover={{ borderTop: "2px solid #8f0d0a" }}
-          _selected={{ borderTop: "2px solid #8f0d0a" }}
-        >
-          REVIEWS (0)
-        </Tab>
-      </TabList>
-      <TabPanels w={"100%"}>
-        <TabPanel w={"100%"}>
-          <Text color={"GrayText"} fontFamily={"PT Serif"}>
-            Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit
-            aut fugit, sed quia consequuntur. Lorem ipsum dolor. Aquia sit amet,
-            elitr, sed diam nonum eirmod tempor invidunt labore et dolore magna
-            aliquyam.erat, sed diam voluptua. At vero accusam et justo duo
-            dolores et ea rebum. Stet clitain vidunt ut labore eirmod tempor
-            invidunt magna aliquyam.
-          </Text>
-        </TabPanel>
-        <TabPanel w={"100%"}>
-          <Flex
-            w={"100%"}
-            display={"flex"}
-            justifyContent={width < 768 ? "center" : "flex-start"}
-            padding={"1rem"}
-            borderTop={"1px solid GrayText"}
-            borderBottom={"1px solid GrayText"}
-            alignItems={width < 768 ? "flex-start" : "center"}
-            fontSize={"1.2rem"}
-          >
-            Color{" "}
-            <Text ml={"5.5rem"} color={"GrayText"}>
-              Beige,White
-            </Text>
-          </Flex>
-        </TabPanel>
-        <TabPanel w={"100%"}>
-          <Box w={"100%"} p={4} shadow="md" borderWidth="1px" borderRadius="md">
-            <Flex
-              fontFamily={"PT Serif"}
-              justifyContent={width < 768 ? "space-between" : "center"}
-              flexDirection={width > 768 ? "row" : "column"}
-            >
-              <Box w={width > 768 ? "50%" : "100%"}>
-                <Text
-                  fontSize={"large"}
-                  color={"GrayText"}
-                  fontFamily={"PT Serif"}
-                  mb={"20"}
-                >
-                  There are no reviews yet.
-                </Text>
-              </Box>
-              <FormControl w={width > 768 ? "50%" : "100%"}>
-                <Heading
-                  mb={"2rem"}
-                  fontFamily={"PT Serif"}
-                  fontSize={"1.7rem"}
-                  fontWeight={"lighter"}
-                >
-                  Be the first to review{" "}
-                  <Text display={"inline-block"} color={"#8f0d0a"}>
-                    &#34;
-                    {productName}
-                    &#34;
-                  </Text>
-                </Heading>
-                <Text mb={"2rem"} color={"GrayText"} fontFamily={"PT Serif"}>
-                  Your email address will not be published. Required fields are
-                  marked *
-                </Text>
-                <FormLabel mb={"1rem"}>Name *</FormLabel>
-                <Input
-                  w={"100%"}
-                  mb={"2rem"}
-                  border={"none"}
-                  borderBottom={"2px solid #8f0d0a"}
-                  outline={"none"}
-                  p={10}
-                  fontSize={"1.2rem"}
-                  variant="flushed"
-                  type="text"
-                />
-                <FormLabel mb={"1rem"}>Email *</FormLabel>
-                <Input
-                  w={"100%"}
-                  mb={"2rem"}
-                  variant="flushed"
-                  border={"none"}
-                  borderBottom={"2px solid #8f0d0a"}
-                  outline={"none"}
-                  p={10}
-                  fontSize={"1.2rem"}
-                  type="email"
-                />
-                <FormLabel mb={"1rem"}>Your Review *</FormLabel>
-                <Textarea
-                  mb={"2rem"}
-                  border={"none"}
-                  borderBottom={"2px solid #8f0d0a"}
-                  outline={"none"}
-                  p={10}
-                  fontSize={"1.2rem"}
-                  w={"100%"}
-                  variant={"flushed"}
-                  cols="70"
-                  rows="5"
-                ></Textarea>
-                <Text
-                  fontFamily={"PT Serif"}
-                  justifyContent={"center"}
-                  display={"flex"}
-                  alignItems={"center"}
-                  color={"GrayText"}
-                  mb={"2rem"}
-                >
-                  <Flex
-                    justifyContent={"flex-start"}
-                    w={"100%"}
-                    alignItems={"center"}
-                  >
-                    <Input
-                      color={"#c49851"}
-                      fontFamily={"PT Serif"}
-                      type="checkbox"
-                    />
-                    <Text ml={5}>
-                      I agree that my submitted data is being
-                      <span className={style.formspan}>
-                        collected and stored
-                      </span>
-                    </Text>
-                  </Flex>
-                </Text>
-                <Button
-                  p={"20px 60px"}
-                  cursor={"pointer"}
-                  color={"white"}
-                  fontSize={"1.3rem"}
-                  border={"none"}
-                  bgColor={"#8f0d0a"}
-                >
-                  {" "}
-                  Submit
-                </Button>
-              </FormControl>
-            </Flex>
-          </Box>
-        </TabPanel>
-      </TabPanels>
-    </Tabs>
-  );
-};
+//     return () => {
+//       window.removeEventListener("resize", handleResize);
+//     };
+//   }, []);
+//   return (
+//     <Tabs
+//       width={"100%"}
+//       mb={"1rem"}
+//       p={width < 1025 ? "2rem" : "7rem"}
+//     >
+//       <TabList
+//         mb={"5rem"}
+//         display={"flex"}
+//         alignItems={width > 768 ? "center" : "start"}
+//         justifyContent={width > 768 ? "start" : "center"}
+//         flexDirection={width > 768 ? "row" : "column"}
+//       >
+//         <Tab
+//           p={20}
+//           border={"none"}
+//           w={["17rem", "full"]}
+//           m={".2rem"}
+//           a
+//           _hover={{ borderTop: "2px solid #8f0d0a" }}
+//           _selected={{ borderTop: "2px solid #8f0d0a" }}
+//         >
+//           DESCRIPTION
+//         </Tab>
+//         <Tab
+//           p={20}
+//           border={"none"}
+//           w={["17rem", "full"]}
+//           m={".2rem"}
+//           _hover={{ borderTop: "2px solid #8f0d0a" }}
+//           _selected={{ borderTop: "2px solid #8f0d0a" }}
+//         >
+//           ADDITIONAL INFORMATION
+//         </Tab>
+//         <Tab
+//           p={20}
+//           border={"none"}
+//           w={["17rem", "full"]}
+//           m={".2rem"}
+//           _hover={{ borderTop: "2px solid #8f0d0a" }}
+//           _selected={{ borderTop: "2px solid #8f0d0a" }}
+//         >
+//           REVIEWS (0)
+//         </Tab>
+//       </TabList>
+//       <TabPanels w={"100%"}>
+//         <TabPanel w={"100%"}>
+//           <Text color={"GrayText"} fontFamily={"PT Serif"}>
+//             Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit
+//             aut fugit, sed quia consequuntur. Lorem ipsum dolor. Aquia sit amet,
+//             elitr, sed diam nonum eirmod tempor invidunt labore et dolore magna
+//             aliquyam.erat, sed diam voluptua. At vero accusam et justo duo
+//             dolores et ea rebum. Stet clitain vidunt ut labore eirmod tempor
+//             invidunt magna aliquyam.
+//           </Text>
+//         </TabPanel>
+//         <TabPanel w={"100%"}>
+//           <Flex
+//             w={"100%"}
+//             display={"flex"}
+//             justifyContent={width < 768 ? "center" : "flex-start"}
+//             padding={"1rem"}
+//             borderTop={"1px solid GrayText"}
+//             borderBottom={"1px solid GrayText"}
+//             alignItems={width < 768 ? "flex-start" : "center"}
+//             fontSize={"1.2rem"}
+//           >
+//             Color{" "}
+//             <Text ml={"5.5rem"} color={"GrayText"}>
+//               Beige,White
+//             </Text>
+//           </Flex>
+//         </TabPanel>
+//         <TabPanel w={"100%"}>
+//           <Box w={"100%"} p={4} shadow="md" borderWidth="1px" borderRadius="md">
+//             <Flex
+//               fontFamily={"PT Serif"}
+//               justifyContent={width < 768 ? "space-between" : "center"}
+//               flexDirection={width > 768 ? "row" : "column"}
+//             >
+//               <Box w={width > 768 ? "50%" : "100%"}>
+//                 <Text
+//                   fontSize={"large"}
+//                   color={"GrayText"}
+//                   fontFamily={"PT Serif"}
+//                   mb={"20"}
+//                 >
+//                   There are no reviews yet.
+//                 </Text>
+//               </Box>
+//               <FormControl w={width > 768 ? "50%" : "100%"}>
+//                 <Heading
+//                   mb={"2rem"}
+//                   fontFamily={"PT Serif"}
+//                   fontSize={"1.7rem"}
+//                   fontWeight={"lighter"}
+//                 >
+//                   Be the first to review{" "}
+//                   <Text display={"inline-block"} color={"#8f0d0a"}>
+//                     &#34;
+//                     {productName}
+//                     &#34;
+//                   </Text>
+//                 </Heading>
+//                 <Text mb={"2rem"} color={"GrayText"} fontFamily={"PT Serif"}>
+//                   Your email address will not be published. Required fields are
+//                   marked *
+//                 </Text>
+//                 <FormLabel mb={"1rem"}>Name *</FormLabel>
+//                 <Input
+//                   w={"100%"}
+//                   mb={"2rem"}
+//                   border={"none"}
+//                   borderBottom={"2px solid #8f0d0a"}
+//                   outline={"none"}
+//                   p={10}
+//                   fontSize={"1.2rem"}
+//                   variant="flushed"
+//                   type="text"
+//                 />
+//                 <FormLabel mb={"1rem"}>Email *</FormLabel>
+//                 <Input
+//                   w={"100%"}
+//                   mb={"2rem"}
+//                   variant="flushed"
+//                   border={"none"}
+//                   borderBottom={"2px solid #8f0d0a"}
+//                   outline={"none"}
+//                   p={10}
+//                   fontSize={"1.2rem"}
+//                   type="email"
+//                 />
+//                 <FormLabel mb={"1rem"}>Your Review *</FormLabel>
+//                 <Textarea
+//                   mb={"2rem"}
+//                   border={"none"}
+//                   borderBottom={"2px solid #8f0d0a"}
+//                   outline={"none"}
+//                   p={10}
+//                   fontSize={"1.2rem"}
+//                   w={"100%"}
+//                   variant={"flushed"}
+//                   cols="70"
+//                   rows="5"
+//                 ></Textarea>
+//                 <Text
+//                   fontFamily={"PT Serif"}
+//                   justifyContent={"center"}
+//                   display={"flex"}
+//                   alignItems={"center"}
+//                   color={"GrayText"}
+//                   mb={"2rem"}
+//                 >
+//                   <Flex
+//                     justifyContent={"flex-start"}
+//                     w={"100%"}
+//                     alignItems={"center"}
+//                   >
+//                     <Input
+//                       color={"#c49851"}
+//                       fontFamily={"PT Serif"}
+//                       type="checkbox"
+//                     />
+//                     <Text ml={5}>
+//                       I agree that my submitted data is being
+//                       <span className={style.formspan}>
+//                         collected and stored
+//                       </span>
+//                     </Text>
+//                   </Flex>
+//                 </Text>
+//                 <Button
+//                   p={"20px 60px"}
+//                   cursor={"pointer"}
+//                   color={"white"}
+//                   fontSize={"1.3rem"}
+//                   border={"none"}
+//                   bgColor={"#8f0d0a"}
+//                 >
+//                   {" "}
+//                   Submit
+//                 </Button>
+//               </FormControl>
+//             </Flex>
+//           </Box>
+//         </TabPanel>
+//       </TabPanels>
+//     </Tabs>
+//   );
+// };
 
 export default Product_show_component;
