@@ -6,6 +6,12 @@ import { products as productData } from "./productsArray";
 import Link from "next/link";
 import { Playfair_Display, Antic_Didone } from "next/font/google";
 import Image from "next/image";
+import style1 from "@/styles/productDetails.module.scss";
+import "react-inner-image-zoom/lib/InnerImageZoom/styles.css";
+import "react-inner-image-zoom/lib/InnerImageZoom/styles.min.css";
+import InnerImageZoom from "react-inner-image-zoom";
+import { Button, Modal } from 'antd';
+import { products } from "@/Components/productsArray";
 
 const playfair_display = Playfair_Display({
   weight: "400",
@@ -28,6 +34,10 @@ const ProductsPage = () => {
       ...productData.slice(prevData.length, prevData.length + 10),
     ]);
   };
+
+
+
+
   return (
     <div className={style.products}>
       <p className={style.collection}>Our Premier Collection</p>
@@ -53,9 +63,29 @@ const Product = ({ data }) => {
   const { productName1, productName2, imageLink, _id } = data;
   let id = _id;
   console.log(imageLink.src);
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+
+  const [productDetail, setProductDetail] = useState({});
+
+  useEffect(() => {
+    setProductDetail(products.filter((product) => product._id === id)[0]);
+  }, []);
+
   return (
-    <Link href={`/Product/${id}`}>
-      <div className={style.card}>
+          <>
+    <button className={style.cardbutton} onClick={showModal}>
+    {/* <Link href={`/Product/${id}`}> */}
+      <div className={style.card} >
         <div className={style.content}>
           <Image
             src={imageLink}
@@ -70,7 +100,29 @@ const Product = ({ data }) => {
           <p className={antic_didone.className}>{productName2}</p>
         </div>
       </div>
-    </Link>
+    {/* </Link> */}
+    </button>
+
+    <Modal className={style1.modal} open={isModalOpen}  onCancel={handleCancel}>
+    <div className={style1.product_detail}>
+        <div className={style1.head}>
+        </div>
+        <div className={style1.body}>
+          <div className={style1.left}>
+            <InnerImageZoom
+              src={productDetail.imageLink}
+              zoomSrc={productDetail.largeImageLink}
+            />
+          </div>
+          <div className={style1.right}>
+            <h2>Product Name: {productDetail.productName1}</h2>
+            <h2>Material: {productDetail.productName2}</h2>
+            {productDetail.color === "Not Available" ? "":<h2>Color:{productDetail.color} </h2>  }
+            
+          </div>
+        </div>
+      </div>
+      </Modal></>
   );
 };
 

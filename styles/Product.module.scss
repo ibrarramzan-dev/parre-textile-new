@@ -113,6 +113,22 @@
   }
 }
 
+.cardbutton{
+  all: unset;
+}
+
+.productmodal{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+// .modal{
+//   height: 20vh !important;
+// }
+
 @-webkit-keyframes slide-top {
   0% {
     -webkit-transform: translateY(0);
