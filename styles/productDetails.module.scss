@@ -35,6 +35,10 @@
     font-family: "PT Serif", serif;
     font-size: 1rem;
     margin-bottom: 1rem;
+
+    span{
+      font-weight: bold;
+    }
   }
 
   @media screen and (max-width: 1150px) {

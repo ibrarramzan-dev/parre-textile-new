@@ -103,7 +103,7 @@ const Product = ({ data }) => {
     {/* </Link> */}
     </button>
 
-    <Modal className={style1.modal} footer={null} open={isModalOpen}  onCancel={handleCancel}>
+    <Modal className={style1.modal} footer={null} open={isModalOpen} width={"100vw"} height={"50vh"} onCancel={handleCancel}>
     <div className={style1.product_detail}>
         <div className={style1.head}>
         </div>
@@ -115,9 +115,10 @@ const Product = ({ data }) => {
             />
           </div>
           <div className={style1.right}>
-            <h2>Product Name: {productDetail.productName1}</h2>
-            <h2>Material: {productDetail.productName2}</h2>
-            <h2>Color: {productDetail.color === "Not Available" ? "": productDetail.color }</h2>
+            <h2>Product Name: <span> {productDetail.productName1}</span></h2>
+            <h2>Material: <span>{productDetail.productName2}</span> </h2>
+            {data.color === "Not Available" ? "" : <h2>Color: <span> {data.color} </span> </h2>}
+            {/* <h2>Color: {productDetail.color}</h2> */}
           </div>
         </div>
       </div>
