@@ -7,17 +7,20 @@
 }
 
 .body {
-  margin: 2rem 0;
+  // margin: 1rem 0;
   @include flexer(row);
-  width: 90%;
+  width: 92%;
   height: 100%;
   .left {
-    width: 95%;
+    width: 98%;
     height: fit-content;
-    margin-bottom: 1rem;
   }
   @media screen and (max-width: 1150px) {
     @include flexer(column);
+    .left{
+      margin-bottom: 1rem;
+
+    }
   }
 }
 
