@@ -3,14 +3,13 @@
 import style from "@/styles/Product.module.scss";
 import React, { useState, useEffect } from "react";
 import { products as productData } from "./productsArray";
-import Link from "next/link";
 import { Playfair_Display, Antic_Didone } from "next/font/google";
 import Image from "next/image";
 import style1 from "@/styles/productDetails.module.scss";
 import "react-inner-image-zoom/lib/InnerImageZoom/styles.css";
 import "react-inner-image-zoom/lib/InnerImageZoom/styles.min.css";
 import InnerImageZoom from "react-inner-image-zoom";
-import { Button, Modal } from 'antd';
+import { Modal } from "antd";
 import { products } from "@/Components/productsArray";
 
 const playfair_display = Playfair_Display({
@@ -34,9 +33,6 @@ const ProductsPage = () => {
       ...productData.slice(prevData.length, prevData.length + 10),
     ]);
   };
-
-
-
 
   return (
     <div className={style.products}>
@@ -82,47 +78,64 @@ const Product = ({ data }) => {
   }, []);
 
   return (
-          <>
-    <button className={style.cardbutton} onClick={showModal}>
-    {/* <Link href={`/Product/${id}`}> */}
-      <div className={style.card} >
-        <div className={style.content}>
-          <Image
-            src={imageLink}
-            className={style.waku}
-            width={350}
-            height={350}
-            alt=""
-          />
-        </div>
-        <div className={style.title}>
-          <h4 className={playfair_display.className}>{productName1}</h4>
-          <p className={antic_didone.className}>{productName2}</p>
-        </div>
-      </div>
-    {/* </Link> */}
-    </button>
-
-    <Modal className={style1.modal} footer={null} open={isModalOpen} width={"100vw"} height={"50vh"} onCancel={handleCancel}>
-    <div className={style1.product_detail}>
-        <div className={style1.head}>
-        </div>
-        <div className={style1.body}>
-          <div className={style1.left}>
-            <InnerImageZoom
-              src={productDetail.imageLink}
-              zoomSrc={productDetail.largeImageLink}
+    <>
+      <button className={style.cardbutton} onClick={showModal}>
+        {/* <Link href={`/Product/${id}`}> */}
+        <div className={style.card}>
+          <div className={style.content}>
+            <Image
+              src={imageLink}
+              className={style.waku}
+              width={350}
+              height={350}
+              alt=""
             />
           </div>
-          <div className={style1.right}>
-            <h2>Product Name: <span> {productDetail.productName1}</span></h2>
-            <h2>Material: <span>{productDetail.productName2}</span> </h2>
-            {data.color === "Not Available" ? "" : <h2>Color: <span> {data.color} </span> </h2>}
-            {/* <h2>Color: {productDetail.color}</h2> */}
+          <div className={style.title}>
+            <h4 className={playfair_display.className}>{productName1}</h4>
+            <p className={antic_didone.className}>{productName2}</p>
           </div>
         </div>
-      </div>
-      </Modal></>
+        {/* </Link> */}
+      </button>
+
+      <Modal
+        className={style1.modal}
+        footer={null}
+        open={isModalOpen}
+        width={"100vw"}
+        height={"50vh"}
+        onCancel={handleCancel}
+      >
+        <div className={style1.product_detail}>
+          <div className={style1.head}></div>
+          <div className={style1.body}>
+            <div className={style1.left}>
+              <InnerImageZoom
+                src={productDetail.imageLink}
+                zoomSrc={productDetail.largeImageLink}
+              />
+            </div>
+            <div className={style1.right}>
+              <h2>
+                Product Name: <span> {productDetail.productName1}</span>
+              </h2>
+              <h2>
+                Material: <span>{productDetail.productName2}</span>{" "}
+              </h2>
+              {data.color === "Not Available" ? (
+                ""
+              ) : (
+                <h2>
+                  Color: <span> {data.color} </span>{" "}
+                </h2>
+              )}
+              {/* <h2>Color: {productDetail.color}</h2> */}
+            </div>
+          </div>
+        </div>
+      </Modal>
+    </>
   );
 };
 

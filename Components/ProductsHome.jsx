@@ -1,6 +1,12 @@
 "use client";
 
 import style from "@/styles/Product.module.scss";
+import {  Modal } from 'antd';
+import { products } from "@/Components/productsArray";
+import style1 from "@/styles/productDetails.module.scss";
+import "react-inner-image-zoom/lib/InnerImageZoom/styles.css";
+import "react-inner-image-zoom/lib/InnerImageZoom/styles.min.css";
+import InnerImageZoom from "react-inner-image-zoom";
 import React, { useState, useEffect } from "react";
 import { products as productData } from "./productsArray";
 import Link from "next/link";
@@ -84,8 +90,28 @@ const Product = ({ data }) => {
   const { productName1, productName2, imageLink, _id } = data;
   let id = _id;
   console.log(imageLink.src);
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+
+  const [productDetail, setProductDetail] = useState({});
+
+  useEffect(() => {
+    setProductDetail(products.filter((product) => product._id === id)[0]);
+  }, []);
+
   return (
-    <Link href={`/Product/${id}`}>
+    <>
+    <button className={style.cardbutton} onClick={showModal}>
+    {/* <Link href={`/Product/${id}`}> */}
       <div className={style.card}>
         <div className={style.content}>
           <Image
@@ -101,7 +127,46 @@ const Product = ({ data }) => {
           <p className={antic_didone.className}>{productName2}</p>
         </div>
       </div>
-    </Link>
+    {/* </Link> */}
+    </button>
+
+    <Modal
+        className={style1.modal}
+        footer={null}
+        open={isModalOpen}
+        width={"100vw"}
+        height={"50vh"}
+        onCancel={handleCancel}
+      >
+        <div className={style1.product_detail}>
+          <div className={style1.head}></div>
+          <div className={style1.body}>
+            <div className={style1.left}>
+              <InnerImageZoom
+                src={productDetail.imageLink}
+                zoomSrc={productDetail.largeImageLink}
+              />
+            </div>
+            <div className={style1.right}>
+              <h2>
+                Product Name: <span> {productDetail.productName1}</span>
+              </h2>
+              <h2>
+                Material: <span>{productDetail.productName2}</span>{" "}
+              </h2>
+              {data.color === "Not Available" ? (
+                ""
+              ) : (
+                <h2>
+                  Color: <span> {data.color} </span>{" "}
+                </h2>
+              )}
+              {/* <h2>Color: {productDetail.color}</h2> */}
+            </div>
+          </div>
+        </div>
+      </Modal>
+    </>
   );
 };
 
