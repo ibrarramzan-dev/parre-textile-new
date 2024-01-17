@@ -51,7 +51,7 @@ const libre_bodoni = Libre_Bodoni({
 const Footer = () => {
   return (
     <>
-      <div className={style.bgfooter}>
+      {/* <div className={style.bgfooter}>
         <div className={style.newsletter}>
           <h2>
             <span className={libre_bodoni.className}>
@@ -67,13 +67,13 @@ const Footer = () => {
             <button className={libre_bodoni.className}>Subscribe</button>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <footer className={style.footer}>
         <div className={style.main_footer}>
-          <section className={`${style.footer_header} ${playfair_display.className}`}>
+          {/* <section className={`${style.footer_header} ${playfair_display.className}`}>
             We Innovate & create <br /> modern textiles{" "}
-          </section>
+          </section> */}
           <section className={style.address}>
             <h2 className={playfair_display.className}>Address</h2>
             <p>
@@ -156,7 +156,7 @@ const Footer = () => {
             </Link>
           </div>
           <div className={`${style.copys} ${antic_didone.className}`}>
-            PARRE&apos; &copy; 2023. All Rights Reserved
+            PARRE&apos; &copy; 2024. All Rights Reserved
           </div>
         </div>
       </footer>

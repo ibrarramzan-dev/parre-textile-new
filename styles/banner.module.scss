@@ -5,23 +5,24 @@
   width: 100vw;
 
   img {
-    height: 81vh;
+    height: 70vh;
     width: 100%;
+    // object-fit: cover;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .bannerimg {
     img {
-      height: 53vh;
+      height: 50vh;
     }
   }
 }
 
-@media screen and (max-width: 464px) {
+@media screen and (max-width: 500px) {
   .bannerimg {
     img {
-      height: 28.5vh;
+      height: 25vh;
     }
   }
 }

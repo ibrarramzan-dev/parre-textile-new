@@ -9,7 +9,7 @@ import Link from "next/link";
 import { Antic_Didone } from "next/font/google";
 import { VscThreeBars } from "react-icons/vsc";
 import { RxCross2 } from "react-icons/rx";
-import hd from "@/public/rod.jpg";
+import hd from "@/public/hd.png";
 
 const antic_didone = Antic_Didone({
   weight: "400",

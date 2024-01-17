@@ -17,6 +17,7 @@ import {
   Antic_Didone,
 } from "next/font/google";
 import Image from "next/image";
+import Banner from "@/Components/Banner";
 
 const arapey = Arapey({
   weight: "400",
@@ -64,7 +65,7 @@ const ProductsPage = () => {
           <span className={gentium_book_plus.className}>FAQ&apos;s</span>
         </Link>
       </header>
-
+    <Banner />
       <h2 className={`${style.hometext} ${arapey.className}`}>
         Luxury Printed Textiles Exclusively for Discerning Interior Designers
       </h2>

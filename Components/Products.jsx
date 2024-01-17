@@ -88,7 +88,6 @@ const Product = ({ data }) => {
               className={style.waku}
               width={350}
               height={350}
-              alt=""
             />
           </div>
           <div className={style.title}>
@@ -104,7 +103,7 @@ const Product = ({ data }) => {
         footer={null}
         open={isModalOpen}
         width={"100vw"}
-        height={"50vh"}
+        top={"0"}
         onCancel={handleCancel}
       >
         <div className={style1.product_detail}>
