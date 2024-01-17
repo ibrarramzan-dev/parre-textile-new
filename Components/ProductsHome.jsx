@@ -1,7 +1,7 @@
 "use client";
 
 import style from "@/styles/Product.module.scss";
-import {  Modal } from 'antd';
+import { Modal } from "antd";
 import { products } from "@/Components/productsArray";
 import style1 from "@/styles/productDetails.module.scss";
 import "react-inner-image-zoom/lib/InnerImageZoom/styles.css";
@@ -10,6 +10,9 @@ import InnerImageZoom from "react-inner-image-zoom";
 import React, { useState, useEffect } from "react";
 import { products as productData } from "./productsArray";
 import Link from "next/link";
+import _2qr423ooy from "./productsArray";
+import _fkg8e9mfy from "./productsArray";
+import _m06lwqfll from "./productsArray";
 import {
   Arapey,
   Gentium_Book_Plus,
@@ -43,8 +46,9 @@ const ProductsPage = () => {
   const [data, setdata] = useState([]);
 
   useEffect(() => {
-    setdata(productData.slice(0, 3));
+    setdata(productData.slice(15,18));
   }, []);
+
 
   return (
     <div className={style.products}>
@@ -65,7 +69,7 @@ const ProductsPage = () => {
           <span className={gentium_book_plus.className}>FAQ&apos;s</span>
         </Link>
       </header>
-    <Banner />
+      <Banner />
       <h2 className={`${style.hometext} ${arapey.className}`}>
         Luxury Printed Textiles Exclusively for Discerning Interior Designers
       </h2>
@@ -111,27 +115,25 @@ const Product = ({ data }) => {
 
   return (
     <>
-    <button className={style.cardbutton} onClick={showModal}>
-    {/* <Link href={`/Product/${id}`}> */}
-      <div className={style.card}>
-        <div className={style.content}>
-          <Image
-            src={imageLink}
-            width={300}
-            className={style.waku}
-            height={247}
-            alt=""
-          />
+      <button className={style.cardbutton} onClick={showModal}>
+        <div className={style.card}>
+          <div className={style.content}>
+            <Image
+              src={imageLink}
+              width={300}
+              className={style.waku}
+              height={247}
+              alt=""
+            />
+          </div>
+          <div className={style.title}>
+            <h4 className={playfair_display.className}>{productName1}</h4>
+            <p className={antic_didone.className}>{productName2}</p>
+          </div>
         </div>
-        <div className={style.title}>
-          <h4 className={playfair_display.className}>{productName1}</h4>
-          <p className={antic_didone.className}>{productName2}</p>
-        </div>
-      </div>
-    {/* </Link> */}
-    </button>
+      </button>
 
-    <Modal
+      <Modal
         className={style1.modal}
         footer={null}
         open={isModalOpen}
@@ -162,7 +164,6 @@ const Product = ({ data }) => {
                   Color: <span> {data.color} </span>{" "}
                 </h2>
               )}
-              {/* <h2>Color: {productDetail.color}</h2> */}
             </div>
           </div>
         </div>
