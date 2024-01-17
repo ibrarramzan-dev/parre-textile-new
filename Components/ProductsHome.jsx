@@ -8,11 +8,8 @@ import "react-inner-image-zoom/lib/InnerImageZoom/styles.css";
 import "react-inner-image-zoom/lib/InnerImageZoom/styles.min.css";
 import InnerImageZoom from "react-inner-image-zoom";
 import React, { useState, useEffect } from "react";
-import { products as productData } from "./productsArray";
+import { products as productData } from "./productArray1";
 import Link from "next/link";
-import _2qr423ooy from "./productsArray";
-import _fkg8e9mfy from "./productsArray";
-import _m06lwqfll from "./productsArray";
 import {
   Arapey,
   Gentium_Book_Plus,
@@ -46,7 +43,7 @@ const ProductsPage = () => {
   const [data, setdata] = useState([]);
 
   useEffect(() => {
-    setdata(productData.slice(15,18));
+    setdata(productData.slice(0,3));
   }, []);
 
 
