@@ -55,11 +55,22 @@ const ProductsPage = () => {
         </div>
       </div>
       {data.length > 50 ? (
-        ""
+         <p className={style.collection2}>
+         Please Email Sample Requests to{" "}
+         <Link
+           className={style.mail}
+           href="mailto:SampleRequests@ParreTextile.com"
+         >
+           SampleRequests@ParreTextile.com
+         </Link>
+       </p>
+        
       ) : (
+        <>
         <div className={style.btn}>
           <button onClick={handleClick}>Show more</button>
         </div>
+       </>
       )}
     </div>
   );
