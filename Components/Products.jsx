@@ -11,6 +11,7 @@ import "react-inner-image-zoom/lib/InnerImageZoom/styles.min.css";
 import InnerImageZoom from "react-inner-image-zoom";
 import { Modal } from "antd";
 import { products } from "@/Components/productsArray";
+import Link from "next/link";
 
 const playfair_display = Playfair_Display({
   weight: "400",
@@ -37,6 +38,15 @@ const ProductsPage = () => {
   return (
     <div className={style.products}>
       <p className={style.collection}>Our Premier Collection</p>
+      <p className={style.collection1}>
+        Please Email Sample Requests to{" "}
+        <Link
+          className={style.mail}
+          href="mailto:SampleRequests@ParreTextile.com"
+        >
+          SampleRequests@ParreTextile.com
+        </Link>
+      </p>
       <div className={style.product}>
         <div className={style.product_list}>
           {data.map((product) => (

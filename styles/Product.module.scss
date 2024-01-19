@@ -9,6 +9,26 @@
     text-align: center;
     margin: 2rem 0.8rem 0rem 0.5rem;
   }
+  
+  .collection1{
+    font-size: 1.5rem;
+    font-family: $font4;
+    text-align: center;
+    margin: 1rem 0.8rem 0rem 0.5rem;
+    
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.4rem;
+    }
+
+    @media screen and (max-width:480px) {
+      font-size: 1.3rem;
+      a{
+        font-size: 1rem;
+      }
+    }
+  }
 
   .btn {
     text-align: center;
