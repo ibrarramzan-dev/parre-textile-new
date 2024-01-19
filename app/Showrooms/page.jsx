@@ -9,11 +9,13 @@ import img2 from "@/public/bga3.jpg";
 import img3 from "@/public/bga4.jpg";
 import Image from "next/image";
 import Footer from "@/Components/Footer";
+import Navigation from "@/Components/Navigation";
 
 export default function Home() {
   return (
     <>
     <Header/>
+    <Navigation />
     <div className={style.showroom}>
       <h2>Showrooms</h2>
       <p>Parre' Textile is seeking Showrooms and Road Sales representation across the United States.</p>
