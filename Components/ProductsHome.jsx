@@ -8,7 +8,7 @@ import "react-inner-image-zoom/lib/InnerImageZoom/styles.css";
 import "react-inner-image-zoom/lib/InnerImageZoom/styles.min.css";
 import InnerImageZoom from "react-inner-image-zoom";
 import React, { useState, useEffect } from "react";
-import { products as productData } from "./productArray1";
+import { products as productData } from "./productsArray";
 import Link from "next/link";
 import {
   Arapey,
