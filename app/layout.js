@@ -1,7 +1,7 @@
 import "@/styles/App.scss";
 
 export const metadata = {
-  title: " PARRE' Textile",
+  title: "PARRE' Textile",
   description: 'Luxury Printed Textiles Exclusively for Discerning Interior Designers',
 }
 
