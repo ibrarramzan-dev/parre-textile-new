@@ -47,7 +47,7 @@ export const products = [
   {
     //6
     _id: "_2rze5dfil",
-    productName1: "Garvey 01",
+    productName1: "Garvey 02",
     productName2: "55% Linen/45% Cotton",
     color: "Garnet",
     imageLink:
@@ -83,7 +83,7 @@ export const products = [
   {
     //10
     _id: "_zqag8qhum",
-    productName1: "Wilkie 04",
+    productName1: "Wilkie 03",
     productName2: "55% Linen/45% Cotton",
     color: "Red/Blue/Multi",
      imageLink:
@@ -245,7 +245,7 @@ export const products = [
   {
     //28
     _id: "_w15mupe3j",
-    productName1: "Holdaamph 03",
+    productName1: "Holdamph 03",
     productName2: "55% Linen/45% Cotton",
     color: "Red/Orange",
     imageLink:
@@ -266,16 +266,16 @@ export const products = [
     _id: "_z85v6kozf",
     productName1: "Curran 02",
     productName2: "100% Cotton",
-    color: "Mange/Blue/Red",
+    color: "Mango/Blue/Red",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C1%20Des%2020%20Combo%2012%20Feb%2023.jpg",
   },
   {
     //31
     _id: "_ke21m94hj",
-    productName1: "Geller 03",
+    productName1: "Geller 02",
     productName2: "100% Cotton",
-    color: "Terracotta/Indigo",
+    color: "Green/Pink/Red",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C1%20Design%2018%20Combo%202%20Feb%2023.jpg",
   },
@@ -372,9 +372,9 @@ export const products = [
   {
     //42
     _id: "_t6nxferf8",
-    productName1: "Geller 02",
+    productName1: "Geller 04",
     productName2: "100% Cotton",
-    color: "Green/Pink/Red",
+    color: "Green/Beige",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/C1%20Des%2018%20Combo%203%20Feb%2023.jpg",
   },
