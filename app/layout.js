@@ -4,7 +4,6 @@ import favicon1 from "@/public/favicon-16x16.png";
 import favicon2 from "@/public/favicon-32x32.png";
 import apple from "@/public/apple-touch-icon.png";
 import favicon4 from "@/public/android-chrome-512x512.png";
-// import { Html } from "next/document";
 
 export const metadata = {
   title: "PARRE' Textile",
