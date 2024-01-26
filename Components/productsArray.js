@@ -309,9 +309,9 @@ export const products = [
   {
     //35
     _id: "_yjnubmvl4",
-    productName1: "Holdamph 02",
+    productName1: "Geller 01",
     productName2: "55% Linen/45% Cotton",
-    color: "Pink/Purple/Spring Green",
+    color: "Blue/White",
     imageLink:
     "https://6583af23b9dda70008c7b0d1--brilliant-flan-7fb4e6.netlify.app/images/DP%2018%20Col%206%20Feb%2023.jpg",
   },
