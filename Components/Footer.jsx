@@ -51,29 +51,10 @@ const libre_bodoni = Libre_Bodoni({
 const Footer = () => {
   return (
     <>
-      {/* <div className={style.bgfooter}>
-        <div className={style.newsletter}>
-          <h2>
-            <span className={libre_bodoni.className}>
-              Sign Up for Exclusive Offerings, New Product and More
-            </span>
-          </h2>
-          <div className={style.textnewsletter}>
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className={libre_bodoni.className}
-            />
-            <button className={libre_bodoni.className}>Subscribe</button>
-          </div>
-        </div>
-      </div> */}
 
       <footer className={style.footer}>
         <div className={style.main_footer}>
-          {/* <section className={`${style.footer_header} ${playfair_display.className}`}>
-            We Innovate & create <br /> modern textiles{" "}
-          </section> */}
+          
           <section className={style.address}>
             <h2 className={playfair_display.className}>Address</h2>
             <p>
