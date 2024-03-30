@@ -6,18 +6,20 @@
   @include flexer(column);
 }
 
-
 .body {
-  margin: 2rem 0;
   @include flexer(row);
-  width: 90%;
+  width: 92%;
   height: 100%;
   .left {
-    width: 95%;
+    width: 98%;
     height: fit-content;
   }
-  @media screen and (max-width:1150px) {
+  @media screen and (max-width: 1150px) {
     @include flexer(column);
+    .left{
+      margin-bottom: 1rem;
+
+    }
   }
 }
 
@@ -35,75 +37,14 @@
     font-family: "PT Serif", serif;
     font-size: 1rem;
     margin-bottom: 1rem;
+
+    span{
+      font-weight: bold;
+    }
   }
 
-  @media screen and (max-width:1150px) {
+  @media screen and (max-width: 1150px) {
     width: 95%;
+    height: fit-content;
   }
 }
-// MEDIA QUERIRES
-
-// @media only screen and (max-width: 1108px) {
-//   .body {
-//     width: 80%;
-//     @include flexer(column);
-//   }
-
-//   .body {
-//     @include flexer(column);
-//     width: 90%;
-//     height: fit-content;
-//     .left {
-//       width: 100%;
-//       height: fit-content;
-//       margin-bottom: 2rem;
-//     }
-//   }
-
-//   .right {
-//     width: 95%;
-//     height: fit-content;
-
-//     .numbers {
-//       input {
-//         margin-bottom: 1rem;
-//       }
-//     }
-//   }
-// }
-
-// @media screen and (max-width: 978px) {
-//   .head {
-//     margin-top: 3rem;
-//     margin-bottom: 2rem;
-//   }
-// }
-
-// @media only screen and (max-width: 768px) {
-//   .head {
-//     padding: 0.34rem;
-
-//     h1 {
-//       font-size: 2.5rem;
-//       margin-bottom: 1rem;
-//     }
-//   }
-
-//   .body {
-//     @include flexer(column);
-//   }
-
-//   .right {
-//     width: 98%;
-//   }
-
-//   .left {
-//     padding: 0;
-//   }
-
-//   .thumbnail {
-//     margin-top: 1rem;
-//     width: 3rem;
-//   }
-// }
-// }

@@ -3,6 +3,7 @@ import style from "@/styles/faqs/faqs.module.scss";
 import { Collapse } from "antd";
 import { Header } from "@/Components/Header";
 import Footer from "@/Components/Footer";
+import Navigation from "@/Components/Navigation";
 
 const customArrowStyle = {
   color: "white",
@@ -101,6 +102,7 @@ const App = () => {
     return (
         <>
         <Header />
+        <Navigation />
         <div className={style.faqs}>
             <h2>Frequently Asked Questions</h2>
             <p className={style.parre}>Here at Parre&apos; Textile we believe in &quot;Keeping it Simple&quot;</p>

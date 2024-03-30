@@ -9,14 +9,16 @@ import img2 from "@/public/bga3.jpg";
 import img3 from "@/public/bga4.jpg";
 import Image from "next/image";
 import Footer from "@/Components/Footer";
+import Navigation from "@/Components/Navigation";
 
 export default function Home() {
   return (
     <>
     <Header/>
+    <Navigation />
     <div className={style.showroom}>
       <h2>Showrooms</h2>
-      <p>Parre' Textile is seeking Showroom and Road Sales representation across the United States.</p>
+      <p>Parre' Textile is seeking Showrooms and Road Sales representation across the United States.</p>
       <Image src={img} className={style.img} alt="" />
       <Image src={img1} className={style.img} alt="" />
       <Image src={img2} className={style.img} alt="" />

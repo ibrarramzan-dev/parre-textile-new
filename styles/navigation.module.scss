@@ -1,0 +1,37 @@
+@import "./utils";
+
+
+.links {
+    margin: 1.2rem 0;
+    width: 100%;
+    @include flexer;
+    > a {
+      margin: 10px 15px 0px 15px;
+      text-decoration: none;
+      font-family: "Antic Didone", serif;
+      font-size: 1.2rem;
+      color: black;
+      transition: all 0.4s ease;
+  
+      &:hover {
+        color: $color1;
+      }
+    }
+  
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      display: none;
+      margin: 10px 0;
+      font-size: 0.9rem;
+    }
+    @media screen and (max-width: 400px) {
+      > a {
+        margin: 10px;
+        font-size: 0.9rem;
+        text-decoration: none;
+        color: black;
+        transition: all 0.4s ease;
+      }
+    }
+  }
+  

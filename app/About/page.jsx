@@ -9,11 +9,13 @@ import img2 from "@/public/t2.jpg";
 import img3 from "@/public/t3.jpg";
 import Image from "next/image";
 import Footer from "@/Components/Footer";
+import Navigation from "@/Components/Navigation";
 
 export default function Home() {
   return (
     <>
       <Header />
+      <Navigation />
       <div className={style.about}>
         <div className={style.left}>
           <h1>About Us</h1>

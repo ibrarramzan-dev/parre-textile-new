@@ -1,6 +1,6 @@
 import React from 'react'
 import Image  from 'next/image'
-import img from "@/public/banner.jpg"
+import img from "@/public/banner1234.jpg"
 import style from "@/styles/banner.module.scss"
 
 const Banner = () => {

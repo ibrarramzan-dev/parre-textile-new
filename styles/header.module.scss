@@ -11,7 +11,7 @@
 }
 
 .hd{
-  height: 45%;
+  height: 85%;
   width: 20%;
   margin: 0 auto;
 
@@ -98,115 +98,11 @@
   }
 }
 
-// .icons {
-//   @include hw(20%);
-//   @include flexer(row, flex-end);
-// }
-// .icons1 {
-//   height: 20%;
-//   width: 20%;
-//   @include flexer(row, flex-start);
-// }
 @media screen and (max-width: 1050px) {
   .icons1 {
     display: none;
   }
 }
-
-// .btn {
-//   background: none;
-//   border-radius: 50px;
-//   width: 40px;
-//   height: 40px;
-//   @include flexer;
-//   cursor: pointer;
-//   font-size: 1.5rem;
-//   margin: 5px 10px;
-//   border: none;
-
-//   &:hover {
-//     background: $color2;
-//   }
-// }
-
-
-// .search_modal {
-//   position: fixed;
-//   width: 100vw;
-//   z-index: 100;
-//   height: 20vh;
-//   top: 0px;
-//   right: 0px;
-//   background: rgb(255, 255, 255);
-//   box-shadow: 3px 3px 13px black;
-
-//   .search_modal_header {
-//     padding: 1rem;
-//     @include flexer(row, space-between);
-
-//     .navbar_logo {
-//       img {
-//         height: 11.5vh;
-//         margin-top: 2rem;
-//         width: 15vw;
-//         margin-left: 1rem;
-//       }
-//     }
-//   }
-
-//   .closeIcon {
-//     background: none;
-//     font-size: xx-large;
-//     margin-top: 1.9rem;
-//     color: rgb(0, 0, 0);
-//     margin-right: 2rem;
-//     border: none;
-//   }
-
-//   // styles/searchMenu.scss
-//   .searcmenu {
-//     width: 50%;
-//     margin: auto;
-//     margin-top: 3rem;
-//     height: 4rem;
-//     padding: 1.1rem;
-//     display: flex;
-    
-//     margin-left: 20%;
-//     align-items: center;
-//     position: relative;
-
-//     button {
-//       background: none;
-//       border: none;
-//       padding-right: 1rem;
-//       cursor: pointer;
-//       font-size: xx-large;
-//     }
-
-//     input {
-//       padding-left: 30px;
-//       border: 1px solid #ccc;
-//       border-radius: 4px;
-//       height: 30px;
-//       box-sizing: border-box;
-//       width: 60%;
-//       border: none;
-//       background: none;
-//       outline: none;
-//       font-size: 1.6rem;
-//     }
-
-//     svg {
-//       position: absolute;
-//       left: 10px; 
-//       top: 50%;
-//       transform: translateY(-50%);
-//       font-size: 2.5rem;
-//       color: #666; 
-//     }
-//   }
-// }
 
 @media screen and (max-width: 420px) {
   .search_modal {
@@ -272,7 +168,7 @@
   border-bottom: 2px solid black;
 
   &:hover {
-    color: peachpuff;
+    color: #8d3d3b;
     border-bottom: 2px solid white;
   }
 }
