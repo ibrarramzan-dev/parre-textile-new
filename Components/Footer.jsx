@@ -69,6 +69,7 @@ const Footer = () => {
                 <Link
                   className={style.social_link}
                   href="https://www.instagram.com/parretextile/"
+                  target="_blank"
                 >
                   <FaInstagram />
                 </Link>
