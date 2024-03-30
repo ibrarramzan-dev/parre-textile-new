@@ -73,7 +73,9 @@ const Footer = () => {
 
       <footer className={style.footer}>
         <div className={style.main_footer}>
-          <section className={`${style.footer_header} ${playfair_display.className}`}>
+          <section
+            className={`${style.footer_header} ${playfair_display.className}`}
+          >
             We Innovate & create <br /> modern textiles{" "}
           </section>
           <section className={style.address}>
@@ -86,12 +88,15 @@ const Footer = () => {
             <div className={style.social}>
               <h2 className={playfair_display.className}>Follow Along</h2>
               <div className={style.media}>
-              <Link className={style.social_link} href={""}>
-                <GrFacebookOption />
-              </Link>
-              <Link className={style.social_link} href={""}>
-                <FaInstagram />
-              </Link>
+                <Link className={style.social_link} href={""}>
+                  <GrFacebookOption />
+                </Link>
+                <Link
+                  className={style.social_link}
+                  href="https://www.instagram.com/parretextile/"
+                >
+                  <FaInstagram />
+                </Link>
               </div>
             </div>
           </section>
