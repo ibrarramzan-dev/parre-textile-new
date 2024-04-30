@@ -51,8 +51,10 @@ const libre_bodoni = Libre_Bodoni({
 const Footer = () => {
   return (
     <>
+
       <footer className={style.footer}>
         <div className={style.main_footer}>
+          
           <section className={style.address}>
             <h2 className={playfair_display.className}>Address</h2>
             <p>
@@ -63,16 +65,12 @@ const Footer = () => {
             <div className={style.social}>
               <h2 className={playfair_display.className}>Follow Along</h2>
               <div className={style.media}>
-                <Link className={style.social_link} href={""}>
-                  <GrFacebookOption />
-                </Link>
-                <Link
-                  className={style.social_link}
-                  href="https://www.instagram.com/parretextile/"
-                  target="_blank"
-                >
-                  <FaInstagram />
-                </Link>
+              <Link className={style.social_link} href={""}>
+                <GrFacebookOption />
+              </Link>
+              <Link className={style.social_link} href={""}>
+                <FaInstagram />
+              </Link>
               </div>
             </div>
           </section>

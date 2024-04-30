@@ -10,12 +10,12 @@
   display: none;
 }
 
-.hd{
-  height: 85%;
-  width: 20%;
+.hd {
+  height: 82%;
+  width: 16%;
   margin: 0 auto;
 
-  @media screen and (max-width:1056px){
+  @media screen and (max-width:1056px) {
     display: none;
   }
 }
@@ -30,12 +30,13 @@
   height: 20vh;
 
   .navbar_logo {
-    padding-left: 11rem;
+    padding-left: 10rem;
   }
 
   @media screen and (max-width: 2560px) and (min-width: 1700px) {
     .navbar_logo {
       padding-left: 0;
+
       .link {
         img {
           height: 12vh;
@@ -46,23 +47,24 @@
 
   @media screen and (max-width: 1380px) {
     .navbar_logo {
-      padding-left: 10rem;
+      padding-left: 0rem;
     }
   }
+}
 
-  @media screen and (max-width: 1059px) {
-    .navbar_logo {
-      padding-left: 0;
-    }
+@media screen and (max-width: 1059px) {
+  .navbar_logo {
+    padding-left: 0;
   }
+}
 
-  @media screen and (max-width: 1700px) and (min-width: 1681px) {
-    .navbar_logo {
-      padding-left: 0;
-      .link {
-        img {
-          height: 10vh;
-        }
+@media screen and (max-width: 1700px) and (min-width: 1681px) {
+  .navbar_logo {
+    padding-left: 0;
+
+    .link {
+      img {
+        height: 10vh;
       }
     }
   }
@@ -72,7 +74,7 @@
   @include flexer(row, space-between);
   @include hw(25%);
 
-  > a {
+  >a {
     color: rgb(0, 0, 0);
     font-family: "Antic Didone", serif;
     text-decoration: none;
@@ -88,10 +90,12 @@
 
 .navbar_logo {
   @include flexer();
+
   .link {
-    > img {
-      width: 48%;
-      @include hw(60%, 60%);
+    >img {
+      // width: 48%;
+      width: 55%;
+      @include hw(70%, 70%);
       border: 3px solid $color;
       padding: 4px 22px;
     }
@@ -109,6 +113,7 @@
     .searcmenu {
       margin-top: 0rem;
       width: 95%;
+
       input {
         font-size: 1.5rem;
       }
@@ -257,7 +262,7 @@
   .links {
     display: none;
 
-    > a {
+    >a {
       color: black;
       text-decoration: none;
       transition: all ease 0.5s;
@@ -283,8 +288,9 @@
 
     .navbar_logo {
       @include flexer();
+
       .link {
-        > img {
+        >img {
           width: 48%;
           @include hw(60%, 60%);
         }
@@ -322,14 +328,17 @@
 @media screen and (max-width: 2560px) and (min-width: 1700px) {
   .links {
     width: 28%;
+
     a {
       font-size: 1.2rem;
     }
   }
+
   .navbar_logo {
     @include flexer();
+
     .link {
-      > img {
+      >img {
         @include hw(100%, 100%);
       }
     }

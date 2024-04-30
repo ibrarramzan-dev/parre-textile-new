@@ -43,7 +43,7 @@ const ProductsPage = () => {
   const [data, setdata] = useState([]);
 
   useEffect(() => {
-    setdata(productData.slice(0,3));
+    setdata(productData.slice(0, 3));
   }, []);
 
 

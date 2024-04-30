@@ -100,7 +100,6 @@ const Product = ({ data }) => {
   return (
     <>
       <button className={style.cardbutton} onClick={showModal}>
-        {/* <Link href={`/Product/${id}`}> */}
         <div className={style.card}>
           <div className={style.content}>
             <Image
@@ -115,7 +114,6 @@ const Product = ({ data }) => {
             <p className={antic_didone.className}>{productName2}</p>
           </div>
         </div>
-        {/* </Link> */}
       </button>
 
       <Modal
@@ -149,7 +147,6 @@ const Product = ({ data }) => {
                   Color: <span> {data.color} </span>{" "}
                 </h2>
               )}
-              {/* <h2>Color: {productDetail.color}</h2> */}
             </div>
           </div>
         </div>
